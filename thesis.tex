@@ -1,0 +1,155 @@
+\documentclass[a4paper]{book}
+
+
+% --- Package --- %
+\usepackage[a4paper]{meta-donnees}     % pour mettre la page de garde
+\usepackage{subfiles}                  % pour subdiviser les fichiers .tex
+\usepackage[english]{babel}            % pour transformer chapter -> chapitre
+\usepackage[utf8]{inputenc}            % pour mettre les accents
+\usepackage[fontsize=12pt]{scrextend}  % pour changer la taille de la police
+\usepackage[inner  = 3.5cm,
+            outer  = 2.7cm,
+            top    = 3.5cm,
+            bottom = 3.5cm]{geometry}  % pour les marges changeantes interieur et extérieur        
+\usepackage{xcolor,lipsum}             % Required for specifying colors by name
+%\usepackage{avant}                     % Use the Avantgarde font for headings
+\usepackage{mathptmx}                  % Use the Adobe Times Roman as the default text font together with math symbols
+\usepackage{microtype}                 % Slightly tweak font spacing for aesthetics
+\usepackage[T1]{fontenc}               % Use 8-bit encoding that has 256 glyphs
+\usepackage{ctable}                    % for toprule, midrule, bottomrule
+\usepackage{titlesec}                  % for titleformat
+\usepackage{multicol}                  % for double colunm items
+\usepackage{amsmath}                   % for math formula
+\usepackage{amssymb}                   % for math formula
+\usepackage{placeins}                  % for floatBarrier
+\usepackage{lmodern}                   % for the front
+\usepackage{graphicx}                  % for includegraphics
+\usepackage{array}                     % for multicolumn table
+\usepackage{multirow}                  % use of multirow
+\usepackage{fancyhdr}                  % to use the fancy style
+\usepackage{lipsum}                    % for dummy test
+%\pagestyle{fancy}                      % for fancy style
+\usepackage{titlesec}                  % for the title section (mise en page chap.)
+\usepackage{lettrine}                  % For the drop cap
+%\usepackage{lastpage}                 % Used to determine the number of pages in the document (for "Page X of Total")* 
+%\usepackage{bm}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+% --------------- %
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% --- Style --- %
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\leftmark}
+%\fancyhead[RE,LO]{\leftmark}
+%\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+% ------------- %
+ 
+ 
+% --- New command --- %
+\renewcommand {\headrulewidth} {2pt}          % Change l'épaisseur du trait du haut de page
+\renewcommand {\footrulewidth} {1.5pt}        % Change l'épaisseur du trait du pied de page
+\renewcommand {\familydefault} {\sfdefault}   % Change la police des haut et pied de page
+\newcommand*  {\horzbar}       {\rule[2pt]{2pt}{2pt}}
+\newcommand{\Cd}{$^{\text{116}}$Cd}
+\newcommand{\Sn}{$^{\text{116}}$Sn}
+\newcommand{\NI}{\noindent}
+% ------------------- %
+
+
+% --- Change la mise en page des chapitre --- %
+\usepackage[a]{fncychap}
+\makeatletter
+	\ChTitleVar{\Huge\sffamily}
+	\ChNameVar{\bfseries\LARGE\sffamily}
+\makeatother
+% ------------------------------------------ %
+
+  
+\begin{document}
+
+
+% --- Option pour les espaces --- %
+%\Sethpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture horizontalement (valeur par défaut est -5.5mm)
+%\Setvpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture verticalement (valeur par défaut est -15.5mm)
+
+%\Universite{}    %%optionnel : à décommenter et à renseigenr si vous voulez changer le non d'université
+%\Grade{}         %%optionnel : à décommenter et à renseigenr si vous voulez changer le grade
+% ------------------------------- %
+
+
+% --- Page de garde --- %
+\Specialite      {Physique Subatomique et Astroparticules}
+\Arrete          {25 mai 2016} % ATTENTION, A VERIFIER CHAQUE ANNEE
+\Auteur          {Thibaud LE NOBLET}
+\Directeur       {Dominique DUCHESNEAU}
+\CoDirecteur     {Alberto REMOTO}
+\Laboratoire     {Laboratoire d'Annecy-le-Vieux de Physique des Particules}
+\EcoleDoctorale  {Communaut\'e Universit\'e Grenoble Alpes}
+\Titre           {Background studies and design optimisation of the SuperNEMO demonstrator module\\
+\smallskip
+Search for $2\nu\beta\beta$ and $0\nu\beta\beta$ decays of $^{\text{116}}$Cd into the excited states of $^{\text{116}}$Sn with NEMO-3}
+
+%\Soustitre{}%%optionnel : à décommenter et à renseigenr si présence d'un sous-titre de thèse
+\Depot           {date}
+
+% --- Commande pour création de nouvelles catégories dans le jury --- %
+%\UGTNewJuryCategory{...NomDeLaCategorie...}{...Definition...}
+% Exemple \UGTNewJuryCategory{UGTFamille}{Membre de la famille} que nous ajoutons dans la commande \Jury ci-dessous sous la forme \UGTFamille{Jean Rousseau}{(...titre_et_affiliation...s'il_y_en_a...)}
+% ------------------------------------------------------------------- %
+
+
+\Jury  {%\UGTRole{civilité, prénom et nom}{titre}{affiliation}
+  \UGTPresidente    {Mme, M ??}{??}{}
+  \UGTRapporteur    {M, Claudio GIGANTI}    {Chargé de recherche, LPNHE - Paris}          {}
+  \UGTRapporteur    {M, Ruben SAAKYAN}      {Professor, UCL - Londres}                      {}
+  \UGTExaminatrice  {Mme, Jaime DAWSON}     {Chargée de recherche, APC - Paris}              {}
+  \UGTExaminatrice  {Mme, Edwige TOURNEFIER}{Chargée de recherche, APC - Paris}              {}
+  \UGTExaminateur   {M, Laurent SIMARD}     {Ma\^itre de conf, Univ. Paris-Sud / LAL - Orsay}{}
+  %\UGTDirecteur     {M, le Directeur}{DR}{Labo1}
+}
+\MakeUGthesePDG    %% très important pour générer la couvérture de thèse
+
+\tableofcontents
+\addcontentsline{toc}{chapter}{Introduction}
+
+% --- Parties de la thèse --- %
+\subfile{Introduction}
+
+\subfile{Chap1-NeutrinoPhysics}
+
+\subfile{Chap2-DoubleBeta}
+
+\subfile{Chap3-NEMOdetectors}
+
+\subfile{Chap4-SourceFoilDesign}
+
+\subfile{Chap5-RadonBkgStudy}
+
+\subfile{Chap6-Cd116ExcitedStatesAnalysis}
+
+\subfile{Conclusion}
+
+
+\appendix
+
+\subfile{Annexe1-SourceFabrication}
+
+\subfile{Annexe2-LightInjection}
+
+
+
+
+\bibliographystyle{ieeetr}
+\bibliography{biblio}
+
+\end{document}
