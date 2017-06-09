@@ -6,98 +6,105 @@
 
 
 
-\begin{flushright}
-\textit{blablab lablab labla labla labla labla labla lablalabla \\ 
-labla lablala labla labla lablabla labla}\\
-Author.
-\end{flushright}
+%\begin{flushright}
+%\textit{You see, mon ami, the voices of the little gray cells have begun to sing to Poirot.}\\
+%Agatha Christie, \textit{Appointment with Death}.
+%\end{flushright}
+
+
+
+%\bigskip
+
+
+\NI The investigation of the $\beta\beta$ decays of $^{\text{116}}$Cd via the excited states of $^{\text{116}}$Sn is described in this section. These decays are expected to be even rarer than the decay to the ground state but their very clear signature topology, simultaneous emission of two electrons accompanied of one or more photons, allow their searches with a high background suppression.
 
 
 \bigskip
 
 
-\NI The aim of this analysis is to measure or set a limit on the half-life of the 2$\nu\beta\beta$ and 0$\nu\beta\beta$ decays of \Cd~via the excited states of \Sn.
-
-\section{The \texorpdfstring{\Cd}~ sector in NEMO-3}
-\label{sec:CdSectorInNEMO3}
+\NI The two main excited states of $^{\text{116}}$Sn are introduced in Section~\ref{sec:ESCd}. The analysis technique used to perform the search is described in Section~\ref{sec:AnalysisTechnique}. The modelisation of the background and the measurement of its different contributions are presented in Section~\ref{sec:BKGexcitedStates}. The preselection criteria of the events for these decay channels are described in Section~\ref{sec:Preselection}. The optimisation of the cuts using a multivariate approach is presented in Section~\ref{sec:CutOptimisation}. The evaluation of the sources of systematic uncertainties is discussed in Section~\ref{sec:SourceOfSystematics}. The results of these searches are presented in Section~\ref{sec:Result2PLUS} and Section~\ref{sec:Result0PLUS} for the two main excited states respectively in both 2$\nu$ and 0$\nu$ decay modes. Finally a summary can be found in Section~\ref{sec:SummaryAnalysis}.
 
 
-\NI In NEMO-3 detector, a total mass of 440~g of cadmium were placed in sector 18. The average enrichment of \Cd~was (93.2~$\pm$~0.2)\%~\cite{NEMO-3-detector} which represents an effective mass of (410~$\pm$~1)~g~of~\Cd. The enrichment have been realized by the centrifugation separation method. Despite the good yield of this technique, smaller amounts of other isotopes are still present in the sample as summarized in Table~\ref{IsotopeCdTable}. Part of the sample (152~g) was previously measured with the NEMO-2 prototype~\cite{ObservationCd116NEMO-2}.  
+%\section{The \texorpdfstring{\Cd}~ sector in NEMO-3}
+%\label{sec:CdSectorInNEMO3}
 
 
-\bigskip
+%\NI In NEMO-3 detector, a total mass of 440~g of cadmium were placed in sector 18. The average enrichment of \Cd~was (93.2~$\pm$~0.2)\%~\cite{NEMO-3-detector} which represents an effective mass of (410~$\pm$~1)~g~of~\Cd. The enrichment have been realized by the centrifugation separation method. Despite the good yield of this technique, smaller amounts of other cadmium isotopes are still present in the sample, see Table~\ref{IsotopeCdTable}. Part of the sample (152~g) was previously measured with the NEMO-2 prototype~\cite{ObservationCd116NEMO-2}.  
 
 
-\NI The cadmium has been divided in 7~strips of about 2423~cm long and about 65~cm wide. Each strip was made of one or more smaller pieces which were glued together with Araldite~AW~106 and a hardener~HV953V. Two 12-$\mu$m mylar films surrounded the entire strip to provide a mechanical strenght. The mylar films were glued using Araldite~2020/A~XW~3961 and Araldite~2020/B~XW~3972.
+%\bigskip
 
 
-\begin{table}[h!]
-\begin{center}
-\begin{tabular}{c|c|c}
-\toprule
-Isotope & Mass fraction & Mass (g) \\
-\midrule
-116   & 0.932   & 410.08 \\[0.05cm]
-114   & 0.03228 & 14.20  \\[0.05cm]
-113   & 0.00885 & 3.90   \\[0.05cm]
-112   & 0.01544 & 6.79   \\[0.05cm]
-111   & 0.00535 & 2.35   \\[0.05cm]
-110   & 0.00468 & 2.06   \\[0.05cm]
-108   & 0.00032 & 0.14   \\[0.05cm]
-106   & 0.00038 & 0.17   \\[0.05cm]
-Total & 0.999   & 439.69 \\[0.05cm]
-\bottomrule
-\end{tabular}
-\end{center}
-\label{IsotopeCdTable}
-\caption{Isotopes present in the 440~g of Cd sample placed in NEMO-3 detector. The total mass of \Cd~is (410~$\pm$~1)~g which takes into account the error on the enrichment yield of 0.2\%.}
-\end{table}
+%\NI The cadmium has been divided in 7~strips of about 2423~cm long and about 65~cm wide. Each strip was made of one or more smaller pieces which were glued together with Araldite~AW~106 and a hardener~HV953V. Two 12-$\mu$m mylar films surrounded the entire strip to provide a mechanical strenght. The mylar films were glued using Araldite~2020/A~XW~3961 and Araldite~2020/B~XW~3972.
 
 
-\bigskip
+%\begin{table}[h!]
+%\begin{center}
+%\begin{tabular}{c|c|c}
+%\toprule
+%Isotope & Mass fraction & Mass (g) \\
+%\midrule
+%116   & 0.932   & 410.08 \\[0.05cm]
+%114   & 0.03228 & 14.20  \\[0.05cm]
+%113   & 0.00885 & 3.90   \\[0.05cm]
+%112   & 0.01544 & 6.79   \\[0.05cm]
+%111   & 0.00535 & 2.35   \\[0.05cm]
+%110   & 0.00468 & 2.06   \\[0.05cm]
+%108   & 0.00032 & 0.14   \\[0.05cm]
+%106   & 0.00038 & 0.17   \\[0.05cm]
+%Total & 0.999   & 439.69 \\[0.05cm]
+%\bottomrule
+%\end{tabular}
+%\end{center}
+%\label{IsotopeCdTable}
+%\caption{Isotopes present in the 440~g of Cd sample placed in NEMO-3 detector. The total mass of \Cd~is (410~$\pm$~1)~g which takes into account the error on the enrichment yield of 0.2\%.}
+%\end{table}
 
 
-\NI To ensure a good bound with the glue, the mylar sheets were perforated of microscopic holes (around 0.4 $\mu$m in diameter). The perforation has been realized at the Joint Institute for Nuclear Reaserch (JINR, Dubna, Russia) by irradiating the mylar with a $^{\text{84}}$Kr ion beam of 3~MeV/nucleon and a luminosity of 5~$\times$~10$^{\text{11}}$ ions/s. The mylar was chemically etched with NaOH at 70$^{\circ}$~C, washed with water and 1~\% of acetic acid. Finally, the film was dried with hot air. All the materials entering in the process of the backing film have been selected for their radio-purity and have been measured with High Purity Germanium detector at LSM.
+%\bigskip
 
 
-\bigskip
+%\NI To ensure a good bound with the glue, the mylar sheets were perforated of microscopic holes (around 0.4 $\mu$m in diameter). The perforation has been realized at the Joint Institute for Nuclear Reaserch (JINR, Dubna, Russia) by irradiating the mylar with a $^{\text{84}}$Kr ion beam of 3~MeV/nucleon and a luminosity of 5~$\times$~10$^{\text{11}}$ ions/s. The mylar was chemically etched with NaOH at 70$^{\circ}$~C, washed with water and 1~\% of acetic acid. Finally, the film was dried with hot air. All the materials entering in the process of the backing film have been selected for their radio-purity and have been measured with High Purity Germanium detector at LSM.
 
 
-\NI Each strips was connected to their neighboring strips with glue (Araldine~AW106). A schematic view of the~7~cadmium foils in sector~18 is shown in~Figure~\ref{CdFoil}. After the installation, some gaps ranging from 2~mm to 4~mm between some parts of the strips have been observed. The source shape is not strictly cylindrical as shown in the top section of~Figure~\ref{CdFoil}. It was also found that straining of the strips was small due to the softness of the cadmium metal~\cite{SoftnessCdMetal}. 
+%\bigskip
 
 
-\bigskip
+%\NI Each strips was connected to their neighboring strips with glue (Araldine~AW106). A schematic view of the~7~cadmium foils in sector~18 is shown in~Figure~\ref{CdFoil}. After the installation, some gaps ranging from 2~mm to 4~mm between some parts of the strips have been observed. The source shape is not strictly cylindrical as shown in the top section of~Figure~\ref{CdFoil}. It was also found that straining of the strips was small due to the softness of the cadmium metal~\cite{SoftnessCdMetal}. 
 
 
-\begin{figure}[h!]
-\includegraphics[height=7.5cm]{pictures/Chap6/schemaFoil_v2.pdf}
-\centering
-\caption{Left : Schematic view of the sector 18. The 7 cadmium foils are divided in smaller pieces and glued together. The labels I and II correspond to the different \Cd~productions. Right : Drawing of the strips of cadmium showing the plexiglass clips that attach the foil to the support structure. The small pieces of backing film used to join the individual strips to one another.}
-\label{CdFoil}
-\end{figure}
+%\bigskip
 
 
-\NI Before to be introduced in the detector, the radioactive contaminations of the cadmium foils have been measured thanks to High Purity Germanium detector (HPGe). The results of the different contaminations are summarized in Table \ref{TableContaminationMeasurements}.
+%\begin{figure}[h!]
+%\includegraphics[height=7.5cm]{pictures/Chap6/schemaFoil_v2.pdf}
+%\centering
+%\caption{Left : Schematic view of the sector 18. The 7 cadmium foils are divided in smaller pieces and glued together. The labels I and II correspond to the different \Cd~productions. Right : Drawing of the strips of cadmium showing the plexiglass clips that attach the foil to the support structure. The small pieces of backing film used to join the individual strips to one another.}
+%\label{CdFoil}
+%\end{figure}
 
 
-\bigskip
+%\NI Before to be introduced in the detector, the radioactive contaminations of the cadmium foils have been measured thanks to High Purity Germanium detector (HPGe). The results of the different contaminations are summarized in Table \ref{TableContaminationMeasurements}.
 
 
-\begin{table}[h!]
-\begin{center}
-\begin{tabular}{c|c|c|c|c|c|c|c|c}
-   \toprule
-   Source  & Mass [g] & Exposure [h] &\multicolumn{6}{c|}{Activity [mBq/kg]} \\
-   \midrule[0.05cm]
-           &          &              & $^{\text{40}}$K &  $^{\text{235}}$U &  $^{\text{234}}$Th & $^{\text{214}}$Bi  & $^{\text{228}}$Ac & $^{\text{232}}$Tl \\[0.1cm]
-   Type I  & 257      & 778          & < 13     & < 0.5      & < 12        & < 1.5                  & < 2        & < 0.5 \\
-   Type II & 299      & 368          & < 20     & < 1        & < 56        & < 1.7                  & < 4        & < 0.83 \\
-   \bottomrule
-\end{tabular}
-\caption{Measurements of the cadmium source foils (including mylar support) realized with HPGe detector.}
-\label{TableContaminationMeasurements}
-\end{center}
-\end{table}
+%\bigskip
+
+
+%\begin{table}[h!]
+%\begin{center}
+%\begin{tabular}{c|c|c|c|c|c|c|c|c}
+ %  \toprule
+ %  Source  & Mass [g] & Exposure [h] &\multicolumn{6}{c|}{Activity [mBq/kg]} \\
+ %  \midrule[0.05cm]
+ %          &          &              & $^{\text{40}}$K &  $^{\text{235}}$U &  $^{\text{234}}$Th & $^{\text{214}}$Bi  & %$^{\text{228}}$Ac & $^{\text{232}}$Tl \\[0.1cm]
+ %  Type I  & 257      & 778          & < 13     & < 0.5      & < 12        & < 1.5                  & < 2        & < 0.5 \\
+ %  Type II & 299      & 368          & < 20     & < 1        & < 56        & < 1.7                  & < 4        & < 0.83 \\
+ %  \bottomrule
+%\end{tabular}
+%\caption{Measurements of the cadmium source foils (including mylar support) realized with HPGe detector.}
+%\label{TableContaminationMeasurements}
+%\end{center}
+%\end{table}
 
 
 \FloatBarrier
@@ -113,7 +120,7 @@ Total & 0.999   & 439.69 \\[0.05cm]
 \bigskip
 
 
-\NI The searches for $\beta \beta$ decays through the excited states is mainly motivated by a better understanding of the nuclear structures. The measurement of the decay rate brings informations about the squared effective axial-vector coupling constant and nuclear matrix elements which are sensitive to nuclear-spin isospin correlations. The decays via the excited states is also interesting to study the 0$\nu\beta\beta$ mechanism. They can provide possibilities to distinguish between the various 0$\nu\beta\beta$ mechanisms by studying the different branching ratios of 0$\nu\beta\beta$ of excited states and ground state~\cite{TheoryOfNeutrinolessDBD}.
+\NI The searches for $\beta \beta$ decays through the excited states is mainly motivated by a better understanding of the nuclear structures. The measurement of the decay rate could brings informations on nuclear matrix elements, which are sensitive to nuclear-spin isospin correlations, and provide additional handle for NME calculations. The decays via the excited states are also interesting to study the 0$\nu\beta\beta$ mechanism by giving us alternative channels to study an hypothtical 0$\nu\beta\beta$ signal. Finally, they also offer us the possibility to distinguish between the various 0$\nu\beta\beta$ mechanisms since the branching ratios of 0$\nu\beta\beta$ decay between the excited states and the ground state could differ according the model~\cite{TheoryOfNeutrinolessDBD}.
 
 
 \bigskip
@@ -145,7 +152,7 @@ Total & 0.999   & 439.69 \\[0.05cm]
 
 
 
-\NI Theoretically, the decay probability to the excited states is proportionnal to (Q$_{\beta\beta}$ $-$ E$^*$)$^{\text{11}}$ in 2$\nu\beta\beta$ decay and to (Q$_{\beta\beta}$ $-$ E$^*$)$^{\text{5}}$ in 0$\nu\beta\beta$ decay, where Q$_{\beta\beta}$ is the total available energy and E$^*$ the energy of the excited state. It can be deduced that the decay to the excited state~2$^+$ is more likely than the decay via~0$^+$. Furthermore, as the detection efficiency of the electrons increases with the their energy, the decays via the excited state 2$^+$ seems easier to detect. One the other hand, the presence of 2 electrons and 1 photon inside the detector is more reproducible by the background than the presence of 2 electrons and 2 photons. In any case, the detection efficency of the two electrons and one or more photons will be very low. It explains why the search for decays via the excited states is very challenging.
+\NI Theoretically, the decay probability to the excited states is proportionnal to (Q$_{\beta\beta}$~$-$~E$^*$)$^{\text{11}}$ in 2$\nu\beta\beta$ decay and to (Q$_{\beta\beta}$ $-$ E$^*$)$^{\text{5}}$ in 0$\nu\beta\beta$ decay, where Q$_{\beta\beta}$ is the total available energy and E$^*$ the energy of the excited state. It can be deduced that the decay to the excited state~2$^+$ is more likely than the decay via~0$^+$. Furthermore, as the detection efficiency of the electrons increases with the their energy, the decays via the excited state 2$^+$ seems easier to detect. One the other hand, the presence of two electrons and one photon inside the detector is more reproducible by the background than the presence of two electrons and two photons. In any case, the detection efficency of the two electrons and one or more photons will be very low. It explains why the search for decays via the excited states is very challenging.
 
 
 \bigskip
@@ -157,50 +164,50 @@ Total & 0.999   & 439.69 \\[0.05cm]
 \bigskip
 
 
-\NI More recently the study of the \Cd~decay has continued mainly using CdWO$_{\text{4}}$ scintillator crystals. The Solotvina experiment reported the results obtained with 330 g of crystals for a total exposure  of 0.4~kg$\times$y~\cite{Solotvina}. The 2$\nu\beta\beta$ half-life corresponding to T$_{\text{1}/\text{2}}^{\text{2}\nu}$~=~[2.9 $\pm$ 0.06 (stat.) $^{+\text{0.4}}_{-\text{0.3}}$ (syst.)]~$\times$~10$^{\text{19}}$~y. Installed at the Gran Sasso Underground Laboratory, Aurora experiment investigate double beta decay of \Cd~ with 1.162~kg of crystal scintillators enriched to 82~\%~\cite{Aurora}. The half-life of 2$\nu\beta\beta$ was measured to be T$_{\text{1}/\text{2}}^{\text{2}\nu}$~=~[2.62 $\pm$ 0.14]~$\times$~10$^{\text{19}}$~y for the ground state. The lower limit on the half-life was set to T$_{\text{1}/\text{2}}^{\text{0}\nu}$~>~1.7~$\times$~10$^{\text{23}}$~y at 90\%~C.L. Aurora has also puts new limits concerning the decay of \Cd~via the excited state of \Sn. The main results obtained for 2$\nu\beta\beta$ and 0$\nu\beta\beta$ decays to the ground and the excited states are gathered in Table~\ref{TableSummaryResultsFS}.\textcolor{red}{mettre à jour et trouver les infos et les réfs}.
+\NI More recently the study of the \Cd~decay has continued mainly using CdWO$_{\text{4}}$ scintillator crystals. The Solotvina experiment reported the results obtained with 330 g of crystals for a total exposure  of 0.4~kg$\times$y~\cite{Solotvina}. The 2$\nu\beta\beta$ half-life corresponding to T$_{\text{1}/\text{2}}^{\text{2}\nu}$~=~[2.9 $\pm$ 0.06 (stat.) $^{+\text{0.4}}_{-\text{0.3}}$ (syst.)]~$\times$~10$^{\text{19}}$~y. Installed at the Gran Sasso Underground Laboratory, the Aurora experiment investigate double beta decay of \Cd~ with 1.162~kg of crystal scintillators enriched to 82~\%~\cite{Aurora}. The half-life of 2$\nu\beta\beta$ was measured to be T$_{\text{1}/\text{2}}^{\text{2}\nu}$~=~[2.62 $\pm$ 0.14]~$\times$~10$^{\text{19}}$~y for the ground state. The lower limit on the half-life was set to T$_{\text{1}/\text{2}}^{\text{0}\nu}$~>~1.7~$\times$~10$^{\text{23}}$~y at 90\%~C.L. Aurora has also puts new limits concerning the decay of \Cd~via the excited state of \Sn. The main results obtained for 2$\nu\beta\beta$ and 0$\nu\beta\beta$ decays to the ground and the excited states are gathered in Table~\ref{TableSummaryResultsFS}.
 
 
 
 \begin{table}[h!]
 \begin{center}
-\begin{tabular}{c|c|c}
+\begin{tabular}{c|c|c|c}
 \toprule
-Experiment &  Decays & T$_{\text{1}/\text{2}}$ half-life or limit [y] at 90 \% C.L\\[0.1cm]
+Experiment & Decays & T$_{\text{1}/\text{2}}$ half-life or limit [y] at 90 \% C.L & ref\\[0.1cm]
 \midrule[0.05cm]
 
-\multirow{2}{*}{NEMO-2} & 2$\nu$ (g.s) & [3.75 $\pm$ 0.35 (stat.) $\pm$ 0.21 (syst.)]~$\times~$10$^{\text{19}}$\\[0.1cm]
-                        & 0$\nu$ (g.s) & $>$ 5~$\times$~10$^{\text{22}}$ \\[0.1cm]
+\multirow{2}{*}{NEMO-2} & 2$\nu$ (g.s) & [3.75 $\pm$ 0.35 (stat.) $\pm$ 0.21 (syst.)]~$\times~$10$^{\text{19}}$&\cite{NEMO2:Cd116}\\[0.1cm]
+                        & 0$\nu$ (g.s) & $>$ 5~$\times$~10$^{\text{22}}$ &\\[0.1cm]
                                                
 \midrule   
-\multirow{2}{*}{NEMO-3} & 2$\nu$ (g.s) & [2.74 $\pm$ 0.04 (stat.) $\pm$ 0.18 (syst.)]~$\times$~10$^{\text{19}}$\\[0.1cm]
-                        & 0$\nu$ (g.s) & $>$ 1.0~$\times$~10$^{\text{23}}$ \\[0.1cm]
+\multirow{2}{*}{NEMO-3}  & 2$\nu$ (g.s) & [2.74 $\pm$ 0.04 (stat.) $\pm$ 0.18 (syst.)]~$\times$~10$^{\text{19}}$&\cite{Arnold2016bed}\\[0.1cm]
+                        & 0$\nu$ (g.s) & $>$ 1.0~$\times$~10$^{\text{23}}$ &\\[0.1cm]
                     
 \midrule                        
 
-\multirow{2}{*}{ELEGANT-V} & 2$\nu$ (g.s) & [2.6 $^{+\text{0.9}}_{-\text{0.5}}$]~$\times$~ 10$^{\text{19}}$\\[0.1cm]
-                           & 0$\nu$ (g.s) & $>$ 2.9~$\times$~10$^{\text{22}}$ \\[0.1cm]
+\multirow{2}{*}{ELEGANT-V}  & 2$\nu$ (g.s) & [2.6 $^{+\text{0.9}}_{-\text{0.5}}$]~$\times$~ 10$^{\text{19}}$&\cite{ElegantV-1}\\[0.1cm]
+                           & 0$\nu$ (g.s) & $>$ 2.9~$\times$~10$^{\text{22}}$ &\\[0.1cm]
                         
                         
 \midrule
 
-\multirow{2}{*}{CdWO$_{4}$} & 2$\nu$ (g.s) & [2.7 $^{+\text{0.5}}_{-\text{0.4}}$~(stat.)~$^{+\text{0.9}}_{-\text{0.6}}$~(syst.)]~$\times$~10$^{\text{19}}$\\[0.1cm]
-                           & 0$\nu$ (g.s) & $>$ 2.9~$\times$~10$^{\text{22}}$ \\[0.1cm]
+%\multirow{2}{*}{CdWO$_{\text{4}}$} & 2$\nu$ (g.s) & [2.7 $^{+\text{0.5}}_{-\text{0.4}}$~(stat.)~$^{+\text{0.9}}_{-\text{0.6}}$~(syst.)]~$\times$~10$^{\text{19}}$& a\\[0.1cm]
+%                           & 0$\nu$ (g.s) & $>$ 2.9~$\times$~10$^{\text{22}}$& \\[0.1cm]
+
+%\midrule
+                           
+                           
+\multirow{2}{*}{Solotvina} & 2$\nu$ (g.s) & [2.9 $\pm$ 0.06 (stat.)~$^{+\text{0.4}}_{-\text{0.3}}$ (syst.)]~$\times$~10$^{\text{19}}$&\cite{Solotvina}\\[0.1cm]
+                           & 0$\nu$ (g.s) & $>$ 1.9~$\times$~10$^{\text{23}}$ &\\[0.1cm]
+                           
 
 \midrule
-                           
-                           
-\multirow{2}{*}{Solotvina} & 2$\nu$ (g.s) & [2.9 $\pm$ 0.06 (stat.)~$^{+\text{0.4}}_{-\text{0.3}}$ (syst.)]~$\times$~10$^{\text{19}}$\\[0.1cm]
-                           & 0$\nu$ (g.s) & $>$ 1.9~$\times$~10$^{\text{23}}$ \\[0.1cm]
-                           
 
-\midrule
-
-\multirow{6}{*}{Aurora} & 2$\nu$ (g.s) & [2.62~$\pm$ 0.06~(stat.)~$\pm$~0.14~(syst.)]~$\times$~10$^{\text{19}}$\\[0.1cm]
-                        & 2$\nu$ (0$^+$) & $>$ 9.0~$\times$~10$^{\text{20}}$\\[0.1cm]
-                        & 2$\nu$ (2$^+$) & $>$ 1.0~$\times$~10$^{\text{21}}$\\[0.1cm]
-                        & 0$\nu$ (g.s)   & $>$ 1.9~$\times$~10$^{\text{23}}$\\[0.1cm]
-                        & 0$\nu$ (0$^+$) & $>$ 6.2~$\times$~10$^{\text{22}}$\\[0.1cm]
-                        & 0$\nu$ (2$^+$) & $>$ 6.3~$\times$~10$^{\text{22}}$\\[0.1cm]
+\multirow{6}{*}{Aurora} & 2$\nu$ (g.s) & [2.62~$\pm$ 0.06~(stat.)~$\pm$~0.14~(syst.)]~$\times$~10$^{\text{19}}$& \cite{Aurora}\\[0.1cm]
+                        & 2$\nu$ (0$^+$) & $>$ 9.0~$\times$~10$^{\text{20}}$&\\[0.1cm]
+                        & 2$\nu$ (2$^+$) & $>$ 1.0~$\times$~10$^{\text{21}}$&\\[0.1cm]
+                        & 0$\nu$ (g.s)   & $>$ 1.9~$\times$~10$^{\text{23}}$&\\[0.1cm]
+                        & 0$\nu$ (0$^+$) & $>$ 6.2~$\times$~10$^{\text{22}}$&\\[0.1cm]
+                        & 0$\nu$ (2$^+$) & $>$ 6.3~$\times$~10$^{\text{22}}$&\\[0.1cm]
 \bottomrule
 \end{tabular}
 \caption{Summary of results for the search for $\beta \beta 2\nu$ and $\beta \beta 0\nu$ decays to the fundamental and excited states.}
@@ -211,18 +218,594 @@ Experiment &  Decays & T$_{\text{1}/\text{2}}$ half-life or limit [y] at 90 \% C
 
 \FloatBarrier
 
+\clearpage
+
+\section{Analysis technique}\label{sec:AnalysisTechnique}
 
 
-\section{Background to the search for the excited states}
+\NI The NEMO-3 analysis technique consists of a comparison of the experimental data obtained by the detector to the Monte-Carlo simulations of physics processes such as double beta decay. The simulated data are then propagated throught the NEMO-3 detector by GEANT-3. Section~\ref{sec:MCsimu} presents the event generation and their propagation in the detector. Both simulated and real data are then reconstructed with a dedicated software package developed by the collaboration. Section~\ref{sec:RecoNEMOR} introduces the event reconstruction which provides the informations necessary for building the objects used in particle identification. The particle identification, presented in Section~\ref{sec:PIDanalysis}, and the timing informations, shown in Section~\ref{sec:TOFanalysis}, are then used to identify different independant analysis channels. Section~\ref{sec:StatAnalysisTools} describes the statistical tools used to measure the background, to set limits or to optimise the selection. Finally, Section~\ref{sec:HalfLifeAnalysis} presents the method used to translate decay rates measured with NEMO-3 data into half-lives.
 
 
-\NI The $\beta \beta$ decays to the excited states present very specific signatures : emission of  2 electrons accompanied by one or more photons. Moreover, the energies of these photons are very characteristic. Very few isotopes are able to reproduce this kind of signature. In NEMO-3, according its origin, the background is divided in two parts : 
+\subsection{MC simulation}\label{sec:MCsimu}
+
+
+\NI The Monte Carlo simulations for NEMO-3 are generated using the GENBB event generator~\cite{GENBB}. This program, which is a particular implementation of DECAY0 used by NEMO-3, provides the initial state of the particles with accurate kinematics, timing and branching ratio. GENBB generates all the necessary informations on 2$\nu\beta\beta$ and 0$\nu\beta\beta$ decay modes and also on the different decays used for the background isotopes.
+
+
+\bigskip
+
+
+\NI The transport of the particles generated by GENBB through NEMO-3 is simulated by GEANT-3.21 \cite{GEANT3} which uses a full description of the detector. GEANT-3.21 simulates the interactions of the particles in all of the simulated detector components. The simulated data are then digitized in exactly the same format as raw data in a way to use the same reconstruction process.   
+
+
+\subsection{Event reconstruction}\label{sec:RecoNEMOR}
+
+
+\NI The real and simulated data are reconstructed and calibrated in a same way thanks to a dedicated software package called NEMOR. This program uses the digitized informations to produce the physical objects used in the NEMO-3 data analysis. 
+
+
+\bigskip
+
+
+\NI In order to take into account the different data taking conditions, and ensure that MC events can be directly compared to the real data, all the MC sample events are distributed into several run periods according to the length of the real data runs.  This can be performed thanks to the existence of a database containing all the informations relative to the real detector running conditions such as the life time of each run. The database also contains the status of each PMTs and each Geiger cells during the lifetime of the experiment. All these informations such as the dead channel or the real-time calibration coefficients can be used during the reconstruction of the simulated data in order to be as close as possible to the data acquisition conditions.  
+
+
+\subsubsection{Track reconstruction}
+
+
+\NI The reconstruction of the particle track inside the tracker is performed in NEMOR software. During the passage of a charged particles in the tracker, the wires close to its passage are triggered and constitute the building blocks for the tracking pattern recognition algorithm. According the transverse and longitudinal hit positions and the timing informations, the hits are clustered together using a cellular automated tracking algorithm. This algorithm searches for successive hits in the neighbouring layers and connects them with simple line segments. This proccess continues until there are no more consecutive hits. When all the segments are been added to the cluster, they are removed from the search and a new one startes until there are not segments available to build a track. After the identification of all the tracks in the events, three helical fits are performed for each track. The first fit, which is global, uses all the hits contains in the track cluster. This fit provides the measurement of the track length. The two others fits are performed by using only the hits closest to the source foil and closest to the calorimeter wall to precisely measure the vertex position on the source foil and the impact point on the calorimeter block.
+
+
+\subsection{Particle identification}\label{sec:PIDanalysis}
+
+
+\NI By using the different reconstructed informations provides by the tracker and calorimeter, NEMO-3 give us the ability to distinguish between different types of particles. The identifiable particles in NEMO-3 data are electrons, positrons, photons and alpha particles.
+
+
+\subsubsection{Electron identification}
+
+
+\NI Electrons and positrons are identified as curved tracks inside the tracker. The track must intersect the source foil and be associated to a single calorimeter hit. Thanks to the magnetic field, the distinction between electrons and positrons can be performed by looking at their opposite curvature. Figure~\ref{DoubleBetaEventDisplay} shows an event where two electrons have been identified in the NEMO-3 data. In order to properly reconstructed the full energy of the electrons, the neighbouring optical modules, side and diagonally, must not been fired. If neighbouring optical modules have hit, this could be explained by a scaterring off of the first optical module to a close one. In this kind of event, the trajectory of the particle is not well reconstructed by the tracking algorithm. These events are associated with a large systematic uncertainties or can be removed from the analysis.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.35]{pictures/Chap6/betabetaEvent.png}
+\label{DoubleBetaEventDisplay}
+\caption{Top view of the NEMO-3 detector where two electron candidates have been identified in the NEMO-3 data. The red and blue lines are the reconstructed tracks, the small circles corresponds to to the Geiger hits. Their sizes depend on the distance between the particle track and the anode wire. The blue boxes are the inner and outer calorimeter walls. The location of the calorimeter hits are colored in yellow. The magenta boxes represents the petal scintillators.}
+\end{figure}
+
+\FloatBarrier
+
+\subsubsection{Photon identification}
+
+
+\NI Contrary to the electrons and positrons, the photons are not charged, so do not leave a track in the tracker volume. Moreover, as the detection efficiency for a photon of 0.5~MeV is 60~\%, nothing guarantee that the photon is fully contained in a single or isolated calorimeter hits. Photons are identified as an energy deposit in one or several optical modules without an associated track. During the photon identification, the neighbouring calorimeter hits are clustered and attributed to a single photon. The energy of the photon being equal to the sum of the individual hits energies. Examples of neighbouring calorimeters hits which could be gather together are shown in Figure~\ref{GammaClusterSchema}. Futhermore, no Geiger cell that are unassociated to tracks may be found within 15~cm radially of calorimeter hits in order to limit the mis-identification from $\alpha$ decay (next section) or scattered electrons as photons.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.35]{pictures/Chap6/GammaCluster.png}
+\label{GammaClusterSchema}
+\caption{Schematic front view of the main wall. The grid represents scintillator blocks. The red squares correspond to optical modules with energy deposits without associated tracks. They could be clustered to form a photon.}
+\end{figure}
+
+\FloatBarrier
+
+\subsubsection{Alpha identification}
+
+
+\NI As it was already described in Chapter~5, due to their high ionizing power and to the high mass, the alpha particles are identified as short straight lines. The alpha particles from radioactive decay are not expected to be higher than 40~cm.
+
+
+\bigskip
+
+
+\NI The identification of the alpha particle is important to detect the Bi-Po cascades in which an alpha decay with a half-life of 164~$\mu$s occurs. The BiPo cascade is then identify as the emission of a prompt electron followed by a delayed alpha coming from the same location as shown in Figure~\ref{AlphaNEMO3}.  
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{pictures/Chap6/alphaIdentification.png}
+\label{AlphaNEMO3}
+\caption{Top view of the NEMO-3 detector where a candidate BiPo event have been identifed. The red track corresponds to the prompt electron while the black squares represents the delayed Geiger hits of the alpha track.}
+\end{figure}
+
+
+\FloatBarrier
+
+\subsection{Time of flight informations}\label{sec:TOFanalysis}
+
+
+\NI The $\beta\beta$ signal is characterized by the emission of two electrons coming from the source foil in coincidence in time. To measure a signal or a background coming from the source it is necessary to reduce as much as possible the contribution of the events from an external origin. To distinguish the origin of the events, internal or external to the source foil, the time of flight informations provide by the calorimeter is used. Two different hypotheses, internal and external are introduced which quantify the probability that a event has its origin inside or outside the source foil. These two probabilities are build out of $\chi^\text{2}$ distributions using the measured time of particle hits in the calorimeter and the hypothetical time of flight calculated from the estimated speed and the trajectory of the particle between its vertex to the calorimeter. The $\chi^\text{2}$ calculations also take into account the uncertainties on the measured and hypothetical times. Next sections present the calculation of the internal and external hypotheses. These hypotheses are calculated between two particles. One of the particle must be an electron with a reconstructed track and vertex.  The other particle can be a second electron or a photon. According the kind of particle the uncertaities are not computed in the same way as explained at the end of the section.
+
+
+\subsubsection{Internal probability}\label{sec:Pint}
+
+
+\NI The internal hypothesis $\chi_{\text{int}}$ assumes that the two detected particles come from the same decay occuring at a time t$_\text{0}$ inside the source foil :
+
+
+\begin{equation}
+\text{t}_\text{1}^{\text{mes}} - \text{t}_\text{1}^{\text{tof}} = \text{t}_\text{0} = \text{t}_\text{2}^{\text{mes}} - \text{t}_\text{2}^{\text{mes}}  
+\end{equation}
+
+
+\NI where $\text{t}_\text{1}^{\text{mes}}$ and $\text{t}_\text{2}^{\text{mes}}$ are the measured time of particle hits 1 and 2 in the calorimeter, and $\text{t}_\text{1}^{\text{tof}}$ and $\text{t}_\text{2}^{\text{tof}}$ are the hypothetical time of arrival of the particle 1 and 2. By taking account the uncertainties on each of these parameters, the internal pull is defined as :
+
+
+\begin{equation}
+\chi_{\text{int}} = \frac{(\text{t}_\text{1}^{\text{mes}} - \text{t}_\text{1}^{\text{tof}}) - (\text{t}_\text{2}^{\text{mes}} - \text{t}_\text{2}^{\text{mes}} ) }{\sqrt{ \sigma^{\text{2}}_{\text{t}_\text{1}^{\text{mes}}} + \sigma^{\text{2}}_{\text{t}_\text{1}^{\text{tof}}} + \sigma^{\text{2}}_{\text{t}_\text{2}^{\text{mes}}} + \sigma^{\text{2}}_{\text{t}_\text{2}^{\text{tof}}}  }}
+\end{equation}
+
+
+\NI Then, the internal probability P$_{int}$ is defined from $\chi_{\text{int}}$ as : 
+
+
+\begin{equation}\label{eq:probaDef}
+\text{P}_{\text{int}} = \text{1} - \frac{\text{2}}{\pi} \int_\text{0}^{\chi^\text{2}_{\text{int}}} \text{e}^{\text{x}^\text{2}} \text{dx}
+\end{equation}
+
+
+\NI with x defined as :
+
+\begin{equation}
+\text{x} = \frac{\text{1}}{\text{1}+\sqrt{\text{2}\chi^\text{2}_{\text{int}}}}
+\end{equation}
+
+
+\NI The internal probability for an internal and an external 2-e event is shown in Figure~\ref{PintforIntandExt}. For an internal event the distribution is expected to be constant while is expected to be peaked for an external event.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.55]{pictures/Chap6/Pint_explication.pdf}
+\label{PintforIntandExt}
+\caption{Internal probability distribution for an internal 2-e event in blue and for an external event in red.}
+\end{figure}
+
+
+
+\FloatBarrier
+
+
+\subsubsection{External probability}\label{sec:Pext}
+
+
+\NI The external hypothesis is built as the internal hypothesis exept that the vertex of the decay is assumed to be outside the source foil. Figure~\ref{ExternalEventDisplay} shows two typical external events in which a 2-e event is induced by a external photon. According which particle generates the other two different external hypotheses are constructed : 
+
+
+\begin{equation}
+(\text{1} \rightarrow \text{2})~~~~~ \text{t}_\text{1}^{\text{mes}} = \text{t}_\text{0} = \text{t}_\text{2}^{\text{mes}} - \text{t}_\text{2}^{\text{tof}} - \text{t}_\text{1}^{\text{tof}}
+\end{equation}
+
+\begin{equation}
+(\text{2} \rightarrow \text{1})~~~~~ \text{t}_\text{2}^{\text{mes}} = \text{t}_\text{0} = \text{t}_\text{1}^{\text{mes}} - \text{t}_\text{1}^{\text{tof}} - \text{t}_\text{2}^{\text{tof}}
+\end{equation}
+
+
+\NI By considering only the first expression (1 $\rightarrow$ 2), the associated $\chi^\text{2}_{\text{ext}}$ is defined as : 
+
+\begin{equation}
+(\text{1} \rightarrow \text{2})~~~~~ \chi^\text{2}_{\text{ext}} = \frac{ (\text{t}_\text{2}^{\text{mes}} - \text{t}_\text{2}^{\text{tof}} - \text{t}_\text{1}^{\text{tof}} - \text{t}_\text{1}^{\text{mes}} )^\text{2} }{  \sigma^{\text{2}}_{\text{t}_\text{1}^{\text{mes}}} + \sigma^{\text{2}}_{\text{t}_\text{1}^{\text{tof}}} + \sigma^{\text{2}}_{\text{t}_\text{2}^{\text{mes}}} + \sigma^{\text{2}}_{\text{t}_\text{2}^{\text{tof}}} }
+\end{equation}
+
+
+\NI The $\chi^\text{2}_{\text{ext}}$ expression for (2 $\rightarrow$ 1) is calculated by replacing the numerator. By using Equation~\ref{eq:probaDef} the external probabilities, P$_{\text{ext}}$ (1 $\rightarrow$ 2) and P$_{\text{ext}}$ (2 $\rightarrow$ 2) are calculated. For the external event topology the distribution is expected to be uniform except at very low value while the distribution is expected to be very peaked close to zero for the internal events.
+
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.32]{pictures/Chap6/ExternalEvents.png}
+\label{ExternalEventDisplay}
+\caption{Top view of the NEMO-3 detector. (a) external candidate in which a photon creates a electron crossing the detector. (b) external candidate in which a photon interact with the source foil to create an electron.}
+\end{figure}
+
+
+\subsubsection{Time of flight parameters}\label{sec:TOFinfo}
+
+
+\NI The measured time $\text{t}^{\text{mes}}$ of each particle is given by the calorimeter and their uncertainties are estimated from the timing resolution, gain variations, number of photoelectrons collected and the scintillation light constant of the calorimeter block.
+
+
+\bigskip
+
+
+\NI The computation of the the hypothetical time of flight $\text{t}^{\text{tof}}$ and its uncertainites depend of the particle. In case the particle is an electron, the time of flight $\text{t}_{\text{e}}^{\text{tof}}$ is computed as :
+
+
+\begin{equation}\label{eq:TOFhyp}
+\text{t}_\text{e}^{\text{tof}} = \frac{\text{L}_\text{e}}{\beta}
+\end{equation}
+
+
+\bigskip
+
+
+\NI where L$_\text{e}$ is the length of the reconstructed electron track and $\beta$ is computed from the electron rest mass m$_\text{e}$ and the reconstructed energy E$_\text{e}$ : 
+
+
+\begin{equation}
+\beta = \frac{ \sqrt{\text{E}_\text{e} (\text{E}_\text{e} +\text{2m}_\text{e})} }{\text{E}_\text{e} + \text{m}_\text{e}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI To obtain the uncertainties on the hypothetical time $\sigma^\text{2}_{\text{t}_{\text{e}}^{\text{tof}}}$, Equation~\ref{eq:TOFhyp} is differentied : 
+
+
+\begin{equation}
+\sigma^\text{2}_{\text{t}_{\text{e}}^{\text{tof}}} = \left( \frac{\partial \text{t}_\text{e}^{\text{tof}}}{\partial \beta}  \right)^\text{2} \sigma^\text{2}_\beta + \left( \frac{\partial \text{t}_\text{e}^{\text{tof}}}{\partial \text{L}_\text{e}}  \right)^\text{2} \sigma^\text{2}_{\text{L}_\text{e}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI As the uncertainty on the track length is very small compared to the uncertainties on the energy and measured time, the last term is neglected. Finally, the uncertainty on the hypothetical time is written as : 
+
+
+\begin{equation}
+\sigma^\text{2}_{\text{t}_{\text{e}}^{\text{tof}}} = \left( \frac{\text{t}_\text{e}^{\text{tof}} \text{m}_\text{e}^\text{2}}{\text{E}_\text{e} (\text{E}_\text{e} + \text{m}_\text{e})(\text{E}_\text{e} + \text{2m}_\text{e})}  \right) ^\text{2} \sigma^\text{2}_{\text{E}_\text{e}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI In case the particle is a photon, the hypothetical time is calculated as : 
+
+
+\begin{equation}
+\text{t}_\gamma^{\text{tof}} = \frac{\text{L}_\gamma}{\text{c}} + \text{t}_{\text{scint.}} 
+\end{equation}
+
+\bigskip
+
+
+\NI where L$_{\gamma}$ is the straight line path from the reconstructed vertex to the center of the front face of the calorimeter block associated with the photon, c is the speed of light in the vacuum and t$_{\text{scint}}$ is a empirically factor which parametrize the scintillation time. Note that the hypothetical time is more complicated to compute for photon than for electron since the exact photon path through the detector and the impact point inside the calorimeter block are unknown. The parameter t$_{\text{scint}}$ is also present to take into account and correct the simple approximation of a straight line for the photon path. It includes many factors such as the variation of the interaction depth in the scintillator block and differences between the speed of light in the tracker, calorimeter block and light guides. This factor is energy dependant, and has been estimated for the different scintillator block composing the calorimeter~\cite{GammaReconstructionHereward}.
+
+
+\bigskip
+
+
+\NI The uncertinty on the hypothetical time of flight is defined as :  
+
+
+\begin{equation}
+\sigma^\text{2}_{\text{t}_\gamma^{\text{tof}}} = \sigma^\text{2}_{\text{L}_\gamma} + \sigma^\text{2}_{\text{t}_{\text{scint.}}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI where $\sigma^\text{2}_{\text{L}_\gamma}$ is the uncertainty on the straight line calculation and $\sigma^\text{2}_{\text{t}_{\text{scint.}}}$ is the uncertainty of t$_{\text{scint}}$ which have been empirically estimated~\cite{GammaReconstructionHereward}.
+
+
+\subsection{Statistical analysis}\label{sec:StatAnalysisTools}
+
+
+\NI This section describes the different statistical analysis tools used to perform the analysis. The fit method to measure the backgrounds is presented in the next sub-section. The optimisation of the cut by a multivariate method is described in the second sub-section. The two last sub-sections present the way to set a limit when no significant signal is observed and the extraction of the half-life value when signal events are observed.
+
+
+\subsubsection{Fitting MC templates to data}
+
+
+\NI To fit the observed data with the different simulated distribution a binned log-likelihood fit is performed. According the analysis channel, different sensitive observables can be used such as the energy of the electrons, photons or the alpha track length. To build out the likelihood function we assume that for each bin i, the probability p$_\text{i}$ to observe the number of data events d$_\text{i}$ is governed by Poisson statistics :   
+
+\begin{equation}
+\text{p}_\text{i} = \frac {\text{e}^{-(\text{s}_\text{i}+\sum_\text{j} \text{b}_{\text{i,j}})} (\text{s}_\text{i}+ \sum_\text{j} \text{b}_{\text{i,j}})^{\text{d}_{\text{i}}} }  {\text{d}_\text{i}~\text{!}} 
+\end{equation}
+
+
+\bigskip
+
+
+\NI where s$_\text{i}$ is the signal prediction given by the MC and $\sum_\text{j} \text{b}_{\text{i,j}}$ is the sum of all j backgrounds. The likelihood L is defined as the product of all the probabilities from all i bins : 
+
+
+\begin{equation}\label{eq:likelihood}
+\text{L} = \prod_\text{i} \frac {\text{e}^{-(\text{s}_\text{i}+\sum_\text{j} \text{b}_{\text{i,j}})} (\text{s}_\text{i} + \sum_\text{j} \text{b}_{\text{i,j}} )^{\text{d}_\text{i}} } {\text{d}_\text{i}~\text{!}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI This expression is valid for a single channel. To take into account the multiple channels in which a isotope can contribute, Equation~\ref{eq:likelihood} can be rewritten to include all n channels in the fit simultaneously : 
+
+
+\begin{equation}
+\text{L} = \prod_{\text{i,n}} \frac{\text{e}^{-(\text{s}_\text{i}+ \sum_\text{j} \text{b}_{\text{i,j,n}})} (\text{s}_{\text{i,n}} + \sum _\text{j} \text{b}_{\text{i,j,n}})^{\text{d}_{\text{i,n}}} } {\text{d}_\text{i}~\text{!}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI It is generally more convenient to work with the logarithm of the likelihood and the new quantity to maximise is :
+
+
+\begin{equation}
+\text{ln(N)} = \sum_{\text{i,n}} \left[ -(\text{s}_{\text{i,n}} + \sum_\text{j} \text{b}_{\text{i,j,n}}) + \text{d}_{\text{i,n}} \text{ln} \left( \text{s}_{\text{i,n}} + \sum_\text{j} \text{b}_{\text{i,j,n}}\right) + \text{ln}(\text{}_{\text{i,n}} \text{!})  \right]
+\end{equation}
+
+
+\bigskip
+
+
+\NI The quantity is then multiply by a factor -2 such that the distribution -2ln(L) follows a $\chi^\text{2}$ distribution. The best estimates for signal and background contributions are extracted when -2ln(L) reaches its global minimum. The TMinuit package and the MIGRAD minimization routine in ROOT~\cite{Root} are used to minimise the likelihood, calculated the errors and correlation matrices for all parameters.
+
+
+
+\bigskip
+
+
+\NI Some isotopes are degenerated and can be measured in different channels. For these isotopes, the activity can be firstly measured in the most sensitive channel and be constrained when measuring the other channels. Gaussian additional constrains, c$_\text{k}$, can be added to the likelihood with the form : 
+
+\begin{equation}
+\text{c}_\text{k} = \text{exp} \left[ -\frac{\text{1}}{\text{2}} \left( \frac{\text{A}_\text{k} - \text{A}_{\text{k}_\text{0}}}{\sigma_{\text{A}_{\text{k}_\text{0}}}} \right)^\text{2} \right] \left(  \frac{\text{1}}{\text{2}\pi \sigma_{\text{A}_{\text{k}_\text{0}}}} \right) 
+\end{equation}
+
+
+\bigskip
+
+
+\NI where A$_{\text{k}_\text{0}}$ and $\sigma_{\text{A}_{\text{k}_\text{0}}}$ are the activity and the uncertainties of isotopes k as measured in a different channel or by HPGe detector where the sensitivity to that isotope is much better.
+
+
+\subsubsection{Multivariate analysis}
+
+
+\NI Usuallly, in the previous NEMO-3 analyses, the search for 0$\nu\beta\beta$ decay has been performed by comparing the S+B and B-only hypothesis using only one observable : the total electron energy distribution of the two electrons. Thanks to ability of NEMO-3 to reconstruct other observables such as energy of photons or timing informations, theses additional observables can be used to better discriminate between signal and background by multivariate analysis. An optimisation of the cuts can then be performed in order to maximise the background rejection while mainting the highest signal efficiency. The recent analyses such as the searches for 0$\nu\beta\beta$ decay of $^{\text{150}}$Nd or $^{\text{116}}$Cd used these techniques, which can, in some case, improve the sensitivity by 10\%~\cite{NEMO3:Nd150}. The same strategy is used in this work. Futhermore, this approach can be beneficial as the photon(s) emitted in the decay via the excited are mono-energetic.
+
+
+\bigskip
+
+
+\NI The Toolkit for Multivariate Analysis (TMVA) is used to optimise the cuts. It provides a ROOT-integrated environment for the processing, parallel evalution and application of multivariate classification and regression techniques. The package includes rectangular cut optimisation, multi-dimensional likelihood estimation, artificial neural networks, boosted decision trees etc. As the observables are not strongly correlated, the Rectangular Cuts method (RC), is used. It has the advantage to provide direct and explicit interpretation of the cuts on the different observables.
+
+
+\bigskip
+
+
+\NI The RC method is the simplest and most common classifier for selecting signal events from a mixed sample of signal and background events. A set of rectangular cuts are applied on discriminating variables to maximise the background rejection at given signal efficiency. A scan over the full range of the latter quantity is performed. The cut classifier only returns a binary response : signal or background. The cut optimisation is performed with the use of multivariate parameters fitters. In RC method, 3 fitters are implemented and can be chosen by the user : Monte-Carlo sampling, Genetic Algorithm and Simulated Annealing. It has been observed that in our case, the Genetic Algorith give us satisfying results in reasonable time, explaining why it has been chosen for this study.
+
+
+\bigskip
+
+
+\NI The Genetic Algorithm consists of a technique to find approximate solutions to optimisation or search problems. As its name suggests, this algorithm is inspired by the process of natural selection by relying on bio-refered operators as mutation, cross-over and selection. The underlying concept is that a population (set of individuals with their own properties) 
+faced with a problem evolves toward the better solutions.
+
+
+\bigskip
+
+
+\NI From a mathematical point of view, a fitness function is defined. The aim of this fitness function is the evaluation of the goodness of each individual of the population. A value representing the goodness of each individual is returned. The different steps of the algorithms are decribed below : 
+
+
+\begin{itemize}
+\item The first step is the \textbf{initialisation}. It consists of the creation of the population. This population is a set of individuals created by randomly setting the parameters of the abstract representation (variables). So, each individual represents a point in the solution domain of the initial problem. The size of the population is one the parameters of the algorithm. 
+
+\item The second step is the \textbf{evaluation}. Each individual is evaluated using the fitness function.
+
+\item The third step is the \textbf{selection}. According the goodness of the individual to the fitness function, individual are kept or rejected. Several selection procedures are possible. For example, only the worst performing fraction of the population is rejected. This is the simplest procedure. An other possibility is to assign on each individual a survival probability which depends on the goodness of the individual.
+
+\item The fouth step is the \textbf{reproduction}. The surviving individuals are copied, mutated, crossed-over until the initial population size is reached again.
+
+\item The last step is the \textbf{termination}. The evaluation, selection and reproduction steps are repeated. It ends when the maximum number of cycles is reached or when an individual satisfies a maximum-fitness function. The solution of the problem is then the best individual. 
+
+\end{itemize}  
+
+
+\NI To optimize the performances of the Genetic Algorithm, the user can tunned different parameters. The more intuitive and the more important for enhancing the quality of the results is the size of the population. The calculation time should increase in the same order of the population size. During the reproduction step, to engender the next generation, new individuals are created from the survival individuals. In theory they are identical but some mutations can occur. These changes are randomly generated following a Gaussian distribution function. The width of the Gaussian is one of the parameter and simulated the mutation rate. Finally the user can choose the maximum number of cycles or the maximum-fitness function to decide when ends the algorithm. The list of all the parameters and their influence on the performance of the algorithm can be found in the User Guide of TMVA~\cite{TMVA}.
+
+
+\subsubsection{Limit setting}
+
+
+\NI If no evidence of a signal over background is observed, an upper limit on the allowed signal strength can be set through a statistical procedure at a given confidence level (CL). In this analysis, the limits calculation are performed with the Collie software package which the advantage to properly introduced the systematic errors in the computation. This section is mainly based on the Collie documentation provided in~\cite{NLLR}.
+
+
+\bigskip
+
+
+\NI Two hypotheses are constructed and compared to the observed data : the signal and background hypothesis (S+B) and the background only (B) hypothesis. In the scenario where the low signal and background statistics are searched, the likelihood ratio turns out to be the best choice, it is defined as : 
+
+
+\begin{equation}
+\text{Q}_{\text{s,b,d}} = \frac{\text{L(S+B)}}{\text{L(B)}}
+\end{equation}
+
+
+\NI By using the definition of the likelihood in Equation~\ref{eq:likelihood} and by binning the observable and treating each bin as an independant channel, the ratio can be written : 
+
+
+\bigskip
+
+
+\begin{equation}
+\text{Q}_{\text{s,b,d}} = \prod^{\text{bins}}_\text{i} \frac{\text{e}^{-\text{s}_\text{i} + \text{b}_\text{i}} (\text{s}_\text{i} + \text{b}_\text{i})^{\text{d}_\text{i}} / \text{d}_\text{i} \text{!} }{\text{e}^{-\text{b}_\text{i}} \text{b}_\text{i}^{\text{d}_\text{i}} / \text{d}_\text{i} \text{!}} 
+\end{equation}
+
+
+\begin{equation}
+\text{Q}_{\text{s,b,d}} = \prod^{\text{bins}}_\text{i}  \text{e}^{-\text{s}_\text{i}} \left( \frac{\text{s}_\text{i} + \text{b}_\text{i}}{\text{b}_\text{i}} \right)^{\text{d}_\text{i}}
+\end{equation}
+
+\bigskip
+
+
+\NI where s$_\text{i}$ is the signal contribution in the bin i, b$_\text{i}$ the background contribution and d$_\text{i}$ the number of observed data. As before, this expression is transformed in a negative log-likelihood ration (NLLR) as :
+
+
+\begin{equation}\label{eq:NLLRdistribution}
+\text{NLLR} \equiv -\text{2} \text{ln (Q)} = \text{2} \sum _\text{i}^{\text{bins}} (\text{s}_\text{i}  - \text{d}_\text{i} \text{ln} (1 + \text{s}_\text{i}/\text{b}_\text{i}))
+\end{equation}
+
+
+\bigskip
+
+
+\NI which follows a $\chi^\text{2}$ distribution. A toy MC is used to generate the distributions of $\chi$(d) which are then used to calculate the confidence levels. NLLR distribution are generated by replacing each value of d$_\text{i}$ by a pseudo-data randomly generated as a Poisson variable with an expectation of s$_\text{i}$ + b$_\text{i}$. The same procedure is followed for the B-only hypothesis. The two distributions of NLLR are shown in Figure~\ref{NLLR}. The systematic errors are taken into account by altering the expected number of events obtained from each pseudo-experiment via a Gaussian smearing.
+
+
+\bigskip
+
+
+\NI The NLLR distributions constructed from pseudo-experiments are then compared to the observed NLLR value $\chi_{\text{obs}}$ calculated from Equation~\ref{eq:NLLRdistribution} with the observed number of data events. The confidence level for excluding the possibility  of simultaneous presence of a signal and background is : 
+
+
+\begin{equation}
+\text{CL}_{\text{S+B}} = \text{P}_{\text{S+B}} (\chi \geq \chi_{\text{obs}} ) = \int_{\chi_{\text{obs}}}^{\infty} \frac{\partial \text{P}_{\text{S+B}} }{\partial \chi} 	\text{d}\chi 
+\end{equation}
+
+
+\bigskip
+
+
+\NI with a similar confidence level for the B-only hypothesis : 
+
+\begin{equation}
+\text{CL}_{\text{B}} = \text{P}_{\text{B}} (\chi \geq \chi_{\text{obs}} ) = \int_{\chi_{\text{obs}}}^{\infty} \frac{\partial \text{P}_{\text{B}} }{\partial \chi} \text{d}\chi 
+\end{equation}
+
+
+\bigskip
+
+
+\NI The confidence level for the signal is related to the S+B and B-only hypotheses by : 
+
+
+\begin{equation}
+\text{CL}_{\text{S}} = \frac{\text{CL}_{\text{S+B}} }{\text{CL}_{\text{B}} } 
+\end{equation}
+
+
+\bigskip
+
+
+\NI To find the appropriate limit, the signal strength is increased until 1-CL$_\text{S}~\geq$ 0.9 to reached a confidence level of 90~\%. 
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.35]{pictures/Chap6/NLLR.png}
+\label{NLLR}
+\caption{NLLR distribution for the S+B (red) and B-only (blue) hypotheses generated from many pseudo-experiments~\cite{NLLR}.}
+\end{figure}
+
+
+
+
+
+\subsubsection{Half-life calculation}\label{sec:HalfLifeAnalysis}
+
+
+\NI In the scenario a signal is observed, the half-life of the source isotope can be deduced. This value can be then compared with values obtained from other experiments.
+
+
+\bigskip
+
+
+\NI Let's consider a initial sample containing N$_\text{0}$ unstable atoms of an isotope. The remaining number of atoms after a time t is given by the exponential law :  
+
+
+\begin{equation}\label{eq:exponentialLaw}
+\text{N}(\text{t}) = \text{N}_\text{0} \text{e}^{-\lambda \text{t}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI where $\lambda$ is the decay constant of the isotope which is related to its half-life $\text{T}_{\text{1/2}}$ as : 
+
+
+\begin{equation}\label{eq:lambda}
+\lambda = \frac{\text{ln2}}{\text{T}_{\text{1/2}}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI As the half-lives of double beta are very huge compared to the life time of the NEMO-3 experiment, a very good approximation can be done in $\lambda$t using the Taylor expansion :  
+
+
+\begin{equation}
+\text{e}^{-\lambda \text{t}} \approx (\text{1}-\lambda \text{t})
+\end{equation}
+
+
+\bigskip
+
+
+\NI and the Equation~\ref{eq:exponentialLaw} can be written :
+
+
+\begin{equation}
+\text{N}(\text{t}) \approx \text{N}_\text{0}~(\text{1} - \lambda \text{t})
+\end{equation}
+
+\begin{equation}\label{eq:N0}
+\text{N}_\text{0} - \text{N} (\text{t}) = \text{N}_\text{0} \lambda \text{t}
+\end{equation}
+
+
+\bigskip
+
+
+\NI where the left-hand side of Equation~\ref{eq:N0} represents the number of observed events N$_{\text{obs}}$ with a detection efficiency $\epsilon$. Replacing $\lambda$ by its expression in Equation~\ref{eq:lambda} : 
+
+\begin{equation}\label{eq:NobsEff}
+\frac{\text{N}_{\text{obs}}}{\epsilon} = \frac{\text{N}_\text{0}~\text{ln2}~\text{t}}{\text{T}_{\text{1/2}}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI The number of initial atoms in the sample can be expressed in term of the isotope mass m and its atomic number A : 
+
+
+\begin{equation}
+\text{N}_\text{0} = \frac{\text{N}_\text{A}~\text{m}}{\text{A}}
+\end{equation}
+
+
+\bigskip
+
+
+\NI where $\text{N}_\text{A}$ is the Avogadro's constant. Equation~\ref{eq:NobsEff} can be re-arranged to provide the final expression for the half-life in terms of measurable quantities : 
+
+\begin{equation}
+\text{T}_{\text{1/2}} = \frac{\text{N}_\text{A} \text{ln 2}}{\text{A}} \times \text{m t} \times \frac{\epsilon}{\text{N}_{\text{obs}}}
+\end{equation}
+
+
+
+\section{Background to the search for the excited states}\label{sec:BKGexcitedStates}
+
+
+\NI The $\beta \beta$ decays to the excited states present very specific signatures : emission of two electrons accompanied by one or more photons. Moreover, the energies of these photons are very characteristic. Very few isotopes are able to reproduce this kind of signature. In NEMO-3, according its origin, the backgrounds are divided in two parts : 
 
 
 \begin{itemize}
 \item \textbf{Internal background} : regroups the backgrounds having their origin inside the source foil.
 \item \textbf{External background} : regroups the backgrounds not coming from the source foil.
 \end{itemize}
+
+
+
+
+
+
 
 
 \subsection{Internal backgrounds}
@@ -238,17 +821,21 @@ Experiment &  Decays & T$_{\text{1}/\text{2}}$ half-life or limit [y] at 90 \% C
 \end{itemize} 
 
 
-\NI These 2-e like events can be accompanied by one or more gamma emission(s) coming from Bremsstrahlung scattering or deexcitation of the  daughter nucleus after a decay. As the electron energy is not high (<~2~MeV), the creation of one photon is more likely that the creation of 2~photons. That is why the 2e1$\gamma$ channel is expected to be more polluted than the 2e2$\gamma$ channel by the background. The different mechanisms leading to 2-e like events accompanied with 2 photons at the origin of internal backgrounds are summarized in Figure~\ref{InternalBkgPicture}. The same mechanisms can also occur and be accompanied by only 1$\gamma$.
+
+
+\NI These 2-e like events can be accompanied by one or more gamma emission(s) coming from Bremsstrahlung scattering or deexcitation of the  daughter nucleus after a decay. As the electron energy is not high (<~2~MeV), the creation of one photon is more likely that the creation of two~photons. That is why the 2e1$\gamma$ channel is expected to be more polluted than the 2e2$\gamma$ channel by the background. The different mechanisms leading to 2-e like events accompanied with two photons at the origin of internal backgrounds are summarized in Figure~\ref{InternalBkgPicture}. The same mechanisms can also occur and be accompanied by only 1$\gamma$.
 
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.47]{pictures/Chap6/InternalBkg.pdf}
+\includegraphics[scale=0.48]{pictures/Chap6/InternalBkg.pdf}
 \label{InternalBkgPicture}
 \caption{The different mecanisms leading to 2-e like events accompagnied with 2 photons at the origin of internal backgrounds. Left : a $\beta$-decay via excited state is followed by a M\"oller scaterring and Bremsstrahlung. Middle : $\beta$-decay with an internal conversion and 2 Bremsstrahlung effects. Right :  a $\beta$-decay via excited state is followed by a Compton scattering and Bremsstrahlung effect.}
 \end{figure}
 
+
+\bigskip
 
 
 \NI The radioactive isotopes of the $^{\text{238}}$U and $^{\text{232}}$Th decay chains can be already present inside the initial source powder and not be entirely removed by the purification process. They can also be introduced latter during the source foil production, handling and mounting. Explaining why a great care was taken in the production and purification of the enriched materials, as well as during the source foil production and mounting.
@@ -288,7 +875,7 @@ Experiment &  Decays & T$_{\text{1}/\text{2}}$ half-life or limit [y] at 90 \% C
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.47]{pictures/Chap6/ExternalBkg.pdf}
+\includegraphics[scale=0.48]{pictures/Chap6/ExternalBkg.pdf}
 \end{center}
 \caption{Mechanisms leading to 2-e like events accompanied with 2 photons coming from an external $\gamma$. Left : the external $\gamma$ undergoes a double Compton scattering accompanied of Bremsstrahlung effects. Middle : pair creation from the external $\gamma$ with Bremsstrahlung effects. The positron is identified as an electron due to a bad reconstruction. Right : Compton scattering of the external $\gamma$ followed by a M\"oller diffusion of the electron and a Bremsstrahlung.}
 \label{ExternalBkgPicture}
@@ -301,7 +888,25 @@ Experiment &  Decays & T$_{\text{1}/\text{2}}$ half-life or limit [y] at 90 \% C
 \subsection{Background model}
 
 
-\NI The background model used in this analysis have been developed for the analysis of $\beta\beta$ decay of \Cd~to the ground state~\cite{Arnold2016bed}. The strategy is to benefit of the NEMO-3 ability to reconstruct the topology of the events. The backgrounds can be measured through different channels. The considered channels and the contaminations they can measured are detailed below.  
+\NI The background model used in this analysis have been developed for the analysis of $\beta\beta$ decay of \Cd~to the ground state~\cite{Arnold2016bed}. The strategy is to benefit of the NEMO-3 ability to reconstruct the topology of the events. The backgrounds can be measured through different channels. The considered channels and the contaminations they can measured are summarized in Table \ref{TableChannelBKG}. The following of this part is dedicated to the presentation of these different channels. In a first time, the cadmium foil is divided into three different regions according the activity. 
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c}
+\toprule
+Contaminations & Channels \\[0.1cm]
+\midrule
+$^{\text{214}}$Bi,$^{\text{222}}$Rn                    & 1e1$\alpha$                           \\[0.1cm]  
+Externals                                              & OCE and ($\gamma$, e)$_{\text{Ext}}$  \\[0.1cm]
+$^{\text{208}}$Tl                                      & 1e2$\gamma$  and 1e3$\gamma$          \\[0.1cm]
+$^{\text{40}}$K, $^{\text{234m}}$Pa, $^{\text{210}}$Bi & 1e                                    \\[0.1cm]
+$^{\text{208}}$Tl,$^{\text{214}}$Bi                    & 1e1$\gamma$                           \\[0.1cm] 
+\bottomrule
+\end{tabular}
+\caption{Contaminations under consideration and channels in which they can be measured.}
+\label{TableChannelBKG}
+\end{table}
 
 
 \bigskip
@@ -309,12 +914,24 @@ Experiment &  Decays & T$_{\text{1}/\text{2}}$ half-life or limit [y] at 90 \% C
 
 \subsubsection{Different activity region in the \Cd~sector}
 
-\NI In the 1e channel~(the events selection are described in section~\ref{sec:1echannel}), the vertex distribution lets appear a non uniformity in activity of the foil, three activity regions have been defined, an high activity region $\gtrsim$~200 events/bin, a medium activity region with [100;200] events/bin and a low activity region with $\lesssim$~100 events/bin. The high activity region observed for Sector~$<$~18.08 corresponds to the calibration tube. This area is not take into account in the analysis since no \Cd~foil is present here. The other high activities regions match with the links between the different strips which compose the foil as described in section~\ref{sec:CdSectorInNEMO3} and shown in Figure~\ref{CdFoil}. The excess of events observed in the high activity region probably provides from a contamination of single $\beta$-emitters. This suggestion is supported by the observation of any strong excess in 1e1$\gamma$ channel as shown in~Figure~\ref{CdSector1eChannel}. The small excess corresponding to the emission of Bremsstrahlung by the single $\beta$-emitter. Studies realized by the collaboration highlighted an excess of $^{\text{234m}}$Pa with respect to $^{\text{40}}$K and $^{\text{210}}$Bi and validated the hypothesis that the single $\beta$-emitter is the origin of the high activity region.
+\NI In the 1e channel~(the events selection are described in Section~\ref{sec:1echannel}), the vertex distribution lets appear a non uniformity in activity of the foil, three activity regions have been defined : 
+
+
+\begin{itemize}
+\item an high activity region, where the number of events per bin is greater than~200,
+\item a medium activity region, where the number of events per bin is between~100~and~200,
+\item a low activity region, where the number of event per bin is lower than~100.
+
+\end{itemize}
+
+
+\NI The high activity region observed for Sector~$<$~18.08 corresponds to the calibration tube. This area is not take into account in the analysis since no \Cd~foil is present here. The other high activities regions match with the links between the different strips which compose the foil as described in section~\ref{sec:CdSectorInNEMO3} and shown in Figure~\ref{CdFoil}. The excess of events observed in the high activity region probably provides from a contamination of single $\beta$-emitters. This suggestion is supported by the observation of any strong excess in 1e1$\gamma$ channel as shown in~Figure~\ref{CdSector1eChannel}. The small excess corresponding to the emission of Bremsstrahlung by the single $\beta$-emitter. Studies realized by the collaboration highlighted an excess of $^{\text{234m}}$Pa with respect to $^{\text{40}}$K and $^{\text{210}}$Bi and validated the hypothesis that the single $\beta$-emitter is the origin of the high activity region.
+
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.45]{pictures/Chap6/CdSector-1e-1e1g.png}
+\includegraphics[scale=0.40]{pictures/Chap6/CdSector-1e-1e1g.png}
 \label{CdSector1eChannel}
 \caption{(a)~\Cd~sector in 1e channel. Blue region corresponds to the low activity region, the green region to medium activity. The high activity regions appear in red, these region are excluded of the analysis. (b)~\Cd~sector in 1e1$\gamma$ channel.}
 \end{figure}
@@ -353,25 +970,45 @@ Experiment &  Decays & T$_{\text{1}/\text{2}}$ half-life or limit [y] at 90 \% C
 \FloatBarrier
 
 
-\subsubsection{External backgrounds measurement}
+\subsubsection{External backgrounds measurement} \label{sec:External}
 
 
-\NI The model developed to estimate the external background is an effective model. Its aim is to provide an accurate description of the total external gamma flux in the detector region near the \Cd~foil. To measure the external backgrounds two channels are used : the one crossing electron channel (OCE) and the external electron-$\gamma$ (($\gamma$,e)$_{\text{Ext}}$) channel. As explained in Section~\ref{sec:externalBkg}, 
+\NI As explained in Section~\ref{sec:externalBkg}, the gamma flux coming from the detector or its shielding can create 2-e like events. These events possesses a characteristic time sequence which can be reconstructed knowing the hit times into the calorimeter. A variable representing the probability of an event coming from outside can be build. A cut on this variable allows an efficiency rejection of the external backgrounds. But, due to the finite calorimeter timing resolution and to the very large number of external background some external background will pass the cut and will be selected as 2e events. It explains why the total external background rate have to be estimated. 
 
 
 \bigskip
 
 
-.  The total energy distribution is used in both channels to discriminate the different contributions and to perform the likelihood fit.
+\NI The model developed to estimate the external background is an effective model. Its aim is to provide an accurate description of the total external gamma flux in the detector region near the \Cd~foil. It contains a total of 12~free parameters considering the contaminations coming from the PMTs, scintillator, iron shielding (Fe~shield), internal copper tower (Cu~tower), PMT $\mu$-metal, radon and thoron in the air. To measure the external backgrounds two channels are used : the one crossing electron channel (OCE) and the external electron-$\gamma$ (($\gamma$,e)$_{\text{Ext}}$) channel.
+
+
+\bigskip
+
+
+\NI The OCE-channel contains the events having a single electron travelling accross the detector. The signature of these event is two tracks with opposite curvature with a length greater than 30~cm. These two track are associated with isolated scintillator hits. The timing of the calorimeter hits must be consistent with the external TOF hypothesis and have P$_{\text{ext}}$ > 0.04 and P$_{\text{int}}$ < 0.01. The energy of each electron has to be greater than 300~keV.
+
+
+\bigskip
+
+
+\NI The ($\gamma$,e)$_{\text{Ext}}$ channel corresponds to the event in which a high energy $\gamma$ ray interacts in the calorimeter followed by a Compton scattering in the source foil to produce an electron. These events are identified by a single electron with an energy greater than 300~keV accompagnied by a $\gamma$ ray with an energy of at least 150~keV. The track length of the electron as to be greater than 50~cm. The timing of the particles must be consistent with the external TOF hypothesis (P$_{\text{ext}}$ > 0.04 and P$_{\text{int}}$ < 0.01).
+
+
+\bigskip
+
+
+\NI The total energy distribution is used in both channels to discriminate the different contributions and to perform the likelihood fit. The results obtained are gathered in~Table~\ref{TableOCE-activityMeasurement}. Figure~\ref{egChannel_Etot} shows the distribution of the total energy of ($\gamma$,e)$_{\text{Ext}}$ channel.
 
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.35]{pictures/Chap6/g-eChannelEtot.png}
+\includegraphics[page=3,scale=0.55]{pictures/Chap6/FinalPlots.pdf}
 \label{egChannel_Etot}
-\caption{...}
+\caption{Distribution of the total energy of the ($\gamma$,e)$_{\text{Ext}}$ channel in linear scale.}
 \end{figure}
+
+
 
 
 \begin{table}
@@ -403,48 +1040,45 @@ $^{\text{234m}}$Pa                 & $\mu-$metal & 2655 $\pm$ 1180  \\
 \end{table}
 
 
-In this background model, the external contributions are measured only by using the data from the cadmium sector.
-
-
 \FloatBarrier
 
 
-\subsubsection{Internal $^{\text{214}}$Bi ($^{\text{222}}$Rn) measurement}
+\subsubsection{Internal $^{\text{214}}$Bi ($^{\text{222}}$Rn) measurement} \label{sec:1e1aChannel}
 
 
-\NI As explained in Chap.~\ref{chap:Radon}, $^{\text{214}}$Bi the contamination is measured using the 1e1$\alpha$ channel. To be selected, an event has : 
-
-
-\begin{itemize}
-\item
-\item
-\item
-\end{itemize}
-
-
-\NI To verify the purity of this selection, the delayed time of the $\alpha$ is used. The time difference between the electron and the $\alpha$ matches with the half-life of $^{\text{214}}$Po of 164~$\mu$s as shown in Figure~\ref{1e1aChannel_alphaDelayTime}.
+\NI As explained in Chap.~\ref{chap:Radon}, $^{\text{214}}$Bi the contamination is measured using the 1e1$\alpha$ channel. During the first year of running, the level of $^{\text{222}}$Rn was measured to be very high. To reduce the level an anti-radon facility have been installed. The data collected before the installation are referred as Phase~1 and as Phase~2 if the data have been registered after.
 
 
 \bigskip
 
 
-\NI The $\alpha$ track length is used to distinguish the different $^{\text{214}}$Bi contributions and to perform a likelihood fit. A total of 10 parameters are used corresponding to the different locations and phases. To take into account the diminution of the radon level after the installation of the anti-radon system, the $^{\text{214}}$Bi on the surface of the wires and foil are fitted separately (Phase 1 and Phase 2). The internal and mylar $^{\text{214}}$Bi contributions are not split according the phase as their activities are not expected to vary during the data taking. The results of the likelihood fit are summarized in~Table~\ref{Table1e1a-activityMeasurement}.
+\NI The 1e1$\alpha$ events are identified by a prompt electron with an energy greater than 300~keV followed by a delayed $\alpha$. The $\alpha$ track length must be lower than 40~cm and possesses at least two hits in the tracker. To verify the purity of this selection, the delayed time of the $\alpha$ is used. The time difference between the electron and the $\alpha$ matches with the half-life of $^{\text{214}}$Po of 164~$\mu$s as shown in Figure~\ref{1e1aChannel_alphaDelayTime}.
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.35]{pictures/Chap6/Bkg1e1aAlphaLength.png}
-\label{1e1aChannel_alpphaLength}
-\caption{Distribution of the delayed $\alpha$ track length in the 1e1$\alpha$ channel }
-\end{figure}
-
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.35]{pictures/Chap6/alphaTimeDelay1e1aChannel.png}
+\includegraphics[scale=0.4]{pictures/Chap6/alphaTimeDelay1e1aChannel.png}
 \label{1e1aChannel_alphaDelayTime}
 \caption{Average time delay between the electron and the $\alpha$ candidate Geiger hits in 1e1$\alpha$ channel. The blue line is an exponential fit which matches to the $^{\text{214}}$Bi half-life.}
 \end{figure}
+
+
+\bigskip
+
+
+\NI The $\alpha$ track length is used to distinguish the different $^{\text{214}}$Bi contributions and to perform a likelihood fit. A total of 10 parameters are used corresponding to the different locations and phases. To take into account the diminution of the radon level after the installation of the anti-radon system, the $^{\text{214}}$Bi on the surface of the wires and foil are fitted separately (Phase 1 and Phase 2). The internal and mylar $^{\text{214}}$Bi contributions are not split according the phase as their activities are not expected to vary during the data taking. The results of the likelihood fit are summarized in~Table~\ref{Table1e1a-activityMeasurement}. Figure~\ref{1e1aChannel_alpphaLength} show the distribution of $\alpha$ track length in 1e1$\alpha$ channel.
+
+
+\begin{figure}[h!]
+\centering
+%\includegraphics[scale=0.35]{pictures/Chap6/Bkg1e1aAlphaLength.png}
+\includegraphics[page=1,scale=0.55]{pictures/Chap6/FinalPlots.pdf}
+\caption{Distribution of the delayed $\alpha$ track length in the 1e1$\alpha$ channel}
+\label{1e1aChannel_alpphaLength}
+\end{figure}
+
+
+
 
 
 \begin{table}
@@ -473,48 +1107,75 @@ In this background model, the external contributions are measured only by using 
 \subsubsection{Internal $^{\text{208}}$Tl ($^{\text{220}}$Rn) measurement}
 
 
-\NI The $\beta$-decay of $^{\text{208}}$Tl is almost always accompanied by a cascade of photons from the excited states of $^{\text{208}}$Pb as shown in Figure~\ref{Tl208-decay-schema}. To measure the $^{\text{208}}$Tl activity, one of the most sensitive channel is provided by the 1e2$\gamma$ channel defined by : 
-
-
-\begin{itemize}
-\item
-\item
-\end{itemize}
-
-
-\NI The best discriminant variable to distinguish between the $^{\text{208}}$Tl contribution from the isotopes which contribute to 1e2$\gamma$ channel is given by the sum of the electrons and photons energies.  Above E$_{\text{Tot}} > $3 MeV, a pure sample of $^{\text{208}}$Tl is obtained, this distribution is used to perform the likelihood fit.
+\NI The $\beta$-decay of $^{\text{208}}$Tl is almost always accompanied by a cascade of photons from the excited states of $^{\text{208}}$Pb as shown in Figure~\ref{Tl208-decay-schema}. To measure the $^{\text{208}}$Tl activity, one of the most sensitive channel is provided by the 1e2$\gamma$ channel.
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.33]{pictures/Chap6/decay-tl208.png}
+\includegraphics[scale=0.40]{pictures/Chap6/decay-tl208.png}
 \caption{Simplified decay diagrams of $^{\text{208}}$Tl.}
 \label{Tl208-decay-schema}
 \end{figure}
 
 
-\NI In 1e2$\gamma$ and 1e3$\gamma$, the energies sum of the electrons and photons is used to distinguish between the $^{\text{208}}$Tl contribution and the isotopes which contribute to 1e2$\gamma$ channel. Above E$_{\text{Tot}} > $3 MeV, a pure sample of $^{\text{208}}$Tl is obtained, this distribution is used to perform the likelihood fit.
+\NI To select 1e2$\gamma$ events coming from source foil, an event must have a single electron with energy greater than 300~keV accompanied by two $\gamma$ rays with an energy of at least 200~keV. The electron track length has to be greater than 50~cm. The timing of each $\gamma$ has to be in agreement with the internal hypothesis with the electron (P$_{\text{int}}$ > 0.04 and P$_{\text{ext}}$ < 0.01). 
+
+
+\bigskip
+
+
+\NI The best discriminant variable to distinguish between the $^{\text{208}}$Tl contribution from the isotopes which contribute to 1e2$\gamma$ channel is given by the sum of the electrons and photons energies.  Above E$_{\text{Tot}}~>~$3 MeV, a pure sample of $^{\text{208}}$Tl is obtained, this distribution is used to perform the likelihood fit. Due to the high sensitivity of the 1e2$\gamma$ channel, the $^{\text{208}}$Tl activity is the only free parameter. The other contributions as radon inside the tracker volume or from the surface of the foils are constrained to the value measured in previous sections. The result is gathered in Table~\ref{TableTl208}. Figure~\ref{1e2gChannel_Etot} shows the distribution of the energy sum in 1e2$\gamma$ channel.
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c}
+ & Activity [Bq] \\
+\toprule
+$^{\text{208}}$Tl & 0.14 $\pm$ 0.02 \\ 
+\bottomrule
+\end{tabular}
+\caption{$^{\text{208}}$Tl activity measured in the cadmium sector.}
+\label{TableTl208}
+\end{table}
 
 
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.35]{pictures/Chap6/1e2gChannelEtot.png}
+\includegraphics[page=5,scale=0.55]{pictures/Chap6/FinalPlots.pdf}
 \caption{Total energy distribution (E$_e$ + E$_{\gamma_1}$ + E$_{\gamma_2}$) in the 1e2$\gamma$ channel.}
 \label{1e2gChannel_Etot}
 \end{figure}
 
 
+\bigskip
+
+
+\NI The internal $^{\text{208}}$Tl contribution can also be measured in 1e3$\gamma$ channel. Despite a worth sensitivity, this channel is useful to validate the result obtained in 1e2$\gamma$ channel. The 1e3$\gamma$ channel is defined as the  1e2$\gamma$ channel with an additionnal $\gamma$ ray (E$_{\gamma}$ > 200 keV). Unfortunately due to the very low statistics (150 events passing the cuts) the sensitivity is not enough to measure the $^{208}$Tl activity. But, by normalizing the MC in 1e3$\gamma$ channel to the activities measured previously the data and MC are in good agreement which enhance the confidence in the estimation of the $^{208}$Tl activity. 
+
+
+\FloatBarrier
+
 
 \subsubsection{Other internal contributions ($^{\text{40}}$K, $^{\text{234m}}$Pa and $^{\text{210}}$Bi)}\label{sec:1echannel}
 
 
+\NI The activities of the single beta emitter internal contributions ($^{\text{40}}$K, $^{\text{234m}}$Pa and $^{\text{210}}$Bi) can be measured in 1e channel. Other sources contribute to the events observed in 1e channel. The first one is due to the external backgrounds. These backgrounds are constrained to the activity measured previously in the fit. Events from $\beta\beta$ decays of~\Cd~can also ends up in 1e channel if one of the electrons is not detected. 
+
+
+\bigskip
+
+
+\NI The single electron energy distribution is used to performed the fit. This distribution is shown in Figure~\ref{1eChannel_Ee}. The results obtained are summarized in~Table~\ref{Table1e-activityMeasurement}. 
+
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.40]{pictures/Chap6/1eChannelEe.png}
-\label{1eChannel_Ee}
+%\includegraphics[scale=0.40]{pictures/Chap6/1eChannelEe.png}
+\includegraphics[page=4,scale=0.55]{pictures/Chap6/FinalPlots.pdf}
 \caption{Electron energy distribution of the electron in the 1e channel. The three main components are $^{\text{40}}$K, $^{\text{234m}}$Pa and $^{\text{210}}$Bi.}
+\label{1eChannel_Ee}
 \end{figure}
 
 
@@ -524,10 +1185,10 @@ In this background model, the external contributions are measured only by using 
 \begin{tabular}{c|c}
  & Activity (Bq) \\
 \midrule
-$^{\text{40}}$K                 & 0.0152 $\pm$ 0.0001 \\
-$^{\text{234m}}$Pa              & 0.0037 $\pm$ 0.0001 \\
-$^{\text{210}}$Bi (surf. foil)  & 3.91   $\pm$ 0.01   \\
-$^{\text{210}}$Bi (surf. wire)  & 2.4    $\pm$ 0.1    \\
+$^{\text{40}}$K                 & 0.0152 $\pm$ 0.0001 \\ [0.05cm]
+$^{\text{234m}}$Pa              & 0.0037 $\pm$ 0.0001 \\ [0.05cm]
+$^{\text{210}}$Bi (surf. foil)  & 3.91   $\pm$ 0.01   \\ [0.05cm]
+$^{\text{210}}$Bi (surf. wire)  & 2.4    $\pm$ 0.1    \\ [0.05cm]
 \bottomrule
 \end{tabular}
 \caption{Measured activity in 1e channel of the other internal components. }
@@ -544,32 +1205,38 @@ $^{\text{210}}$Bi (surf. wire)  & 2.4    $\pm$ 0.1    \\
 \subsubsection{Background model validation}
 
 
-\NI The background model is validated by measuring the activity of $^{\text{208}}$Tl and $^{\text{214}}$Bi in the 1e1$\gamma$ channel. The results are then compared to the measurement obtained in 1e1$\alpha$ channel for $^{\text{214}}$Bi and 1e2$\gamma$ and  1e3$\gamma$ channels for $^{\text{208}}$Tl. The very good agreement ($<$ 1 $\sigma$) of the results validates the background model.
+\NI The background model is validated by measuring the activity of $^{\text{208}}$Tl and $^{\text{214}}$Bi in the 1e1$\gamma$ channel. The results are then compared to the measurement obtained in 1e1$\alpha$ channel for $^{\text{214}}$Bi and 1e2$\gamma$ and  1e3$\gamma$ channels for $^{\text{208}}$Tl.
 
 
+\bigskip
 
 
-The considered channels and the contaminations they can measured are summarized in Table \ref{TableChannelBKG}.  
+\NI The 1e1$\gamma$ channel contains the events with a single electron having an energy greater than 300~keV associated to a photon (E$_{\gamma}$ > 200 keV). 
 
-%The selection criteria of each channel can be found in~\cite{Arnold2016bed}. 
+
+\bigskip
+
+
+\NI The very good agreement ($<$~1~$\sigma$) of the results validates the background model. The comparison of the values measured in different channels are shown in Table~\ref{Table:BkgValidation}.
 
 
 \begin{table}[h!]
 \centering
-\begin{tabular}{c|c}
+\begin{tabular}{c|c|c|c|c}
+Activity & 1e1$\gamma$ & 1e2$\gamma$ & 1e1$\alpha$ & $\Delta$ A/ $\sigma$ \\[0.1cm]
 \toprule
-Contaminations & Channels \\[0.1cm]
-\midrule
-$^{\text{214}}$Bi,$^{\text{222}}$Rn                    & 1e1$\alpha$                           \\[0.1cm]  
-Externals                                              & OCE and ($\gamma$, e)$_{\text{Ext}}$  \\[0.1cm]
-$^{\text{208}}$Tl                                      & 1e2$\gamma$  and 1e3$\gamma$          \\[0.1cm]
-$^{\text{40}}$K, $^{\text{234m}}$Pa, $^{\text{210}}$Bi & 1e                                    \\[0.1cm]
-$^{\text{208}}$Tl,$^{\text{214}}$Bi                    & 1e1$\gamma$                           \\[0.1cm] 
+$^{\text{208}}$Tl [mBq/kg] & 0.14 $\pm$ 0.02 & 0.14 $\pm$ 0.02 & - & 0.00 \\[0.1cm]
+$^{\text{214}}$Bi [mBq/kg] & 0.35 $\pm$ 0.1  & -               & 0.36 $\pm$ 0.1 & 0.06 \\[0.1cm]
+Wire surf. P1 [mBq]        & 696  $\pm$ 28   & -               & 667  $\pm$ 27  & 0.8  \\[0.1cm]
+Wire surf. P2 [mBq]        & 90   $\pm$ 5    & -               & 91   $\pm$ 5   & 0.01 \\[0.1cm]
+Foil surf. P1 [mBq]        & 15   $\pm$ 2    & -               & 15   $\pm$ 1   & 0.04 \\[0.1cm]
+Foil surf. P2 [mBq]        & 1.3  $\pm$ 0.2  & -               & 1.3  $\pm$ 0.3 & 0.18 \\[0.1cm]
 \bottomrule
 \end{tabular}
-\caption{Contaminations under consideration and channels in which they can be measured.}
-\label{TableChannelBKG}
+\caption{Comparison of the activity measured in 1e1$\alpha$, 1e2$\gamma$ and 1e1$\gamma$ channels. The last column presents the relative difference among values with respect to their errors.}
+\label{Table:BkgValidation}
 \end{table}
+
 
 
 
@@ -632,35 +1299,145 @@ $^{\text{208}}$Tl,$^{\text{214}}$Bi                    & 1e1$\gamma$            
 
 \FloatBarrier
 
-\section{Events preselection}
+\section{Events preselection}\label{sec:Preselection}
 
 
-The preselection consists of a set of critria to select the events coming from the \Cd~sector and containing 2 electrons and photons. The events with an alpha particle are not selected.
+\NI Before to optimize the selection of each excited state and introduce more specific cuts to search for the decays via the excited, a preselection of events is introduced to isolate the 2e1$\gamma$ and 2e2$\gamma$ events. This preselection consists of a set of critria to select the events coming from the \Cd~sector and containing two electrons and one or two photons. The events with an alpha particle are rejected.
 
 \bigskip 
 
-\NI An electron is defined as a particle having a negative track with a vertex on the source foil and hitting a calorimeter. In a first time, the energy of each electron has to be greater than 300~keV and the minimal length of their track is 50~cm.
-\noindent A photon is defined as calorimeter hit no associated to a track. To avoid calorimeter noise the energy of the photon has to be greater than 150~keV.
-\noindent An alpha particle is identified as a delayed hits inside the tracker volume. Others criteria as the status of the PMT, or the internal/probability of the electrons are added. The complete list of the preselectrion criteria can be found below :
+\NI An electron is defined as a particle having a negative track with a vertex on the source foil and hitting a calorimeter. The energy of each electron has to be greater than 150~keV and the minimal length of their track is 50~cm. A photon is defined as calorimeter hit no associated to a track. To avoid calorimeter noise the energy of the photon has to be greater than 150~keV. An alpha particle is identified as a delayed hits inside the tracker volume. Others criteria as the status of the PMT, or the internal/probability of the electrons are added. The exhaustive list of the preselectrion criteria can be found below~:
 
 
+%\begin{itemize}
+%\item the run has to be accepted and has a good status
+%\item the PMTs are good and with good LD flag and correction 
+%\item the event contains 2 electrons which deposit their energy into isolated blocks 
+%\item the two electrons  have been reconstructed to come from the Cd-116 sector
+%\item the event do not come from an hot spot
+%\end{itemize}
+
+
+\begin{multicols}{2}
 \begin{itemize}
-\item
-\item
+\item the run has to be accepted
+\item the PMTs are good 
+\item no alpha particle in the event
+\item only 2 electrons in the event 
+\item only 2 tracks in the event 
+\item electron hit PMT with good LD flag and corr
+\item electrons hit different scintillators
+\item both electrons intersect the foil
+\item both electron have fired one hit within 50~cm from the vertex
+\item both electron hit front face of calorimeter block
+\item the electrons hit isolated blocks
+\item the 2 electrons are originated in the same sector 
+\item the 2 electrons intersect the foil at $|\text{z}|~<~$120~cm  
+\item P$_{\text{int}} > $ 0.01 and P$_{\text{ext1} \rightarrow \text{0}} < $ 0.04 and P$_{\text{ext1} \rightarrow \text{0}}~<~$ 0.04 for the electrons 
+\item run status $=$ 1 (GOOD RUN)  
+\item coming from the Cd-116 sector (18)  
+\item energy of each electron $>$~150 keV   
+\item electron track lengths $> $ 50 cm   
+\item negative electron track sign   
+\item internal probability $>$ 0.01     
+\item external probability $<$ 0.01   
+\item no electron hits petal near the foil   
+\item $|\text{dz}_\text{vtx}| < $ 8 cm and radial distance $ <$ 4 cm     
+\item not an hot spot    
+\item N$_{\gamma} >$ 0 and (E$_{\gamma}>$ 150 keV)  
+ 
 \end{itemize}
+\end{multicols}
 
 
+\NI Initially the minimal energy of each electron was fixed to 300~keV. But, in case of decays via the excited state, as a part of the energy is carry away by the photons and the available energy for the electrons is reduced. This selection criterion has been released to 150~keV in order to increase the signal efficiency of the preselection.
 
-\NI This preselection is applied on all the MC of excited states and all the background componants. It consists of the first step of the selection which is common to all the excited states. Latter, other cuts will be added to optimize the background rejection according the excited state studied.
+
+\bigskip
+
+
+\NI The preselection is applied on all the MC of excited states and all the background componants. It consists of the first step of the selection which is common to all the excited states. Latter, other cuts will be added to optimize the background rejection according the excited state. The signal efficiency and the number of background events expected after the preselection is calculated for each excited state.
 
 
 \subsection{Signal efficiency}
 
+ 
+\NI From the MC, the signal efficiency of each excited state can be computed by comparing the number of events which passes the preselection to the number of generated events. According the excited state, two preselections are performed. The first one consists to select the 2e1$\gamma$ events which is appropriate to the search for the excited state (2$^+$). The second preselection is exactly the same except that it consists to isolate the 2e2$\gamma$ events to search for the exited state (0$^+$). The results of the preselection of the events in 2e1$\gamma$ and 2e2$\gamma$ channels are given below. 
 
-\NI From the MC, the signal efficiency of each excited state can be computed by comparing the number of events which passes the preselection to the number of generated events. The results are given in Table \ref{EffPreselection}. 
+
+\subsubsection{2e1$\gamma$ channel}
 
 
-\bigskip
+\NI This channel is dedicated to the search for the excited state (2$^+$). The results are given in Table~\ref{EffPreselection2PLUS}.
+
+
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{c|c|c|c}
+\toprule
+Excited state & N$_\text{{generated}}$ & N$_\text{{preselected}}$ & $\epsilon_\text{{preselection}}$ \\[0.1cm]
+\midrule
+(2$^+$) 2$\nu$ &  10 000 000 & 13095 & (1.31~$\pm$~0.01)~10$^{-\text{3}}$\\[0.1cm]
+(2$^+$) 0$\nu$ &   5 000 000 & 91165 & (1.82~$\pm$~0.01)~10$^{-\text{2}}$\\[0.1cm]
+\bottomrule
+\end{tabular}
+\caption{Signal efficiency of the preselection 2e1$\gamma$ for the excited state (2$^+$).}
+\label{EffPreselection2PLUS}
+\end{center}
+\end{table}
+
+
+\NI The signal efficiency are small, respectively $\sim$0.13~\% and $\sim$1.8~\% for the 2$\nu$ and 0$\nu$ decay mode. The higher selection efficiency obtained in 0$\nu$ is explained by the fact that the two electrons have more available energy in this decay mode. These electrons are less affected by the criterion on their energy (E$_\text{e}$ > 150 keV) than the electrons emitted in 2$\nu$ decay. Moreover, the detection efficiency of the electron is energy dependant and increases with their energy. 
+
+
+
+\ifx
+\begin{table}[h!]
+\begin{center}
+\begin{tabular}{l|c|c}
+                                                            Criteria   &  N(events)     &  Efficiency \\
+\toprule
+               Total number of events after trigger and reconstruction  &    6683615    &     0.66836\\
+                                                          Accepted run  &    6683615    &     0.66836\\
+                                                         PMTs are good  &    6683614    &     0.66836\\
+                                                 No Alpha in the event  &    6683614    &     0.66836\\
+                                       Only two electrons in the event  &     446245    &     0.04462\\
+                                          Only two tracks in the event  &     312843    &     0.03128\\
+                           Electron hit PMT with good LD flag and corr  &     224151    &     0.02242\\
+                                 Electrons hit different scintillators  &     146063    &     0.01461\\
+                                     Both electrons intersect the foil  &     146063    &     0.01461\\
+          Both Electron have fired one hit within 50cm from the vertex  &     133258    &     0.01333\\
+                     Both Electron hit front face of calorimeter block  &     123561    &     0.01236\\
+                                     The electrons hit isolated blocks  &     123561    &     0.01236\\
+                   The two electrons are originated in the same sector  &     112753    &     0.01128\\
+                   The two electrons intersect the foil at |z| < 120cm  &     110292    &     0.01103\\
+P$_{int}$ > 0.01 and P$_{ext1 to 0}$ < 0.04 and P$_{ext1 to 0}$ < 0.04  &     105051    &     0.01051\\
+
+                                                           All events  &     105051   &      0.01051\\
+                                            Run status = 1 (GOOD RUN)  &      94790   &      0.00948\\
+                                                   Cd-116 sector (18)  &      92911   &      0.00929\\
+                                       Energy each electron > 150 keV  &      66919   &      0.00669\\
+                                                Track lengths > 50 cm  &      62411   &      0.00624\\
+                                          Negative electron track sign &      53376   &      0.00534\\
+                                           Internal probability > 0.01 &      53376   &      0.00534\\
+                                           External probability < 0.01 &      53373   &      0.00534\\
+                                  No electron hits petal near the foil &      51898   &      0.00519\\
+                        |dz$_{vtx}$| < 8 cm and radial distance < 4 cm &      44995   &      0.00450\\
+                                                       Not an hot spot &      18198   &      0.00182\\
+                              At least one gamma cluster (E > 150 keV) &      16116   &      0.00161\\
+                                                One gamma in the event &      13095   &      0.00131\\
+\bottomrule
+\end{tabular}
+\caption{Detailled cut flow of the 2e1$\gamma$ preselection for the excited state (2$^+$) in 2$\nu$ decay mode.}
+\label{CutFlowPreselection2PLUS}
+\end{center}
+\end{table}
+\fi
+
+\subsubsection{2e2$\gamma$ channel}
+
+
+\NI This channel is dedicated to the search for the excited state (0$^+$). The results are given in Table~\ref{EffPreselection0PLUS}.
 
 
 \begin{table}[h!]
@@ -671,25 +1448,566 @@ Excited state & N$_\text{{generated}}$ & N$_\text{{preselected}}$ & $\epsilon_\t
 \midrule
 (0$^+$) 2$\nu$ & 200 000 000 & 11168 & (5.58~$\pm$~0.05)~10$^{-\text{5}}$\\[0.1cm]
 (0$^+$) 0$\nu$ &   4 999 900 & 17681 & (3.54~$\pm$~0.03)~10$^{-\text{3}}$\\[0.1cm]
-(2$^+$) 2$\nu$ &  10 000 000 & 13095 & (1.31~$\pm$~0.01)~10$^{-\text{3}}$\\[0.1cm]
-(2$^+$) 0$\nu$ &   5 000 000 & 91165 & (1.82~$\pm$~0.01)~10$^{-\text{2}}$\\[0.1cm]
 \bottomrule
 \end{tabular}
-\caption{Signal efficiency of the preselection 2eN$\gamma$ of each excited states.}
-\label{EffPreselection}
+\caption{Signal efficiency of the preselection 2e2$\gamma$ for the excited state (2$^+$).}
+\label{EffPreselection0PLUS}
 \end{center}
 \end{table}
 
 
+\NI The available energy for the electrons in decay via the excited state (0$^+$) is even more restrainted compared to the (2$^+$) and the selection efficiency are very low, respectively $\sim$0.005\% and $\sim$0.3\%. As before, the selection efficiency is higher in 0$\nu$ decay mode than the 2$\nu$ decay.  
+
+
 \subsection{Number of expected background}
-\subsection{2e1$\gamma$ channel}
-\subsection{2e2$\gamma$ channel}
 
-\section{Cut optimisation using multi-approach}
 
-\section{Systematics uncertainties}
+\NI After the preselection, the number of background events can be evaluated in 2e1$\gamma$ and 2e2$\gamma$ channels using :
 
-\section{$\beta\beta$ decay rate of $^{\text{116}}$Cd into the excited states of $^{\text{116}}$Sn}
+
+\begin{equation}
+\text{N}_{\text{bkg}} = \sum_\text{i} \text{N}_\text{i} = \sum_\text{i} \epsilon_\text{i} \times \text{A}_\text{i} \times \text{T}
+\end{equation}
+
+
+\bigskip
+
+
+\NI where $\epsilon_\text{i}$ is the efficiency of the background component computed as the number of events which passes the preselection divided by the number of generated events in MC. A$_\text{i}$ is the measured activity of the componant, given in Table~\ref{SummaryAllActivities}, and T the time exposure.
+
+
+\subsubsection{2e1$\gamma$ channel}
+
+
+\NI In the 2e1$\gamma$ channel, 285~$\pm$~12 events of background are expected. They mainly provide from the $\beta\beta$ decay to the ground state (118~$\pm$~1) and external backgrounds (114~$\pm$~11). The other contributions are the radon present in the detector and from $^{\text{214}}$Bi and $^{\text{208}}$Tl contained inside the source foil. The distribution of the backgoround in different observables are given in Figure~\ref{preselection2e1g_150}.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e1gBKG_tot_e_energy.pdf}
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e1gBKG_gmc_energy.pdf}
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e1gBKG_min_e_energy.pdf}
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e1gBKG_max_e_energy.pdf}
+\caption{Distribution of different observables in the 2e1$\gamma$ channel after the preselection. Top left : energy sum of the two electron. Top right : energy of the photon. Bottom left : energy of the less energetic electron. Bottom right : energy of the electron with the higher energy.}
+\label{preselection2e1g_150}
+\end{figure}
+
+
+\bigskip
+
+
+\NI Note that a major part of the background has a photon with a low energy (E$_\gamma$~<~0.5~MeV) mainly providing by Bremsstrahlung effect. These background events should not be troublesome since the emitted photon in excited state (2$^+$) is monoenergetic at 1.3~MeV. 
+
+
+\FloatBarrier
+
+
+\subsubsection{2e2$\gamma$ channel}
+
+
+\NI Very few isotopes are able to mimic a signal with two electrons and two photons. The contribution of the background in this channel is expected to be even lower than in the 2e1$\gamma$ channel. After the preselection, only 26 $\pm$ 2 events of background are expected mainly coming from external contribution (16 $\pm$ 2). Smaller contributions of radon, $^{\text{214}}$Bi and $^{\text{208}}$Tl are also expected. Figure~\ref{preselection2e2g_150_electron} and Figure~\ref{preselection2e2g_150_gamma} respectively show the different observables for the electrons and photons in the 2e2$\gamma$ channel.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e2gBKG_tot_e_energy.pdf}
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e2gBKG_min_e_energy.pdf}
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e2gBKG_max_e_energy.pdf}
+\caption{Distribution of different observables in the 2e2$\gamma$ channel after the preselection. Top left : energy sum of the two electron. Top right : energy of the less energetic electron. Bottom : energy of the electron with the higher energy.}
+\label{preselection2e2g_150_electron}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e2gBKG_min_gmc_energy.pdf}
+\includegraphics[scale=0.35]{pictures/FinalResults/bb2nu2/150/preselection/preSelection2e2gBKG_max_gmc_energy.pdf}
+\caption{Distribution of different observables in the 2e2$\gamma$ channel after the preselection. Left : energy of the less energetic photon. Right : energy of the most energetic photon.}
+\label{preselection2e2g_150_gamma}
+\end{figure}
+
+
+\FloatBarrier
+
+
+
+\section{Cut optimisation using a multivariate approach}\label{sec:CutOptimisation}
+
+
+\NI Usually, the most important and sensitive observable to detect the $\beta\beta$ decay is the energy sum of the two electrons. For the investigation of the excited state, other observables such as the energy of the photon can also be used to distinguish the signal from the background by employing a multivariate analysis technique. The list of the discriminating variables is introduced in Section~\ref{sec:discriminatingVariables}. The selection, the implementation and the optimisation of the rectangular cut method are respectively described in Section~\ref{sec:ChoiceRCmethod}, Section~\ref{sec:1e1aChannel} and Section~\ref{sec:RCoptimisation}.
+
+
+
+\subsection{Discriminating variables}\label{sec:discriminatingVariables}
+
+In 2e1$\gamma$ channel, a total of 14 discrimating variables are used, they are listed and defined below : 
+
+\begin{itemize}
+\item the energy of the photon : E$_{\gamma}$
+\item the minimal and maximal energy of the electrons : E$_\text{e}^{\text{min}}$, E$_\text{e}^{\text{max}}$
+\item the energy sum of the electron : $\Sigma\text{E}_\text{e} = \text{E}_\text{e}^{\text{min}} +  \text{E}_\text{e}^{\text{max}}$
+\item energy asymmetry of the electrons :$\Delta\text{E}_\text{e} = \text{E}_\text{e}^{\text{min}} -  \text{E}_\text{e}^{\text{max}}$
+\item the total energy : E$_{\text{tot}} = \Sigma\text{E}_{\text{e}} + \text{E}_{\gamma}$
+\item the 2 internal probabilities of the photons : P$_{\text{int}}^{\gamma-\text{e1}}$ and  P$_{\text{int}}^{\gamma-\text{e2}}$
+\item the 4 external probabilities : P$_{\text{ext}}^{\gamma \rightarrow \text{e1}}$, P$_{\text{ext}}^{\gamma \rightarrow \text{e2}}$, P$_{\text{ext}}^{ \text{e1} \rightarrow\gamma}$ and P$_{\text{ext}}^{ \text{e2} \rightarrow\gamma}$
+\item the 2 angles of the photon with the electrons : cos($\theta_{\gamma-\text{e1}}$) and cos($\theta_{\gamma-\text{e2}}$)
+\end{itemize}
+
+\NI These variables are the input of the multivariate method. Their distributions can be found in Figure~\ref{Variables14TMVA2nu2} for the (2$^+$)~2$\nu$. The signal is represented in blue, the sum of all the background is in red. In 2e2$\gamma$ channel, the same set of variables  is used excepted the energy of the photon is split into 2 variables : minimal and maximal energy (E$_{\gamma}^{\text{min}}$, E$_{\gamma}^{\text{max}}$).
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.59]{pictures/FinalResults/bb2nu2/150/preselection/variablesBB2nu_2_a.pdf}
+\includegraphics[scale=0.59]{pictures/FinalResults/bb2nu2/150/preselection/variablesBB2nu_2_b.pdf}
+\includegraphics[scale=0.59]{pictures/FinalResults/bb2nu2/150/preselection/variablesBB2nu_2_c.pdf}
+\end{center}
+\caption{Discriminating variables used in 2$\nu$ (2$^+$) case.}
+\label{Variables14TMVA2nu2}
+\end{figure}
+
+\FloatBarrier
+
+
+\subsection{Choice of the rectangular method}\label{sec:ChoiceRCmethod}
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.50]{pictures/Chap6/comparaison.pdf}
+\end{center}
+\caption{Comparison of the different rectangular cuts methods. At a given efficiency, the rectangular cut using the genetic algorithm always reject more background than the other methods.}
+\label{comparisonRC}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Reduction of the number of variables}\label{sec:ReductionNumberVariables}
+
+
+\NI Using too much variables can be difficult to handle for some methods and in particuliar for the rectangular cut method. To save time and reduce the phase space and avoid convergence to the local minimal, the number of variables is reduced using correlation between them. The correlation matrix between the variables in 2e1$\gamma$ is shown in Figure~\ref{CorrelationMatrix}.
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.50]{pictures/FinalResults/bb2nu2/150/preselection/CorrelationMatrixBB0nu_2_signal.pdf}
+\end{center}
+\caption{Correlation matrix of the signal in 2$\nu$ (2$^+$) case.}
+\label{CorrelationMatrix}
+\end{figure}
+
+
+\NI It makes sense that the minimum and the maximum energy of the electron are correlated with the energy sum. It is not necessary to have 3 highly variables. E$_\text{e}^{\text{min}}$ and E$_\text{e}^{\text{max}}$ are then not used. Also for this reason, the total energy and the asymetry are not kept. It can be noticed that all the internal and external probabilities are coupled. Only the maximal internal probability and the minimal external probabilties are conserved.
+
+
+\bigskip
+
+
+\NI Finally, 7 discriminating variables are used in 2e1$\gamma$ : E$_{\gamma}$, $\Sigma\text{E}_\text{e}$, P$_{\text{int}}^{\gamma-\text{e1}} \text{max}$, P$_{\text{ext}}^{\gamma \rightarrow \text{e}} \text{min}$, P$_{\text{ext}}^{\text{e} \rightarrow \gamma} \text{min}$, cos$\theta_{\gamma-\text{e1}}$ and cos$\theta_{\gamma-\text{e2}}$. In 2e2$\gamma$, 10 discriminating variables are used including the same 7 variables defined before and adding the minimal energy of the photon and the two additionnal angles of the electrons with the sencond photon. 
+
+
+\bigskip
+
+
+\NI The reduction of the number of variables does not affect the performance of the multivariate analysis as shown in Figure~\ref{CompareTMVA}. For a same signal efficiency, the background rejection is equivalent. This result can be explained that the removed variables were strongly correlated with others. The addition of correlated variables does not give us more discriminating informations.
+
+
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.6]{pictures/FinalResults/bb2nu2/150/preselection/CompareTMVAReductionVar.pdf}
+\end{center}
+\caption{Comparaison of the background rejection using 14 or 7 variables in 2$\nu$ (2$^+$) case.}
+\label{CompareTMVA}
+\end{figure}
+
+
+\FloatBarrier
+
+
+
+
+
+
+
+
+
+\FloatBarrier
+
+\subsection{Rectangular cuts implementation}\label{sec:RCoptimisation}
+
+\subsubsection{Excited state (2$^+$)}
+
+\subsubsection{Excited state (0$^+$)}
+
+
+\FloatBarrier
+
+
+\section{Sources of systematic uncertainties}\label{sec:SourceOfSystematics}
+
+
+\NI The sources of systematic uncertainties which may impact the measurement of the half-lives of the decays to the excited states are presented in this section. Their sources and their values are the same as those evaluated in the decay to the fondamental state, they are presented Section~\ref{sec:CurrentSystematics}. Only the systematic concerning the selection efficiency have been re-evaluate for the search for the excited states. Section~\ref{sec:DetectionEfficiency} presents in more detailed its evaluation. 
+
+%The lists of the systematics uncertainties are listed below (their evaluation and their influence have already been discuseds in~\cite{AlbertoTechNote}) :
+
+
+\subsection{Current sources of systematic uncertainties} \label{sec:CurrentSystematics}
+
+
+\NI This part reports the source of systematic uncertainties considered for the search for the $\beta\beta$ decay to the fundamental state. They are evaluated one by one and propagated to the \Cd~ 2$\nu\beta\beta$ half-life through the likelihhod fit to the 2-e channel.
+
+
+\subsubsection{Energy calibration}
+
+
+\NI It is also a systematic uncertainty dependant of the detector. As explained in a previous section the energy is obtained thanks to a linear fit combining the energy calibration coming from the two $^{\text{207}}$Bi energy peaks and the end point of ${\text{90}}$Y the spectrum :
+
+
+\begin{equation}
+\text{E} = \alpha \times \text{ADC} + \beta
+\end{equation} 
+
+
+\NI where $\alpha$ is the calibration constant of the calorimeter known about $\pm$~1\%. This term variates 
+
+has been estimated by shifting by $\pm$1~\% the energy scale to simulate the variation of the PMT gain. The effect on the half-lives is +1.20~\% and -1.25~\%.   
+
+
+\subsubsection{Isotope mass}
+
+
+has been rounded to 0.25~\% which corresponds to the uncertainties on the mass foil 410$\pm$1~g. This value is directly propagated to the half-lives. 
+
+
+\subsubsection{Source foil geometry composition}
+
+
+take into account the different productions of cadmium foils, have been estimated by comparing the activity measured in different regions (low and medium). Their impact on the half-lives is +2.20~\% and -3.24~\%/
+
+
+\subsubsection{Internal $^{\text{208}}$Tl background}
+
+
+ have been measured by comparing the activities of $^{\text{232}}$U source with HPGe measurement. The uncertaintiy is $\pm$14~\%, his effect on the half-lives is $\pm$0.04~\%. 
+ 
+ 
+\subsubsection{$^{\text{214}}$Bi}
+
+
+have been measured by comparing the activity measured in 1e1$\alpha$ and in 1e1$\gamma$ channels. The agreement is at 12.3~\%. The impact on the half-lives is 0.07~\%.
+
+
+\subsubsection{Rn background}
+
+
+as it have been done, this uncertainties has been estimated by comparing the activities measured in 1e1$\alpha$ and in 1e1$\gamma$ channels of the events coming from tracker and surface foil. The value found is 5~\%. Its impact on the half-lives is 0.04~\%.
+
+
+\subsubsection{$^{\text{40}}$K, $^{\text{234m}}$Pa, $^{\text{210}}$Bi backgrounds}
+
+
+have been estimated by setting all the other componants un 2e channel. This uncertainties is big +40.2~\% and -73.7~\% but its impact on the half-lives is low +0.61~\% and -1.29~\%.
+
+
+\subsubsection{External backgrounds}
+
+
+ have been estimated by comparing the values obtained by the background model made by Alberto and the values obtained in NEMO-3 background paper [??].
+
+
+\NI The last systematic uncertainty to estimate concerns the selection efficiency of the signal. It have been estimated by comparing the activities of two $^{\text{232}}$U sources measured in HPGe detector with the measurements realized with the NEMO-3 detector (by using the same selections introduced for the excited state analysis). As four specific selections has been implemeted to select the four excited states, this uncertainty is computed for each selection.
+
+
+\bigskip
+
+
+\NI In March 2010, calibration runs have been done using three $^{\text{232}}$U sources having different activities. These sources have been previously measured in a HPGe detector. Table~\ref{tab:HPGeMeasurementU232} summarizes these activity measurements. 
+
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c}
+Source/Sector & HPGe (2012) [Bq]   \\
+\midrule
+1/10          & 7.79  $\pm$ 0.04 $\pm$ 0.21 \\ 
+%2/3           & 15.91 $\pm$ 0.09 $\pm$ 0.43 \\ 
+3/16          & 32.76 $\pm$ 0.17 $\pm$ 0.89 \\ 
+\bottomrule
+\end{tabular}
+\caption{Activities of the $^{\text{232}}$U calibration sources measured in HPGe detector. A source 2 was also presents in sector 3 but has not been analysed since no MC was available to analyse it.}
+\label{tab:HPGeMeasurementU232}
+\end{table}  
+
+
+\bigskip
+
+  In the 1e2$\gamma$ channel, the difference is between 10-16~\% according the $^{\text{232}}$U source. The biggest difference is observed for the lower activity source. As we expected measured even lower activity and to be conservative, $\pm$16~\% have been chosen. This uncertainties is directly propagated to the half-lives. Moreover this uncertaities may have an impact on the different backgrounds. All the systematics concerning the background have been set to 16~\%.
+
+
+\bigskip
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{c|c|c|c|c}
+$\text{src/sector}$ & Act.~2e1$\gamma$~[Bq] & Act.~2e2$\gamma$~[Bq] & 2e1$\gamma$/HPGe & 2e2$\gamma$/HPGe \\[0.1cm]
+\toprule
+1/10    & 7.01 $\pm$ 0.22 & 8.28 $\pm$ 0.47 & 10.04 $\pm$ 0.31 & 6.23 $\pm$ 0.35  \\[0.1cm]
+3/16    & 31.43 $\pm$ 0.58 & 35.66 $\pm$ 1.28 & 4.07 $\pm$ 0.08 & 8.85 $\pm$ 0.32 \\[0.1cm]
+\bottomrule
+\end{tabular}
+\label{vvv}
+\caption{Table:activity2e1g-2e2g-Channel-gammaSystematics}
+\end{table}
+\bigskip
+
+
+
+\begin{equation}
+\chi^2 = \sum_{\text{i =1}}^{\text{2}} \frac{(\text{A}_\text{i}^{\text{NEMO}} - \text{A}_\text{i}^{\text{HPGe}})^\text{2}} {(\sigma_\text{i}^{\text{stat}})^\text{2} + (\sigma^{\text{syst}} \times \text{A}_\text{i}^{\text{HPGe}})^\text{2}} = \text{2}
+\end{equation}
+
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.6]{pictures/Chap6/ComparisonChannelSource1AllES.pdf}
+\includegraphics[scale=0.6]{pictures/Chap6/ComparisonChannelSource3AllES.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:ComparisionSourcesHPGe}
+\end{figure}
+
+
+\begin{table}
+\centering
+\begin{tabular}{cc|c}
+& & Systematic \\
+\toprule
+\multirow{2}{*}{(2$^+$)} & $2\nu$ & 5 \% \\
+                         & $0\nu$ & 6 \% \\ 
+\midrule
+\multirow{2}{*}{(0$^+$)} & 2$\nu$ & 10 \% \\
+                         & 0$\nu$ & 4 \% \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%\NI The different sources of systematics have been applied. To see their respective impact, the sensitivity value is computed one after the other. Figure~\ref{PlotSystSummary} and Table~\ref{TableSystSummary} summarize the impact on the sensitivity, the value at $\pm$1~$\sigma$ is also shown in case of 2$\nu$ (2$^+$). 
+
+\NI Table summarized ...
+
+
+\begin{table}
+\centering
+\begin{tabular}{c|c|c}
+Origin                                   & Systematic uncertainty [\%] & Effect on T$_{\text{1/2}}$ [\%] \\[0.1cm]
+\toprule
+$\epsilon_{\text{2e}}$                   & $\pm$ 5.55                       & $\pm$ 5.55 \\[0.1cm]
+\midrule
+Geometry, composition                    & $^{\text{+2.20}}_{\text{-3.24}}$ & $^{\text{+2.20}}_{\text{-3.24}}$ \\[0.1cm]
+\midrule
+Energy calibration                       & $\pm$ 1.00                       & $^{\text{+1.20}}_{\text{-1.25}}$ \\[0.1cm]
+\midrule
+Isotope Mass                             & $\pm$ 0.25                       & $\pm$ 0.25 \\[0.1cm]
+\midrule
+$^{\text{214}}$Bi                        & $\pm$ 2.0                        & $\pm$ 0.01 \\[0.1cm]
+\midrule
+$^{\text{208}}$Tl                        & $\pm$ 14.0                       & $\pm$ 0.05 \\[0.1cm]
+\midrule
+Rn                                       & $\pm$ 2.6                        & $\pm$ 0.02 \\[0.1cm]
+\midrule
+$^{\text{40}}$K, $^{\text{234m}}$Pa, $^{\text{210}}$Bi & $\pm$ 35           & $\pm$ 1.07 \\[0.1cm]
+\midrule
+Externals                                & $\pm$ 15                         & $\pm$ 0.45 \\[0.1cm]
+\bottomrule
+\end{tabular}
+\caption{Sources and estimations of the different systematic uncertainties. The last column presents the effect on the \Cd~half-life in \%.}
+\label{Table:SystCurrent}
+\end{table}
+
+%\begin{figure} [h!]
+%\begin{center}
+%\includegraphics[scale=0.5]{/home/lenoblet-local/Images/NEMO3/Analysis/Syst/Comparison.pdf}
+%\end{center}
+%\caption{Sensitivity value computed taking into account the different source of systematics. The value at $\pm$1~$\sigma$ is also shown in case of 2$\nu$ (2$^+$)}
+%\label{PlotSystSummary}
+%\end{figure}
+
+
+% Change this table
+%\begin{table}
+%\begin{center}
+%\begin{tabular}{c|c|c|c|c}
+
+%\toprule
+%Origin & Systematics [\%]& \multicolumn{3}{c}{Impact on T$_{\text{1/2}}$ at 90 C.L [10$^{\text{21}}$]}  \\
+%\midrule
+%\midrule
+%                               &                    & -1 $\sigma$ & 0 & +1 $\sigma$ \\ \midrule
+%No systematics                 & -                  &  1.34         &  0.942 &  0.642           \\ \midrule
+%$\epsilon_{\text{2e}}$         & $\pm$ 5.55         &  ~~~1.34~~~      & ~~~0.940~~~  & 0.642  \\ \midrule
+%$\epsilon_{\text{1,2} \gamma}$ & $\pm$ 16.0         &  1.31      & 0.909  & 0.617  \\ \midrule
+%Geometry                       & $^{+2.20}_{-3.24}$ &  1.34      & 0.946  & 0.644  \\ \midrule
+%Isotope Mass                   & $\pm$ 0.25         &  1.35      & 0.940  & 0.642  \\ \midrule
+%Energy Calib.                  & $\pm$ 1.00         &  1.34      & 0.944  & 0.643  \\ \midrule
+%Bkg                            & $\pm$ 16.0         &  1.31      & 0.921  & 0.623  \\ \midrule
+%Tot                            & $\pm$ 23.5         &  1.27      & 0.889  & 0.597  \\ \midrule
+%\bottomrule
+%\end{tabular}
+%\end{center}
+%\caption{Sensitivity value computed taking into account the different source of systematics. The value at $\pm$1~$\sigma$ is also shown in case of 2$\nu$ (2$^+$)}
+%\label{TableSystSummary}
+%\end{table}
+
+
+\FloatBarrier
+
+
+\section{$\beta\beta$ decay of $^{\text{116}}$Cd via the excited state (2$^+$) of $^{\text{116}}$Sn}\label{sec:Result2PLUS}
+
+\subsection{2$\nu$ decay mode}
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb2nu2/150/SEe_bb2nu2NS.pdf}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb2nu2/150/Eg_bb2nu2NS.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:SEeAndEg250bb2nu2_150}
+\end{figure}
+
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb2nu2/150/Eemin_bb2nu2NS.pdf}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb2nu2/150/Eemax_bb2nu2NS.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:EeminAndEemax250bb2nu2_150}
+\end{figure}
+
+
+
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb2nu2/250/SEe_bb2nu2.pdf}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb2nu2/250/Eg_bb2nu2.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:SEeAndEg250bb2nu2}
+\end{figure}
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb2nu2/250/Eemin_bb2nu2.pdf}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb2nu2/250/Eemax_bb2nu2.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:EeminAndEemax250bb2nu2}
+\end{figure}
+
+
+\begin{table}
+\centering
+\begin{tabular}{c|c|c|c||c}
+                                                & -1$\sigma$ & 0        & +1$\sigma$ & obs.     \\[0.2cm]
+\hline
+%N collie                                       & 9369.6     & 13 520.1 & 19 837.4   & 18 476.6 \\[0.2cm]
+N exc.                                          & 3.6        & 5.2      & 7.6        & 7.1      \\[0.2cm]
+T$_{\text{1/2}} \times \text{10}^{\text{20}}$y  & 8.28       & 5.74     & 3.91       & 4.2      \\[0.2cm]
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{equation}
+\text{T}_{\text{1/2}} > \frac{\text{ln(2)} \text{N}_\text{A}}{\text{W}} \times \frac{\text{M} \times \text{T}}{\text{N}_{\text{exc.}}^{\text{obs.}}}
+\end{equation}
+
+
+\begin{center}
+$ \text{T}_{\text{1/2}}^{\text{2}\nu} (^{\text{116}} \text{Cd}, \text{0} \rightarrow \text{2}^{+}) > \text{4.2} \times \text{10}^{\text{20}}~\text{y}$ at 90\% C.L.
+\end{center}
+
+
+\FloatBarrier
+
+
+\subsection{0$\nu$ decay mode}
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb0nu2/150/SEe_bb0nu2NS.pdf}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb0nu2/150/Eg_bb0nu2NS.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:SEeAndEg250bb0nu2}
+\end{figure}
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb0nu2/150/Eemin_bb0nu2NS.pdf}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb0nu2/150/Eemax_bb0nu2NS.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:SEeAndEg250bb0nu2}
+\end{figure}
+
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb0nu2/150precut/SEe_bb0nu2.pdf}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb0nu2/150precut/Eg_bb0nu2.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:SEeAndEg250bb0nu2Precut}
+\end{figure}
+
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb0nu2/150precut/Eemin_bb0nu2.pdf}
+\includegraphics[scale=0.5]{pictures/FinalResults/bb0nu2/150precut/Eemax_bb0nu2.pdf}
+\end{center}
+\caption{blabla}
+\label{plot:SEeAndEg250bb0nu2Precut}
+\end{figure}
+
+
+
+\begin{table}
+\centering
+\begin{tabular}{c|c|c|c||c}
+                                                & -1$\sigma$ & 0        & +1$\sigma$ & obs.     \\[0.2cm]
+\hline
+%N collie                                       & 292.4      & 394.8    & 586.7      & 1013.2   \\[0.2cm]
+N exc.                                          & 2.7        & 3.7      & 5.5        & 9.5      \\[0.2cm]
+T$_{\text{1/2}} \times \text{10}^{\text{22}}$y  & 2.65       & 1.97     & 1.32       & 0.77      \\[0.2cm]
+\hline
+\end{tabular}
+\end{table}
+
+
+\FloatBarrier
+
+
+\section{$\beta\beta$ decay of $^{\text{116}}$Cd via the excited state (0$^+$) of $^{\text{116}}$Sn}\label{sec:Result0PLUS}
+
+\subsection{2$\nu$ decay mode}
+
+\subsection{0$\nu$ decay mode}
+
+\section{Summary}\label{sec:SummaryAnalysis}
+
 
 
 \end{document}
