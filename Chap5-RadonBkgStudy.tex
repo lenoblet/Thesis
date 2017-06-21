@@ -12,85 +12,95 @@
 
 
 
-\section{The radon issue}
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=0.60]{pictures/Chap5/tot_energy_spectrum.pdf}
+%\caption{Energy spectrum of the sum of the 2 electrons for the $\beta \beta 0 \nu$ signal (red) and the different backgrounds ($\beta \beta 2 \nu$ in blue, $^{214}Bi$ in orange and $^{208}Tl$ in green). The energy spectrum takes the SuperNEMO detector response into account.}
+%\label{energySpectrum}
+%\end{center}
+%\end{figure}
 
 
-The SuperNEMO experiment is designed to search for neutrinoless double beta decay ($ 2n \rightarrow 2p + 2e^-$). The source used in the experiment consists of thin foils of $^{82}$Se placed in the center of the detector, sandwiched between the trackering and calorimeter planes. 
+\NI As discussed in Chapter~\ref{chap:NEMO}, the $\beta\beta$ processes are very rare and require a very low background environment to be studied. The detectors searching for $\beta\beta$ decays are installed in underground laboratories and protected with different shields to be sheltered against the cosmic rays and the photons/neutrons flux in the laboratory.
+
 
 \bigskip
 
-\noindent The observable signal for double beta decay is a peak which corresponds to the $Q_{\beta \beta}$ value of the decay, which for $^{82}$Se is at 2.995 MeV. Considering the energy lost by the electron leaving the foil and crossing
-the tracker volume, and the energy resolution of the calorimeter, the peak gets smeared out into a wide bump centered at 2.995~MeV. Figure~\ref{energySpectrum} shows the signal ($\beta \beta 0 \nu$ in red) and the main backgrounds ($\beta \beta 2 \nu$ in blue, $^{214}$Bi in orange and $^{208}$Tl in green) as expected in the SuperNEMO experiment after an exposure of 21 kg$\cdot$y and $A(^{208}$Tl)~=~2~$\mu Bq/kg$  and  $A(^{214}$Bi)~=~10 $\mu Bq/kg$.
+
+\NI Despite of these efforts, some backgrounds can still be present and bother the $\beta\beta$ searches. One of the main of them is induced by the radon. Radon ($^{\text{222}}$Rn) is a highly diffusive gas coming from the rock emanations surrounding the underground laboratory. At LSM, its activity in the surrounding air as been measured to be~10Bq/m$^3$~\cite{RadonLSM}. The descendants of the $^{\text{222}}$Rn, mainly the $^{\text{218}}$Po, could deposit on the wires of the tracker or on the surface of the source foil. As shown in Figure~\ref{Radon222decayChain}, $^{\text{222}}$Rn reaches during the decay chain, the $^{\text{214}}$Bi isotope which is one of the main backgrounds in the NEMO experiments due to the electron emitted at 3.27~MeV. As shown in Figure~\ref{Backgroungs}, the decay of $^{\text{214}}$Bi can be different processes (Möller scattering or Compton effect) mimic the $\beta\beta$ signal. 
+
+
+\bigskip
+
+
+\noindent From the NEMO-3 to the SuperNEMO experiments, the aim is to reduce the $^{\text{222}}$Rn contamination inside the tracker by a factor~50. The following techniques will be employed :
+
+
+\begin{itemize}
+
+\item Improve the radiopurity of each components to avoid $^{\text{222}}$Rn emanation coming from the detector itself.
+
+\item Install an anti-radon system made of a clean tent which surrounded the entire detector hermetically and filters which trap $^{\text{222}}$Rn contained in the air inside the tent. 
+
+\end{itemize}
 
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.60]{pictures/Chap5/tot_energy_spectrum.pdf}
-\caption{Energy spectrum of the sum of the 2 electrons for the $\beta \beta 0 \nu$ signal (red) and the different backgrounds ($\beta \beta 2 \nu$ in blue, $^{214}Bi$ in orange and $^{208}Tl$ in green). The energy spectrum takes the SuperNEMO detector response into account.}
-\label{energySpectrum}
+\includegraphics[scale=0.3]{/home/lenoblet-local/Bureau/Radon222decayChain.png}
+\caption{$^{\text{222}}$Rn decay chain.}
+\label{Radon222decayChain}
 \end{center}
 \end{figure}
 
 
-\noindent The main sources of background to the $\beta \beta 0 \nu$ search are the irreducible background from $\beta \beta 2 \nu$ decay and the decays of $^{214}$Bi and $^{208}$Tl originating from the natural chains of $^{238}$U and $^{232}$Th. Due to their high Q-value, the electrons emitted in the decays of $^{214}$Bi and $^{208}$Tl can mimic 2e signal by means of different mechanisms as
-shown in Figure~\ref{Backgroungs}. The combination of the tracking and the calorimetry techniques allow to have independant analysis channels to measure the different background contributions.
-
-
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.5]{pictures/Chap5/internal_bkg.pdf}
+\includegraphics[scale=0.4]{pictures/Chap5/internal_bkg.pdf}
 \caption{Background processes coming from the foil which mimic the two electrons events. On the left : beta decay and internal conversion. In the center : beta decay and M\o ller scattering. On the right : beta decay and Compton scattering.}
 \label{Backgroungs}
 \end{center}
 \end{figure}
 
 
+\noindent Despite of the good radiopurity of the componants and the anti-radon system, some residual contamination of $^{\text{222}}$Rn is expected in the tracker volume. In order to identify these remaining events, analysis tools have been implemented. The strategy is to use the fact that the daughter nucleus of $^{\text{214}}$Bi, $^{\text{214}}$Po, is not stable. The $^{\text{214}}$Po nucleus decays to $^{\text{210}}$Pb by emitting an alpha particle with an half-life of 164.6~$\pm$~0.3~$\mu$s~\cite{NuclearDataSheet210} as shown in Figure~\ref{BiPoChain}. The reconstruction of these events, called BiPo events, with the characteristic coincidence time among the prompt electron and the delayed alpha provides a very clean and sensitive way to measure the $^{\text{214}}$Bi/$^{\text{222}}$Rn contamination in the detector.   
+
+
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.6]{pictures/Chap5/decay_chain_bi.pdf}
-\caption{The $^{214}$Bi decay chain. The first decay emits an electron with $Q_{\beta} = 3.27$MeV. The daughter $^{214}$Po then decays by emitting a monoenergetic alpha particle, $\text{E}_{\alpha} = 7.8 MeV$. The half-life of $^{214}$Po is 164.6~$\pm$~0.3$\mu$s.}
+\caption{The $^{\text{214}}$Bi decay chain. The first decay emits an electron with Q$_{\beta} =$ 3.27 MeV. The daughter $^{\text{214}}$Po then decays by emitting a monoenergetic alpha particle, $\text{E}_{\alpha} =$ 7.8 MeV. The half-life of $^{\text{214}}$Po is 164.6~$\pm$~0.3$\mu$s.}
 \label{BiPoChain}
 \end{center}
 \end{figure}
 
 
-\bigskip 
-
-\noindent The daughter nucleus of $^{214}$Bi, $^{214}$Po, is not stable. The $^{214}$Po nucleus decays to $^{210}$Pb by emitting an alpha particle. The half-life of the $^{214}$Po decay is 164.6~$\pm$~0.3~$\mu$s~\cite{Polonium}. The decay chain of the $^{214}$Bi is shown in Figure~\ref{BiPoChain}.  
-
 \bigskip
 
-\noindent The time coincidence among the prompt electron and the delayed alpha provides a very clean and sensitive way to measure the $^{214}$Bi contamination in the detector. The 1e1$\alpha$ channel can also be used to measure the level of $^{222}$Rn inside the detector. Indeed, $^{222}$Rn eventually decay to $^{214}$Bi.
 
-\bigskip
+\NI The number of expected events coming from $^{\text{214}}$Bi, can be estimated, for each part i of the detector by using :
 
-\noindent Radon ($^{222}$Rn) is a highly diffusive gas coming from the rock emanations surrounding the underground laboratory. The constant flux of $^{222}$Rn inside the laboratory is ~10Bq/m$^3$~\cite{radon_at_LSM}. The descendants of the $^{222}$Rn, mainly the $^{218}$Po, will deposit on the wires of the tracker or on the surface of the source foil. At the end of the decay chain, $^{222}$Rn reaches $^{214}$Bi which is one of the main backgrounds in the NEMO experiments.
-
-\bigskip
-
-\noindent Between the NEMO-3 and the SuperNEMO experiment, the aim is to reduce the $^{222}$Rn contamination by a factor 50. The measurement of the level of $^{222}$Rn in the tracker volume will be one of the measurement to be processed. In order to reduce the level of $^{222}$Rn, the following techniques will be employed :
-\begin{itemize}
-\item Improve the radiopurity of each components to avoid $^{222}$Rn emanation coming from the detector itself.
-\item Install an anti-radon system made of a clean tent which surrounded the entire detector hermetically and filters which trap $^{222}$Rn contained in the air inside the tent. 
-\end{itemize}
-
-
-\noindent Despite of the good radiopurity of the componants and the anti-radon system, some residual contamination of $^{222}$Rn is expected in the tracker volume. The number of expected events, for each part $i$ of the detector of $^{222}$Rn, could be estimated as :
 
 \begin{equation}
-(N_{1e1\alpha})_i = (\epsilon_{1e1\alpha})_i \times A_i \times T
+(\text{N}_{\text{1e1}\alpha})_\text{i} = (\epsilon_{\text{1e1}\alpha})_\text{i} \times \text{A}_\text{i} \times \text{T}
 \label{eq_number_of_expected_events}
 \end{equation}
 
-\noindent where $(\epsilon_{1e1\alpha})_i$ is the efficiency of selecting 1e1$\alpha$ events (which has to be determined by simulations), $A_i$ is the activity of the component of the detector which has been previously measured and T is the time of exposure. The aim of this note is to determine the number of expected events due to a given $^{222}$Rn contamination and the relative error of this measurement.
+
+\noindent where $(\epsilon_{\text{1e1}\alpha})_\text{i}$ is the efficiency of selecting 1e1$\alpha$ events (which has to be determined by simulations), A$_\text{i}$ is the activity of the component of the detector which has been previously measured and T is the time of exposure. 
+
 
 \bigskip
 
-\noindent Section~2 presents the computations of the expected activities in the different parts of the detector, thanks to the radiopurity measurements. Section~3 introduces the simulation and the reconstruction tools used in this study. Section~4 describes the reconstruction of the alpha particle. The alpha finder algorithm can be found in this section. The selection of the 1e1$\alpha$ channel and the efficiency of reconstruction of the 1e1$\alpha$ events are presented in Section~5. Section~6 explains the strategy used in the sensitivity study. Section~7 presents the results and the conclusion. 
+
+\NI Section~\ref{sec:ActivityComputation} presents the computations of the expected activities in the different parts of the detector from the radiopurity measurements.  Section~\ref{sec:SimuReco} introduces the simulation and the reconstruction tools used in this study. Section~\ref{sec:ReconstructionAlphaParticle} presents the identification and the reconstruction of the alpha particles. It is in this section that the algorithm developed to the search for the alpha particle is described. The selection and the efficiency of reconstruction of the 1e1$\alpha$ channel are presented in Section~\ref{sec:Selection1e1aChannel}. Section~\ref{sec:MeasurementStategy} explains the strategy used to estimate the level of background induced by $^{\text{222}}$Rn and with what precision it can be measured. Section~\ref{sec:Results} presents the results of this work.
 
 
-\clearpage
-\newpage
+
+\FloatBarrier
+
+
+
 
 %----------------------------------------------------------------------------------------
 %   ACTIVITIES COMPUTATION
@@ -164,7 +174,7 @@ Activity [mBq] & 15.4 & 0.18    & 45.5    \\[0.1cm]
 %   SIMULATION AND RECONSTRUCTION
 %----------------------------------------------------------------------------------------
 
-\section{Simulation and Reconstruction}
+\section{Simulation and Reconstruction}\label{sec:SimuReco}
 
 
 \noindent The simulation and reconstruction tools used in this work are available in the software package developped by the collaboration called Falaise. The simulations of the events is done by GENBB and presented in Section~\ref{sec:GenerationBi214}. The propagation of the particle inside the SuperNEMO detector is done by GEANT4 and introduced in Section~\ref{sec:DectectorResponseBi214}. For the reconstruction, each event is processed through a pipeline consisting of a sequence of software modules as discussed in Section~\ref{sec:ReconstructionBi214}. Each module is responsible for the elaboration of additional information stored in dedicated banks. An additional tool to output interesting variables on standart ROOT trees is developed for an easier access to the simulated and reconstructed informations.
@@ -391,7 +401,7 @@ others                     &2e1$\alpha$1p1$\gamma$ & 6     & 0.002 \% \\[0.1cm]
 %----------------------------------------------------------------------------------------
 
 
-\section{Reconstruction of the $\alpha$ particle}
+\section{Reconstruction of the $\alpha$ particle}\label{sec:ReconstructionAlphaParticle}
 
 
 Because of its high ionization power, the energy loss of an alpha is much larger than that of an electron. The stopping power (-dE/dx) for an alpha particle, in a gas made of 100 \% of He, is $\sim$~0.25 MeV/cm. In other word, the typical length of an alpha with an energy equal to 7.8 MeV does not exceed 40 cm. So an alpha coming from the source foil is not expected to hit the main calorimeter wall. Due to their high mass, alpha particles are not significantly affected by the magnetic field so their tracks will be essentially a straight lines. An alpha particle is then identified as a short straight line of Geiger hits delayed in time with respect to the electron. A visualisation of a typical alpha track coming from the source is shown in Figure~\ref{visu_alpha_typical_track}.
@@ -1255,19 +1265,16 @@ $\epsilon_{1e1\alpha}$ [$\%$] & 0.05 & 0.16  & 6.72 \\
 %    RESULTS AND CONCLUSION
 %----------------------------------------------------------------------------------------
 
-\section{Results and Conclusion}
+\section{Results and Conclusion}\label{sec:Results}
 
 
-\noindent The method describes in Section~\ref{sec:MeasurementStategy} is generalized to different exposure. For the source selection, the number of expected events is computed according Eq.\ref{eq_number_of_expected_events}. The efficiency of reconstruction presented in Section~\ref{sec:Selection1e1aChannel} and the mean activity computed in Section~\ref{sec:MeasurementStategy} are used. Figure~\ref{picture_number_of_expected_events_source_selection} shows the number of expected events according the exposure time for the different contributions. The results are summarized in Table~\ref{table_number_of_expected_events_source_selection}. The relative error is plotted in Figure~\ref{picture_relative_error_source_selection} and the results are summarized in Table~\ref{table_relative_error_source_selection}.
+\noindent The method described in Section~\ref{sec:MeasurementStategy} is generalized to different exposures. For both selections, source and tracker, the number of expected events is computed according Eq.\ref{eq_number_of_expected_events} and by using the selection efficiency presented in Section~\ref{sec:Selection1e1aChannel} and the mean activity computed in Section~\ref{sec:MeasurementStategy}.
 
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.6]{pictures/Chap5/nexpected_source_selection.pdf}
-\caption{Number of expected events according the exposure time for the different contributions using the source selection.}
-\label{picture_number_of_expected_events_source_selection}
-\end{center}
-\end{figure}
+\subsection{Source selection}
+
+
+\NI Concerning the source selection, the number of events according the exposure for the different contributions in shown in Figure~\ref{picture_number_of_expected_events_source_selection}. Table~\ref{table_number_of_expected_events_source_selection} summarizes the number of expected events after 1~day, 1~week, 2~weeks and 1~month with the source selection. The relative error defined as the ratio $\sigma$/$\mu$ is computed for different exposures and shown in Figure~\ref{picture_relative_error_source_selection}. Table~\ref{table_relative_error_source_selection} gives the results at some exposures.
 
 
 \begin{table}[h!]
@@ -1275,24 +1282,15 @@ $\epsilon_{1e1\alpha}$ [$\%$] & 0.05 & 0.16  & 6.72 \\
 \begin{tabular}{l|c|c|c|c}
  & $\symbol{64}~1$ day  & $\symbol{64}~1$ week  & $\symbol{64}~2$ weeks & $\symbol{64}~1$ month  \\
 \hline
-$\text{N}_\text{bulk}$    & $\sim$ 40 & $\sim$ 275  & $\sim$ 600 & $\sim$ 1175 \\
-$\text{N}_\text{surface}$ & $\sim$ 2  & $\sim$ 10   & $\sim$ 25  & $\sim$ 50   \\
-$\text{N}_\text{tracker}$ & $\sim$ 60 & $\sim$ 420  & $\sim$ 900 & $\sim$ 1800 \\
+$\text{N}_\text{bulk}$ [cts.]    & $\sim$ 40 & $\sim$ 275  & $\sim$ 600 & $\sim$ 1175 \\
+$\text{N}_\text{surface}$ [cts.] & $\sim$ 2  & $\sim$ 10   & $\sim$ 25  & $\sim$ 50   \\
+$\text{N}_\text{tracker}$ [cts.] & $\sim$ 60 & $\sim$ 420  & $\sim$ 900 & $\sim$ 1800 \\
 \hline
 \end{tabular}
 \end{center}
 \caption{Number of expected events according the exposure time for the different contributions using the source selection.}
 \label{table_number_of_expected_events_source_selection}
 \end{table}
-
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.6]{pictures/Chap5/n_source_selection_last_results.pdf}
-\caption{Number of expected events according the exposure time for the different contributions using the source selection. The relative errors using the source selection.}
-\label{picture_relative_error_source_selection}
-\end{center}
-\end{figure}
 
 
 \begin{table}[h!]
@@ -1311,16 +1309,43 @@ $(\sigma / \mu)_{\text{tracker}}$ & 18.0 \% & 6.8  \% & 4.7  \% & 3.3  \% \\
 \label{table_relative_error_source_selection}
 \end{table}
 
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.6]{pictures/Chap5/nexpected_source_selection.pdf}
+\caption{Number of expected events according the exposure time for the different contributions using the source selection.}
+\label{picture_number_of_expected_events_source_selection}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.6]{pictures/Chap5/n_source_selection_last_results.pdf}
+\caption{Number of expected events according the exposure time for the different contributions using the source selection. The relative errors using the source selection.}
+\label{picture_relative_error_source_selection}
+\end{center}
+\end{figure}
+
+
+
+
 \bigskip
 
-\noindent Concerning the source, the level of background coming from the bulk can be known at $\sim$ 10~\% after one week. Even with this selection, the level in the tracker can be measured at  $\sim$ 7~\% after one week. The error on the surface contribution is huge because compared with the other componants the activity is very low. Probably the activity on the foil surface will be higher if a fraction of the $^{\text{222}}$Rn coming from tracker is transfered to the foil surface. 
+\noindent With the source selection, the level of $^{\text{214}}$Bi background coming from the source bulk can be known at $\sim$ 10~\% after one week of data taking. The level of $^{\text{214}}$Bi background coming from the surface of the foil, due to its very low activity compared to the other contributions, is expected to be measured with a high uncertainty, $\sim$~63\% after one month of data taking. Note that this value is a bit pessimist since this study do not take into account that a fraction of the $^{\text{222}}$Rn inside the tracker can be transfered to the foil surface. Futhermore, new radon emanation  measurements of the tracker show that the activity of the tracker have been a little bit overestimated in this work. Finally, note that even if the source selection is not optimised to measure the background contribution from the tracker, it can be measured at $\sim$ 7~\% after one week of data taking.  
 
 
 \FloatBarrier
-\bigskip
 
 
-\noindent For the tracker selection, the number of expected events according the exposure is plotted in Figure~\ref{picture_number_of_expected_events_tracker_selection}, the relative error are shown in Figure~\ref{picture_relative_error_tracker_selection}. Table~\ref{table_number_of_expected_events_relative_error_tracker_selection} summaries the results. The relative error of the surface and the bulk of the foil are not plotted because they tell us nothing. The level of $^{\text{222}}$Rn can be known at $\sim$ 8 \% after one day and can be monitored daily. The expected number of events coming from the foil is very low.
+\subsection{Tracker selection}
+
+
+\noindent For the tracker selection, the number of expected events according the exposure is plotted in Figure~\ref{picture_number_of_expected_events_tracker_selection} and the relative error are shown in Figure~\ref{picture_relative_error_tracker_selection}. Table~\ref{table_number_of_expected_events_relative_error_tracker_selection} summaries the results for several different exposures. The level of $^{\text{222}}$Rn inside the tracker can be known at $\sim$ 8\% after one day and can be monitored daily. Moreover, as this selection is not optimised for the event coming from the bulk and the surface of the foil, the selection efficiency are low and the expected number of events coming from the foil are negligible. The measurement of the level of $^{\text{222}}$Rn in the tracker volume will be one of the measurement to be performed.
+
+
+ 
 
 
 \begin{figure}[h!]
