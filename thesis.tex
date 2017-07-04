@@ -4,7 +4,8 @@
 % --- Package --- %
 \usepackage[a4paper]{meta-donnees}     % pour mettre la page de garde
 \usepackage{subfiles}                  % pour subdiviser les fichiers .tex
-\usepackage[english]{babel}            % pour transformer chapter -> chapitre
+\usepackage[english]{babel}            % pour transformer chapter -> chapitre\\
+\selectlanguage{english}
 \usepackage[utf8]{inputenc}            % pour mettre les accents
 \usepackage[fontsize=12pt]{scrextend}  % pour changer la taille de la police
 \usepackage[inner  = 3.5cm,
@@ -31,9 +32,22 @@
 %\pagestyle{fancy}                      % for fancy style
 \usepackage{titlesec}                  % for the title section (mise en page chap.)
 \usepackage{lettrine}                  % For the drop cap
+\usepackage{multicol}
+\usepackage{chngpage}
+
+\newenvironment{custommargins}[2]{
+     \addtolength{\leftskip}{#1}
+     \addtolength{\rightskip}{#2}}{\par}
+
 %\usepackage{lastpage}                 % Used to determine the number of pages in the document (for "Page X of Total")* 
 %\usepackage{bm}
 \usepackage[nottoc, notlof, notlot]{tocbibind}
+\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\thefootnote}{\alph{footnote}}
+
+\usepackage[noadjust]{cite}
+\renewcommand{\citedash}{--} 
+\usepackage{rotating}
 % --------------- %
 
 \usepackage{hyperref}
@@ -74,6 +88,21 @@
 \makeatother
 % ------------------------------------------ %
 
+
+
+
+\newenvironment{changemargin}[2]{\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\topmargin}{2pt}%
+\setlength{\leftmargin}{0pt}%
+\setlength{\rightmargin}{0pt}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{0pt plus 1pt}%
+\addtolength{\leftmargin}{#1}%
+\addtolength{\rightmargin}{#2}%
+}\item }{\end{list}}
+
   
 \begin{document}
 
@@ -110,10 +139,10 @@ Search for $2\nu\beta\beta$ and $0\nu\beta\beta$ decays of $^{\text{116}}$Cd int
 
 \Jury  {%\UGTRole{civilité, prénom et nom}{titre}{affiliation}
   \UGTPresidente    {Mme, M ??}{??}{}
-  \UGTRapporteur    {M, Claudio GIGANTI}    {Chargé de recherche, LPNHE - Paris}          {}
-  \UGTRapporteur    {M, Ruben SAAKYAN}      {Professor, UCL - Londres}                      {}
+  \UGTRapporteur    {M, Claudio GIGANTI}    {Chargé de recherche, LPNHE - Paris}             {}
+  \UGTRapporteur    {M, Ruben SAAKYAN}      {Professor, UCL - Londres}                       {}
   \UGTExaminatrice  {Mme, Jaime DAWSON}     {Chargée de recherche, APC - Paris}              {}
-  \UGTExaminatrice  {Mme, Edwige TOURNEFIER}{Chargée de recherche, APC - Paris}              {}
+  \UGTExaminatrice  {Mme, Edwige TOURNEFIER}{Directrice de recherche, LAPP - Annecy}         {}
   \UGTExaminateur   {M, Laurent SIMARD}     {Ma\^itre de conf, Univ. Paris-Sud / LAL - Orsay}{}
   %\UGTDirecteur     {M, le Directeur}{DR}{Labo1}
 }
@@ -151,5 +180,12 @@ Search for $2\nu\beta\beta$ and $0\nu\beta\beta$ decays of $^{\text{116}}$Cd int
 
 \bibliographystyle{ieeetr}
 \bibliography{biblio}
+
+\newpage
+\cleardoublepage
+
+\thispagestyle{empty}
+
+\subfile{Summary}
 
 \end{document}
