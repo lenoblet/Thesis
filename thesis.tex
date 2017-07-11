@@ -8,10 +8,18 @@
 \selectlanguage{english}
 \usepackage[utf8]{inputenc}            % pour mettre les accents
 \usepackage[fontsize=12pt]{scrextend}  % pour changer la taille de la police
-\usepackage[inner  = 3.5cm,
-            outer  = 2.7cm,
-            top    = 3.5cm,
-            bottom = 3.5cm]{geometry}  % pour les marges changeantes interieur et extérieur        
+
+%\usepackage[inner  = 3.5cm,
+%            outer  = 2.7cm,
+%            top    = 3.5cm,
+%            bottom = 3.5cm]{geometry}  % pour les marges changeantes interieur et extérieur      
+            
+            \usepackage[inner  = 3.0cm,
+            outer  = 2.4cm,
+            top    = 3.0cm,
+            bottom = 3.0cm]{geometry}  % pour les marges changeantes interieur et extérieur 
+            
+              
 \usepackage{xcolor,lipsum}             % Required for specifying colors by name
 %\usepackage{avant}                     % Use the Avantgarde font for headings
 \usepackage{mathptmx}                  % Use the Adobe Times Roman as the default text font together with math symbols
@@ -42,7 +50,7 @@
 %\usepackage{lastpage}                 % Used to determine the number of pages in the document (for "Page X of Total")* 
 %\usepackage{bm}
 \usepackage[nottoc, notlof, notlot]{tocbibind}
-\renewcommand{\baselinestretch}{1.2}
+\renewcommand{\baselinestretch}{1.15}
 \renewcommand{\thefootnote}{\alph{footnote}}
 
 \usepackage[noadjust]{cite}
@@ -112,7 +120,7 @@
 %\Setvpageshift{???mm}   %%optionnel : à décommenter si besoin pour ajout d'espace afin de center la couvérture verticalement (valeur par défaut est -15.5mm)
 
 %\Universite{}    %%optionnel : à décommenter et à renseigenr si vous voulez changer le non d'université
-%\Grade{}         %%optionnel : à décommenter et à renseigenr si vous voulez changer le grade
+\Grade{Docteur de la communauté université \\ grenoble alpes}         %%optionnel : à décommenter et à renseigenr si vous voulez changer le grade
 % ------------------------------- %
 
 
@@ -129,7 +137,7 @@
 Search for $2\nu\beta\beta$ and $0\nu\beta\beta$ decays of $^{\text{116}}$Cd into the excited states of $^{\text{116}}$Sn with NEMO-3}
 
 %\Soustitre{}%%optionnel : à décommenter et à renseigenr si présence d'un sous-titre de thèse
-\Depot           {date}
+\Depot           {26 septembre 2017}
 
 % --- Commande pour création de nouvelles catégories dans le jury --- %
 %\UGTNewJuryCategory{...NomDeLaCategorie...}{...Definition...}
@@ -138,11 +146,10 @@ Search for $2\nu\beta\beta$ and $0\nu\beta\beta$ decays of $^{\text{116}}$Cd int
 
 
 \Jury  {%\UGTRole{civilité, prénom et nom}{titre}{affiliation}
-  \UGTPresidente    {Mme, M ??}{??}{}
+  \UGTPresidente  {Mme, Edwige TOURNEFIER}{Directrice de recherche, LAPP - Annecy}         {}
   \UGTRapporteur    {M, Claudio GIGANTI}    {Chargé de recherche, LPNHE - Paris}             {}
   \UGTRapporteur    {M, Ruben SAAKYAN}      {Professor, UCL - Londres}                       {}
   \UGTExaminatrice  {Mme, Jaime DAWSON}     {Chargée de recherche, APC - Paris}              {}
-  \UGTExaminatrice  {Mme, Edwige TOURNEFIER}{Directrice de recherche, LAPP - Annecy}         {}
   \UGTExaminateur   {M, Laurent SIMARD}     {Ma\^itre de conf, Univ. Paris-Sud / LAL - Orsay}{}
   %\UGTDirecteur     {M, le Directeur}{DR}{Labo1}
 }
