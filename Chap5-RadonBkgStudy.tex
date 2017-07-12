@@ -21,13 +21,13 @@
 %\end{figure}
 
 
-\NI As discussed in Chapter~\ref{chap:NEMO}, the $\beta\beta$ processes are very rare and require a very low background environment to be studied. The detectors searching for $\beta\beta$ decays are installed in underground laboratories and protected with different shields to be sheltered against the cosmic rays and the photons/neutrons flux in the laboratory.
+\NI As discussed in Chapter~\ref{chap:NEMO}, the $\beta\beta$ processes are very rare and require a very low background environment to be studied. The detectors searching for $\beta\beta$ decays are installed in underground laboratories and protected with different shields to be sheltered against the cosmic rays and the photons/neutrons flux coming from the laboratory.
 
 
 \bigskip
 
 
-\NI Despite of these efforts, some backgrounds can still be present and bother the $\beta\beta$ searches. One of the main of them is induced by the radon. Radon ($^{\text{222}}$Rn) is a highly diffusive gas coming from the rock emanations surrounding the underground laboratory. At LSM, its activity in the surrounding air as been measured to be~10Bq/m$^3$~\cite{RadonLSM}. The descendants of the $^{\text{222}}$Rn, mainly the $^{\text{218}}$Po, could deposit on the wires of the tracker or on the surface of the source foil. As shown in Figure~\ref{Radon222decayChain}, $^{\text{222}}$Rn reaches during the decay chain, the $^{\text{214}}$Bi isotope which is one of the main backgrounds in the NEMO experiments due to the electron emitted at 3.27~MeV. As shown in Figure~\ref{Backgroungs}, the decay of $^{\text{214}}$Bi can be different processes (Möller scattering or Compton effect) mimic the $\beta\beta$ signal. 
+\NI Despite these precautions, some backgrounds can still be present and bother the $\beta\beta$ searches. One of the main background is induced by radon. Radon ($^{\text{222}}$Rn) is a highly diffusive gas emanating from the rocks surrounding the underground laboratory. At LSM, its activity in the surrounding air has been measured to be~10Bq/m$^\text{3}$~\cite{RadonLSM}. The descendants of the $^{\text{222}}$Rn, mainly the $^{\text{218}}$Po, could deposit on the tracker wires or on the surface of the source foil. As shown in Figure~\ref{Radon222decayChain}, $^{\text{222}}$Rn reaches during the decay chain, the $^{\text{214}}$Bi isotope which is one of the main backgrounds in the NEMO experiments due to the electron emitted at 3.27~MeV. Figure~\ref{Backgroungs} shows how the decay of $^{\text{214}}$Bi can by different processes (Möller scattering or Compton effect) mimic the $\beta\beta$ signal. 
 
 
 \bigskip
@@ -38,9 +38,9 @@
 
 \begin{itemize}
 
-\item Improve the radiopurity of each components to avoid $^{\text{222}}$Rn emanation coming from the detector itself.
+\item Improve the radiopurity of each components avoiding $^{\text{222}}$Rn emanation coming from the detector itself.
 
-\item Install an anti-radon system made of a clean tent which surrounded the entire detector hermetically and filters which trap $^{\text{222}}$Rn contained in the air inside the tent. 
+\item Install an anti-radon system made of a clean tent which surrounds the entire detector hermetically and filters the air inside the tent with a radon trap. 
 
 \end{itemize}
 
@@ -57,13 +57,13 @@
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.4]{pictures/Chap5/internal_bkg.pdf}
-\caption{Background processes coming from the foil which mimic the two electrons events. On the left : beta decay and internal conversion. In the center : beta decay and M\o ller scattering. On the right : beta decay and Compton scattering.}
+\caption{Background processes coming from the foil which mimic the two electron events. On the left : beta decay and internal conversion. In the center : beta decay and M\o ller scattering. On the right : beta decay and Compton scattering.}
 \label{Backgroungs}
 \end{center}
 \end{figure}
 
 
-\noindent Despite of the good radiopurity of the componants and the anti-radon system, some residual contamination of $^{\text{222}}$Rn is expected in the tracker volume. In order to identify these remaining events, analysis tools have been implemented. The strategy is to use the fact that the daughter nucleus of $^{\text{214}}$Bi, $^{\text{214}}$Po, is not stable. The $^{\text{214}}$Po nucleus decays to $^{\text{210}}$Pb by emitting an alpha particle with an half-life of 164.6~$\pm$~0.3~$\mu$s~\cite{NuclearDataSheet210} as shown in Figure~\ref{BiPoChain}. The reconstruction of these events, called BiPo events, with the characteristic coincidence time among the prompt electron and the delayed alpha provides a very clean and sensitive way to measure the $^{\text{214}}$Bi/$^{\text{222}}$Rn contamination in the detector.   
+\noindent Despite the good radiopurity of the components and the anti-radon system, some residual contamination of $^{\text{222}}$Rn is expected in the tracker volume. In order to identify and suppress these remaining events, analysis tools have been implemented. The strategy is to use the fact that the daughter nucleus of $^{\text{214}}$Bi, $^{\text{214}}$Po, is not stable. The $^{\text{214}}$Po nucleus decays to $^{\text{210}}$Pb by emitting an alpha particle with a half-life of 164.6~$\pm$~0.3~$\mu$s~\cite{NuclearDataSheet210} as shown in Figure~\ref{BiPoChain}. The reconstruction of these events, called BiPo events, with the characteristic coincidence time among the prompt electron and the delayed alpha provides a very clean and sensitive way to measure the $^{\text{214}}$Bi/$^{\text{222}}$Rn contamination in the detector.   
 
 
 \begin{figure}[h!]
@@ -93,35 +93,33 @@
 \bigskip
 
 
-\NI Section~\ref{sec:ActivityComputation} presents the computations of the expected activities in the different parts of the detector from the radiopurity measurements.  Section~\ref{sec:SimuReco} introduces the simulation and the reconstruction tools used in this study. Section~\ref{sec:ReconstructionAlphaParticle} presents the identification and the reconstruction of the alpha particles. It is in this section that the algorithm developed to the search for the alpha particle is described. The selection and the efficiency of reconstruction of the 1e1$\alpha$ channel are presented in Section~\ref{sec:Selection1e1aChannel}. Section~\ref{sec:MeasurementStategy} explains the strategy used to estimate the level of background induced by $^{\text{222}}$Rn and with what precision it can be measured. Section~\ref{sec:Results} presents the results of this work.
-
+\NI Section~\ref{sec:ActivityComputation} presents the computations of the expected activities in the different parts of the detector from the radiopurity measurements.  Section~\ref{sec:SimuReco} introduces the simulation and the reconstruction tools used in this study. Section~\ref{sec:ReconstructionAlphaParticle} presents the identification and the reconstruction of the alpha particles. It is in this section that the algorithm developed for the search of the alpha particle is described. The selection and the efficiency of reconstruction of the 1e1$\alpha$ channel are presented in Section~\ref{sec:Selection1e1aChannel}. Section~\ref{sec:MeasurementStategy} explains the strategy used to estimate the level of background induced by $^{\text{222}}$Rn and with what precision it can be measured. Section~\ref{sec:Results} presents the results of this work.
 
 
 \FloatBarrier
-
-
 
 
 %----------------------------------------------------------------------------------------
 %   ACTIVITIES COMPUTATION
 %----------------------------------------------------------------------------------------
 
+
 \section{Computation of the expected activity}\label{sec:ActivityComputation}
 
 
-\NI By knowing the $^{\text{214}}$Bi contamination of the different detector components and its mass or its volume the activity of $^{\text{214}}$Bi can be evaluated for each of these parts. Sections~\ref{sec:ActivitySourceFoil} and~\ref{sec:ActivityTracker} respectively present the activity computations for the contamination coming from the source foil and from the tracker.  
+\NI By knowing the $^{\text{214}}$Bi contamination of the different detector components and their mass or volume, the activity of $^{\text{214}}$Bi can be evaluated for each of these parts. Sections~\ref{sec:ActivitySourceFoil} and~\ref{sec:ActivityTracker} respectively present the activity computations for the contamination coming from the source foil and from the tracker.  
 
 
 \subsection{Coming from source foil}\label{sec:ActivitySourceFoil}
 
 
-\noindent $^{\text{214}}$Bi contamination expected from the source foil has been measured in BiPo detector. Results presented in~\cite{BiPoResultsGomez,BiPoResultsLoaiza} put a upper limit on the total activity of 2200 $\times$ 10$^{-\text{6}}$~Bq/kg for the $^{\text{82}}$Se and 210 $\times$ 10$^{-\text{6}}$~Bq/kg for the raw mylar.  
+\noindent $^{\text{214}}$Bi contamination expected from the source foil has been measured in the BiPo detector. Results presented in~\cite{BiPoResultsGomez,BiPoResultsLoaiza} put an upper limit on the total activity of 2200 $\times$ 10$^{-\text{6}}$~Bq/kg for the $^{\text{82}}$Se and 210 $\times$ 10$^{-\text{6}}$~Bq/kg for the raw mylar.  
 
 
 \bigskip
 
 
-\noindent Thanks to these measurements, the radiopurity of each components used in the source foil fabrication is known. By assuming that the bulk of the foil is only made up of~$^{82}$Se and the surface of the foil is made up of only by raw mylar, the total activity can be computed in each part of the detector : 
+\noindent Thanks to these measurements, the radiopurity of each component used in the source foil fabrication is known. By assuming that the bulk of the foil is only made up of~$^{\text{82}}$Se and the surface of the foil is made up of only raw mylar, the total activity can be computed in each part of the detector : 
 
 \begin{itemize}
 \item the bulk of the foil :
@@ -146,7 +144,7 @@
 \subsection{Coming from the tracker}\label{sec:ActivityTracker}
 
 
-\noindent The intrinsic tracker activity has been measured using a RAD7 detector at MSSL~\cite{RAD7measurement}. By assuming that the air is not flushing and that the contamination is 4 times the contamination of the C0 section measured at 11.37~mBq : 
+\noindent The intrinsic tracker activity has been measured using a RAD7 detector at MSSL~\cite{RAD7measurement}. By assuming that the air is not flushing and that the contamination is 4 times the contamination of the C0 section measured at 11.37~mBq, the activity of the tracker is evaluated to be : 
 
 
 \begin{equation}
@@ -154,7 +152,8 @@
 \end{equation}
 
 
-\noindent By flushing the air inside the tracker chamber, the activity inside will be probably lower. The activity computed here for the tracker is overestimated. The fact that a certain amount of $^{222}$Rn presents in the tracker contaminates the surface of the foil is not taken into account. The total activities of each part of the detector are summarized in the Table~\ref{activity_measurement_different_parts}.
+\NI This value of $\text{45.5}~\text{mBq}$ for the tracker activity is probably an overestimation since C1 and C2 sections have been measured respectively at 15.2~mBq and 3.28~mBq as reported in Table~\ref{tab:RadonEmanation}. Calculating the mean value of these measurements gives 10~mBq/C-section corresponding to a total expected activity of 40~mBq for the tracker. Futhermore, the fact that a certain amount of $^{\text{222}}$Rn present in the tracker contaminates the surface of the foil is not taken into account, which would decrease the tracker activity. In addition, the activity inside the tracker can be reduced by flushing the air inside the tracker chamber. Despite this approximation, the value of $\text{45.5}~\text{mBq}$ is chosen for this study since it is probably not so far from the real value (C3 has not been measured) and that we want to test the measurement method. The total activities of each part of the detector (source and tracker) are summarized in the Table~\ref{activity_measurement_different_parts}.
+
 
 \begin{table}[h!]
 \begin{center}
@@ -177,13 +176,13 @@ Activity [mBq] & 15.4 & 0.18    & 45.5    \\[0.1cm]
 \section{Simulation and Reconstruction}\label{sec:SimuReco}
 
 
-\noindent The simulation and reconstruction tools used in this work are available in the software package developped by the collaboration called Falaise. The simulations of the events is done by GENBB and presented in Section~\ref{sec:GenerationBi214}. The propagation of the particle inside the SuperNEMO detector is done by GEANT4 and introduced in Section~\ref{sec:DectectorResponseBi214}. For the reconstruction, each event is processed through a pipeline consisting of a sequence of software modules as discussed in Section~\ref{sec:ReconstructionBi214}. Each module is responsible for the elaboration of additional information stored in dedicated banks. An additional tool to output interesting variables on standart ROOT trees is developed for an easier access to the simulated and reconstructed informations.
+\noindent The simulation and reconstruction tools used in this work are available in the software package developped by the collaboration called Falaise (version 1.0.0). The simulations of the events is done by GENBB and presented in Section~\ref{sec:GenerationBi214}. The propagation of the particle inside the SuperNEMO detector is done by GEANT4 and introduced in Section~\ref{sec:DectectorResponseBi214}. For the reconstruction, each event is processed through a pipeline consisting of a sequence of software modules as discussed in Section~\ref{sec:ReconstructionBi214}. Each module is responsible for the elaboration of additional information stored in dedicated banks. An additional tool giving interesting variables on standard ROOT trees is developed for an easier access to the simulated and reconstructed information.
 
 
 \subsection{Generation of the $^{\text{214}}$Bi events}\label{sec:GenerationBi214}
 
 
-\noindent The first step is the generation of $^{\text{214}}$Bi events with the simulation software. In this note, the events are generated at the surface of the source foil, in the bulk of the source foil and in tracker volume. A complete list of the vertex generators is given in~\cite{FalaiseUserGuide}. The generation of the evens is done by Genbb and the propagation of the particles into the SuperNEMO detector is realized by GEANT4~\cite{GEANT4}.
+\noindent The first step is the generation of $^{\text{214}}$Bi events with the simulation software. In this chapter, the events are generated at the surface of the source foil, in the bulk of the source foil and in the tracker volume. The event generation is done by GENBB and the propagation of the particles into the SuperNEMO detector is realized by GEANT4~\cite{GEANT4}.
 
 
 \bigskip
@@ -195,34 +194,34 @@ Activity [mBq] & 15.4 & 0.18    & 45.5    \\[0.1cm]
 \bigskip 
 
 
-\noindent In this work, the generation is performed in agreement with the decay scheme of $^{\text{214}}$Bi. Since GENBB also simulates secondary nuclear effect such as internal conversion or decay via the excited state, the consequence is the generation of different topologies :
+\noindent In this work, the generation is performed in agreement with the decay scheme of $^{\text{214}}$Bi. Since GENBB also simulates secondary nuclear effects such as internal conversion or decay via the excited state, the consequence is the generation of different topologies :
 
 
 \begin{itemize}
-\item The 1e1$\alpha$ topology, which represents 18.2$\%$ of the all the simulated topologies, represents the standard (BiPo) decay. The $^{\text{214}}$Bi decays to the ground state of $^{\text{214}}$Po.
+\item The 1e1$\alpha$ topology, which represents 18.2$\%$ of all the simulated topologies, represents the standard (BiPo) decay. The $^{\text{214}}$Bi decays to the ground state of $^{\text{214}}$Po.
 
 
-\item The 1e1$\alpha n\gamma$ topologies, which represent 79.1$\%$ of the all the simulated topologies, correspond to the BiPo decay accompanied by a gamma emission. In this case, the $^{\text{214}}$Bi decays to an excited state of $^{\text{214}}$Po, a gamma or a cascade of gammas is then produced.
+\item The 1e1$\alpha$n$\gamma$ topologies, which represent 79.1$\%$ of all the simulated topologies, correspond to the BiPo decay accompanied by a gamma emission. In this case, the $^{\text{214}}$Bi decays to an excited state of $^{\text{214}}$Po, a gamma or a cascade of gammas is then produced.
 
 
-\item The 2e1$\alpha n\gamma$, 3e1$\alpha n\gamma$, 4e1$\alpha n\gamma$ topologies, which reprensent 2.58$\%$ of the all the simulated topologies, correpond to a BiPo event with an internal conversion~(IC). An excited $^{\text{214}}$Bi nucleus can directly transfer its energy to an orbital electron. This electron is expelled from the atom with a discrete energy. The direct consequence is the generation of more than one electron in the event, which could mimic 2e$^-$ event from $\beta\beta$ decay.
+\item The 2e1$\alpha$n$\gamma$, 3e1$\alpha$n$\gamma$, 4e1$\alpha$n$\gamma$ topologies, which reprensent 2.58$\%$ of the all the simulated topologies, correpond to a BiPo event with an internal conversion~(IC). An excited $^{\text{214}}$Bi nucleus can directly transfer its energy to an orbital electron. This electron is expelled from the atom with a discrete energy. The direct consequence is the generation of more than one electron in the event, which could mimic 2e$^-$ event from $\beta\beta$ decay.
 
 
 \end{itemize}
 
 
-\noindent In any case, whatever the topology, an alpha is always present. This justify its search and why the 1e1$\alpha$ channel is an appropriated channel to detect the $^{\text{214}}$Bi.
+\noindent In any case, whatever the topology, an alpha is always present. This justify its search and why the 1e1$\alpha$ channel is an appropriate channel to detect the $^{\text{214}}$Bi.
 
 
 \bigskip
 
  
-\noindent A way to quantitatively ensure that these electrons really come from internal conversion is to analyze the energy spectrum of all the simulated electrons. Figure~\ref{energyspectrumallelectron} shows the energy spectrum of all the simulated electrons. The shape of the energy spectrum of the emitted electrons from $^{\text{214}}$Bi beta decay is well recognized with a Q$_\beta$ at 3.27~MeV. The sharp overlapping peaks then corresponds to the monoenergetic electrons emitted from internal conversions. 
+\noindent A way to quantitatively ensure that these electrons really come from internal conversions is to analyze the energy spectrum of all the simulated electrons. Figure~\ref{energyspectrumallelectron} shows the energy spectrum of all the simulated electrons. The shape of the energy spectrum of the emitted electrons from $^{\text{214}}$Bi beta decay is well recognizable with a Q$_\beta$ at 3.27~MeV. The sharp overlapping peaks then correspond to the monoenergetic electrons emitted from internal conversions. 
 
 
 \bigskip
 
-\noindent By removing the contribution of the electrons coming from the $\beta$ decay, only the electrons coming from internal conversion are kept. Figure~\ref{energyspectruminternalconversion} shows the energy spectrum of these electrons normalized to the number of total events. The four main peaks observed at 0.516, 0.592, 1027 and 1.322~MeV correspond to the internal conversion of $^{\text{214}}$Bi. Table~\ref{internalconversioncomparaison} shows the intensity comparision between the published values \cite{NuclearDataSheet210} and the values obtained in this study. 
+\noindent By removing the contribution of the electrons coming from the $\beta$ decay, only the electrons coming from internal conversions are kept. Figure~\ref{energyspectruminternalconversion} shows the energy spectrum of these electrons normalized to the number of total events. The four main peaks observed at 0.516, 0.592, 1027 and 1.322~MeV correspond to the internal conversion of $^{\text{214}}$Bi. Table~\ref{internalconversioncomparaison} shows the intensity comparision between the published values \cite{NuclearDataSheet210} and the values obtained in this study. 
 
 
 \bigskip
@@ -251,7 +250,7 @@ Electron energy [MeV]  & published values & this study \\[0.1cm]
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.32]{pictures/Chap5/energy_spectrum_all_electron.pdf}
-\caption{Energy spectrum of all simulated electrons. The shape of the energy spectrum of the $^{214}$Bi beta decay is well recognized with a Q$_\beta$ of 3.27~MeV. The sharp peaks correspond to the monoenergetic electrons  emitted from internal conversions.}
+\caption{Energy spectrum of all simulated electrons. The shape of the energy spectrum of the $^{214}$Bi beta decay is well recognizabe with a Q$_\beta$ of 3.27~MeV. The sharp peaks correspond to the monoenergetic electrons emitted from internal conversions.}
 \label{energyspectrumallelectron}
 \end{center}
 \end{figure}
@@ -260,7 +259,7 @@ Electron energy [MeV]  & published values & this study \\[0.1cm]
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.43]{pictures/Chap5/energy_spectrum_internal_conversion.pdf}
-\caption{Energy spectrum of the electrons emitted in internal conversions normalized to number of total simulated events.}
+\caption{Energy spectrum of the electrons emitted in internal conversions normalized to the number of total simulated events.}
 \label{energyspectruminternalconversion}
 \end{center}
 \end{figure}
@@ -273,7 +272,7 @@ Electron energy [MeV]  & published values & this study \\[0.1cm]
     & Simulated topology & 300 000 & 100 $\%$ \\[0.1cm]
 \hline
                            &1$\alpha$            & 21      & 0.007 \%  \\
-$^{214}$Bi $\alpha-$ decay &1$\alpha$1$\gamma$   & 9       & 0.001 \%  \\
+$^{\text{214}}$Bi $\alpha-$ decay &1$\alpha$1$\gamma$   & 9       & 0.001 \%  \\
                            &1$\alpha$2$\gamma$   & 2       & 0.0006 \% \\[0.1cm]
 \hline
                            &1e1$\alpha$          & 54 592  & 18.2 \%   \\
@@ -308,31 +307,31 @@ others                     &2e1$\alpha$1p1$\gamma$ & 6     & 0.002 \% \\[0.1cm]
 \subsection{Detector response simulation}\label{sec:DectectorResponseBi214}
 
 
-\noindent The second step is the simulation of the detector responses. Each particle is propagated in the SuperNEMO detector thanks to GEANT4. The Calibration module is responsible to simulate the response of the tracker and of the calorimeter. A brief reminder on the informations of the SuperNEMO geometry useful to this work are presented here.
+\noindent The second step is the simulation of the detector responses. Each particle is propagated in the SuperNEMO detector thanks to GEANT4. The Calibration module is responsible for simulating the response of the tracker and of the calorimeter. A brief reminder on the information of the SuperNEMO geometry useful to this work are presented here.
 
 
 \bigskip
 
 
-\noindent The tracker, that sandwichs the source foil, is composed of 2034 Geiger cells (9 layers and 113 raws). Each Geiger cell is composed of an anodic wire and 8 cathodic wires for a total of 18306 wires. The distance between each Geiger cell is~2.1~cm.
+\noindent The tracker, that sandwiches the source foil, is composed of 2034 Geiger cells (9 layers and 113 rows). Each Geiger cell is composed of an anodic wire and 8 cathodic wires for a total of 18306 wires. The distance between each Geiger cell is~2.1~cm.
 
 
 \bigskip
 
 
-\noindent The calorimeter is composed of 6 walls : 2 main walls on opposite sides of the source foil, 2 $\gamma$-vetos and 2 x-walls to cap the sides, the top and the bottom of the detector. Each main wall has 260 optical modules made of Polystyrene scintillator blocks directly coupled to a 8-inch low radioactivity PMT. The mean energy resolution of the optical modules, at 1MeV, is $\sim$8$\%$. The distance between the source foil and the main wall is~45~cm.   
+\noindent The calorimeter is composed of 6 walls : 2 main walls on opposite sides of the source foil, 2 $\gamma$-vetos and 2 x-walls to cap the sides, the top and the bottom of the detector. Each main wall has 260 optical modules made of Polystyrene scintillator blocks directly coupled to a 8-inch low radioactivity PMT. The mean energy resolution of the optical modules, at 1MeV, is $\sim$8\%. The distance between the source foil and the main wall is~45~cm.   
 
 
 \bigskip
 
 
-\noindent The response of the calorimeter is simulated though a Gaussian smearing of the true energy taking into account the energy resolution of the calorimeter.  The transversal drift radius of the Geiger cells is simulated in accord to the relation beetween the drift time and radius plotted in Figure~\ref{drift_time}~\cite{DriftTimeModel}. This module creates and fills the Calibrated Data (CD) bank.
+\noindent The response of the calorimeter is simulated though a Gaussian smearing of the true energy taking into account the energy resolution of the calorimeter. The transverse drift radius of the Geiger cells is simulated according to the relation beetween the drift time and radius plotted in Figure~\ref{drift_time}~\cite{DriftTimeModel}. This module creates and fills the Calibrated Data (CD) bank.
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.25]{pictures/Chap5/drift_time.png}
-\caption{The relation between the transversal dritf time and drift radius}
+\caption{The relation between the transverse drift time and drift radius}
 \label{drift_time}
 \end{center}
 \end{figure}
@@ -344,27 +343,27 @@ others                     &2e1$\alpha$1p1$\gamma$ & 6     & 0.002 \% \\[0.1cm]
 \subsection{Reconstruction of the simulated events}\label{sec:ReconstructionBi214}
 
 
-\noindent The final step is the reconstruction of the simulated events. The list of the modules processed in the pipeline used in this study are given below : 
+\noindent The final step is the reconstruction of the simulated events. The list of modules processed in the pipeline used in this study are given below : 
 
 
 \begin{itemize}
 
 
-\item \textbf{Cellular Automaton Tracker (CAT)} : this module clusters the calibrated Geiger hits. It creates and fills the Tracker Clustering Data (TCD) bank. The TCD bank contains all the informations of the cluster. The clusterisation runs in two steps. The first step is to perform a pre-clusterisation. CAT sorts the Geiger hits according the drift time. If the drift time is smaller than 10 $\mu$s from the time of the first particle emission, the cluster is considered as prompt, otherwise it is considered as delayed. The two samples of Geiger hits are then treated separately. The second step is the clusterisation of the Geiger hits by taking into  account their proximity in space through a cellular Automaton Algorithm. %More detailed documents on CAT can been found in \cite{CAT}.
+\item \textbf{Cellular Automaton Tracker (CAT)} : this module clusters the calibrated Geiger hits. It creates and fills the Tracker Clustering Data (TCD) bank. The TCD bank contains all the cluster information. The clusterisation runs in two steps. The first step is to perform a pre-clusterisation. CAT sorts the Geiger hits according to the drift time. If the drift time is smaller than 10 $\mu$s from the time of the first particle emission, the cluster is considered as prompt, otherwise it is considered as delayed. The two samples of Geiger hits are then treated separately. The second step is the clusterisation of the Geiger hits by taking into  account their proximity in space through a cellular Automaton Algorithm. %More detailed documents on CAT can been found in \cite{CAT}.
 
-\item \textbf{TrackFit} : this module fits the clusters found by CAT. It creates and fills the Tracker Trajectory Data (TTD) bank. The TTD bank contains all the information of the track. The fitting algorithm tries to fit a straight line or a helix to the cluster. If cluster is better approximated by a staight line fit, the track is defined by 2 parameters : the first and the last points of the line. In case a helical trajectory is fitted, the track is defined by 5 parameters : the center, radius, pitch and first and last angles of the helical segment. Due to the minimum number of degree of freedom required to fit a straight line, TrackFit considers only cluster containing 3 or more Geiger hits. TrackFit is also able to estimate the alpha emission time which is in practice unknown. %See \cite{TrackFit} for more informations. % By default, only the prompt clusters are fitted. To take into account the delayed clusters the pipeline configuration has to be modified.
+\item \textbf{TrackFit} : this module fits the clusters found by CAT. It creates and fills the Tracker Trajectory Data (TTD) bank. The TTD bank contains all the track information. The fitting algorithm tries to fit a straight line or a helix to the cluster. If the cluster is better approximated by a staight line fit, the track is defined by 2 parameters : the first and the last points of the line. In case a helical trajectory is fitted, the track is defined by 5 parameters : the center, radius, pitch and first and last angles of the helical segment. Due to the minimum number of degrees of freedom required to fit a straight line, TrackFit considers only clusters containing 3 or more Geiger hits. TrackFit is also able to estimate the alpha emission time which is in practice unknown. %See \cite{TrackFit} for more informations. % By default, only the prompt clusters are fitted. To take into account the delayed clusters the pipeline configuration has to be modified.
 
-\item \textbf{Charge Particle Tracking} : this module creates and fills the Particle Track Data (PTD) bank. It computes for each track the charge according to the curvature from the magnetic field.  Charged Particle Tracking also extrapolates the track to estimate its vertex. If the layer of the wire nearest the foil source is triggered the vertex is extrapolated onto the source foil. In the same way, if a calorimeter is hit and so is the layer of Geiger wires nearest the main calorimeter wall, then the calorimeter hit is associated to the track. %See \cite{ChargedParticleTracking} for more informations.
+\item \textbf{Charge Particle Tracking} : this module creates and fills the Particle Track Data (PTD) bank. It computes for each track the charge according to the curvature from the magnetic field.  Charged Particle Tracking also extrapolates the track to estimate its vertex. If the layer of the wire nearest the foil source is triggered, the vertex is extrapolated onto the source foil. In the same way, if a calorimeter is hit together with the layer so is the layer of Geiger wires nearest the main calorimeter wall, then the calorimeter hit is associated to the track. %See \cite{ChargedParticleTracking} for more informations.
 \end{itemize}
 
 
-\noindent Others modules have been developed and are used for the reconstruction of the different channels. They are described briefly here :
+\noindent Others modules have been developed and are used for the reconstruction of the different channels. They are briefly described here :
 
 
 \begin{itemize}
 
 
-\item \textbf{Particle Identification module} : this module tags the reconstructed particles according definitions given by the user. If a particle meets the requirements defined to be an electron the particle is tagged and filled the electron bank. %The definitions are given in a configuration file as cuts. To be accepted in the electron or in the alpha bank, the particle must respect some criteria given by the user. 
+\item \textbf{Particle Identification module} : this module tags the reconstructed particles according to definitions given by the user. If a particle meets the requirements defined to be an electron the particle is tagged and fills the electron bank. %The definitions are given in a configuration file as cuts. To be accepted in the electron or in the alpha bank, the particle must respect some criteria given by the user. 
 
 
 \item \textbf{Topology module} : this module creates a new data bank called Topology Data (TD). The particles in an event are associated to form a topology. This module computes some observables of the reconstructed topology : 
@@ -387,7 +386,7 @@ others                     &2e1$\alpha$1p1$\gamma$ & 6     & 0.002 \% \\[0.1cm]
 \item \textbf{Process 1e1$\alpha$ topology cut} : specific to this work, this module recognizes the 1e1$\alpha$ topology among all the rest.% and executes different actions for these events.
 
 
-\item \textbf{Output module} : this last module is responsible to store the simulated and reconstructed informations in a ROOT tree.
+\item \textbf{Output module} : this last module is responsible for storing the simulated and reconstructed information in a ROOT tree.
 
 
 \end{itemize}
@@ -404,7 +403,7 @@ others                     &2e1$\alpha$1p1$\gamma$ & 6     & 0.002 \% \\[0.1cm]
 \section{Reconstruction of the $\alpha$ particle}\label{sec:ReconstructionAlphaParticle}
 
 
-Because of its high ionization power, the energy loss of an alpha is much larger than that of an electron. The stopping power (-dE/dx) for an alpha particle, in a gas made of 100 \% of He, is $\sim$~0.25 MeV/cm. In other word, the typical length of an alpha with an energy equal to 7.8 MeV does not exceed 40 cm. So an alpha coming from the source foil is not expected to hit the main calorimeter wall. Due to their high mass, alpha particles are not significantly affected by the magnetic field so their tracks will be essentially a straight lines. An alpha particle is then identified as a short straight line of Geiger hits delayed in time with respect to the electron. A visualisation of a typical alpha track coming from the source is shown in Figure~\ref{visu_alpha_typical_track}.
+Because of its high ionization power, the energy loss of an alpha is much larger than that of an electron. The stopping power (-dE/dx) for an alpha particle, in a gas made of 100 \% of He, is $\sim$~0.25 MeV/cm. In other words, the typical length of an alpha with an energy equal to 7.8 MeV does not exceed 40 cm. So an alpha coming from the source foil is not expected to hit the main calorimeter wall. Due to their high mass, alpha particles are not significantly affected by the magnetic field so their tracks will be essentially straight lines. An alpha particle is then identified as a short straight line of Geiger hits delayed in time with respect to the electron. A visualisation of a typical alpha track coming from the source is shown in Figure~\ref{visu_alpha_typical_track}.
 
 
 \begin{figure}[h!]
@@ -417,7 +416,9 @@ Because of its high ionization power, the energy loss of an alpha is much larger
 
 
 \subsection{The Alpha Finder algorithm}
-\noindent The typical alpha track is a short, straigth, and delayed line. Some alphas can have only 1 or 2 Geiger hits, these alphas could otherwise be lost because they are not fitted by TrackFit. For this reason, an algorithm called, Alpha Finder, was developed. Its goal is to search for delayed non-clustered (single) hits and the delayed non-fitted (double) hits. The algorithm is based on the algorithm developed for NEMO-3 and is described here. %The algorithm is based on Vera's algorithm and the work of S.Torre \& J.Mott work for the NEMO-3 experiment \cite{AlphaFinderNEMO3}. 
+
+
+\noindent The typical alpha track is a short, straigth, and delayed line. Some alphas can have only 1 or 2 Geiger hits, these alphas could otherwise be lost because they are not fitted by TrackFit. For this reason, an algorithm, called Alpha Finder, was developed. Its goal is to search for delayed non-clustered (single) hits and the delayed non-fitted (double) hits. The algorithm is based on the algorithm developed for NEMO-3 and is described here. %The algorithm is based on Vera's algorithm and the work of S.Torre \& J.Mott work for the NEMO-3 experiment \cite{AlphaFinderNEMO3}. 
 
 
 \bigskip
@@ -435,7 +436,7 @@ Because of its high ionization power, the energy loss of an alpha is much larger
 \begin{itemize}
 
 
-\item the delayed time of the delayed Geiger hits has to be greater than certain time defined by the \begin{ttfamily}minimum$\_$delayed$\_$time\end{ttfamily}. The CAT algorithm considers a hit as delayed if the delayed time is greater than 10 $\mu$s. The same time have been chosen for the Alpha Finder.
+\item the delayed time of the delayed Geiger hits has to be greater than a certain time defined by the \begin{ttfamily}minimum$\_$delayed$\_$time\end{ttfamily}. The CAT algorithm considers a hit as delayed if the delayed time is greater than 10 $\mu$s. The same time has been chosen for the Alpha Finder.
 
 
 \item the distance in XY between the delayed hit(s) and the hits of the prompt track is computed, and must be smaller than a certain distance called \\
@@ -452,7 +453,7 @@ Because of its high ionization power, the energy loss of an alpha is much larger
 \end{itemize}
 
 
-\noindent If all these different criteria are respected, the delayed cluster (2 hits) or the single hit are added to the alpha bank along with their properties (delayed time, X,Y and Z position...). The delayed time of the alpha corresponds to the delayed time of the Geiger cell which is known with an uncertainty of 4 $\mu$s. 4$\mu$s corresponds to a drift radius of 2.2 cm which is the radius of the a Geiger cell. 
+\noindent If all these different criteria are respected, the delayed cluster (2 hits) or the single hit are added to the alpha bank along with their properties (delayed time, X,Y and Z position...). The delayed time of the alpha corresponds to the delayed time of the Geiger cell which is known with an uncertainty of 4 $\mu$s. 4$\mu$s corresponds to a drift radius of 2.2 cm which is the radius of a Geiger cell. 
 
 
 \bigskip
@@ -465,7 +466,7 @@ Because of its high ionization power, the energy loss of an alpha is much larger
 
 
 %\noindent The selection parameters can easily be changed in the pipeline configuration file in the section dedicated to the ChargedParticleTracking. 
-\NI To summarise, it exists two ways to find the alpha particles :
+\NI To summarise, there are two ways to find the alpha particles :
 
 
 
@@ -475,20 +476,20 @@ Because of its high ionization power, the energy loss of an alpha is much larger
 \end{itemize} 
 
 
-\noindent During the reconstruction of the 1e1$\alpha$ channel, long and short alpha are treated equally, whatever the way they have been found.
+\noindent During the reconstruction of the 1e1$\alpha$ channel, long and short alpha particles are treated equally, whatever the way they have been found.
 
   
 %-------------------------------------------------
 \subsection{The Alpha emission time $t_0$}
 
 
-To find the radius of a Geiger cell, the drift time has to been known. For the prompt tracks it is quite easy to recover the drift time. In an event, the anodic time ($\text{t}_{\text{A}e}$) corresponds to the electron emission time ($ \text{t}_e$) plus the drift time ($\text{t}_d$) :
+To find the radius of a Geiger cell, the drift time has to be known. For the prompt tracks it is quite easy to recover the drift time. In an event, the anodic time ($\text{t}_{\text{A}e}$) corresponds to the electron emission time ($ \text{t}_e$) plus the drift time ($\text{t}_d$) :
 
 
 $$\text{t}_{\text{A}e} = \text{t}_e + \text{t}_d$$
 
 
-\noindent The electron emission time correspond within few ns to the time where the electron hits the calorimeter wall. The response of the calorimeter is very quick (few ns). The anodic time is given by the tracker. The response of the tracker is slower than the calorimeter. In this way, the drift time can be calculated. The correspondence between drift time and the radius has been measured and is given in Figure~\ref{drift_time}.
+\noindent The electron emission time corresponds within a few ns to the time when the electron hits the calorimeter wall. The response of the calorimeter is very quick (few ns). The anodic time is given by the tracker. The response of the tracker is slower than the calorimeter. In this way, the drift time can be calculated. The correspondence between drift time and the radius has been measured and is given in Figure~\ref{drift_time}.
 
 
 \bigskip
@@ -506,7 +507,7 @@ $$\text{t}_{\text{A}\alpha} = \text{t}_e + \text{t}_\alpha + \text{t}_d$$
 $$\text{t}_{\text{A}\alpha} - \text{t}_\alpha =  \text{t}_e  + \text{t}_d$$
 
 
-\noindent In Figure \ref{timeReco}, the difference between the true alpha emission time and the reconstructed alpha emission time is plotted. A picture of the visualisation is also shown in the Figure \ref{timeRecovisu}. The agreement between the reconstruction and the simulation is correct and accurate enough for the following studies presented in this note. The more the number of Geiger hits in the track the better the $\alpha$ emission time is reconstructed. If the number of Geiger hit in a cluster is equal to 2 or less, this calculation is not done because it relies on the fitting of the tracks. 
+\noindent In Figure \ref{timeReco}, the difference between the true alpha emission time and the reconstructed alpha emission time is plotted. A picture of the visualisation is also shown in the Figure \ref{timeRecovisu}. The agreement between the reconstruction and the simulation is correct and accurate enough for the following studies presented in this chapter. The more the number of Geiger hits in the track the better the $\alpha$ emission time is reconstructed. If the number of Geiger hits in a cluster is equal to 2 or less, this calculation is not done because it relies on the fitting of the tracks. 
 
 
 \begin{figure}[h!]
@@ -521,7 +522,7 @@ $$\text{t}_{\text{A}\alpha} - \text{t}_\alpha =  \text{t}_e  + \text{t}_d$$
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.6]{pictures/Chap5/dessin.pdf}
-\caption{Visualisation of simulated (red) and reconstructed (blue) alpha. On the left, a global view is shown, on the rigth, a zoomed in view of the same event is presented. In the simulation, 5 Geiger are cells are hit (red circles) whereas only 4 cells are triggered in the reconstruction (blue circles). The blue squares represent the delayed cells found by the reconstruction, the blue circles represent drift radius estimated by TrackFit with the fitting technique. We can see in the right image that the true alpha track and the reconstructed track are very close.}
+\caption{Visualisation of simulated (red) and reconstructed (blue) alpha. On the left, a global view is shown, on the rigth, a zoomed in view of the same event is presented. In the simulation, 5 Geiger cells are hit (red circles) whereas only 4 cells are triggered in the reconstruction (blue circles). The blue squares represent the delayed cells found by the reconstruction, the blue circles represent drift radius estimated by TrackFit with the fitting technique. We can see in the right image that the true alpha track and the reconstructed track are very close.}
 \label{timeRecovisu}
 \end{center}
 \end{figure}
@@ -538,7 +539,7 @@ $$\text{t}_{\text{A}\alpha} - \text{t}_\alpha =  \text{t}_e  + \text{t}_d$$
 \section{Selection of the 1e1$\alpha$ channel}\label{sec:Selection1e1aChannel}
 
 	
-\noindent In the following discussions, the number of simulated events is always 3.10$^\text{5}$ (unless otherwise noted). This number allows one to obtain good statistic in a reasonable time. The 1e1$\alpha$ events are generated in the foil (bulk and surface) and uniformly in the tracker at the surface of the wires. % In order to further reduce the statistical fluctuations, more events will be probably simulated in the future.
+\noindent In the following discussions, the number of simulated events is always 3.10$^\text{5}$ (unless otherwise noted). This number allows one to obtain good statistics in a reasonable time. The 1e1$\alpha$ events are generated in the foil (bulk and surface) and uniformly in the tracker at the surface of the wires. % In order to further reduce the statistical fluctuations, more events will be probably simulated in the future.
 
 
 \bigskip
@@ -548,22 +549,22 @@ $$\text{t}_{\text{A}\alpha} - \text{t}_\alpha =  \text{t}_e  + \text{t}_d$$
 
 
 \begin{itemize}
-\item source selection : optimized to select the 1e1$\alpha$ the events coming from the source foil and reject the events coming from the tracker.
+\item source selection : optimized to select the 1e1$\alpha$ events coming from the source foil and reject the events coming from the tracker.
 
-\item tracker selection : optimized to select the 1e1$\alpha$ the events coming from tracker and reject the events coming from the source foil.
+\item tracker selection : optimized to select the 1e1$\alpha$ events coming from the tracker and reject the events coming from the source foil.
 \end{itemize}
 
 
 \subsection{1e1$\alpha$ events from the source foil}
 
 
-\noindent A picture representing the 1e1$\alpha$ selection of the event coming from the source foil is shown in Figure~\ref{cartoon_source_selection}. Only the events close to the source in which the first layer of wire is hit are selected. There are represented by the green region in the Figure~\ref{cartoon_source_selection}.
+\noindent A picture representing the 1e1$\alpha$ selection of the event coming from the source foil is shown in Figure~\ref{cartoon_source_selection}. Only the events close to the source in which the first layer of wire is hit are selected. They are represented by the green region the Figure~\ref{cartoon_source_selection}.
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.6]{pictures/Chap5/cartoon_source_selection.pdf}
-\caption{Schema of the source selection. The green part represents the region where the events are selected.}
+\caption{Source selection diagram of the source selection. The green part represents the region where the events are selected.}
 \label{cartoon_source_selection}
 \end{center}
 \end{figure}
@@ -586,12 +587,12 @@ $\#$ having a negative charge  & 116 325  & 38.8  $\pm$ 0.2 \%\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the electrons coming from the surface of the foil according the number of reconstructed electrons and the selection criteria}
+\caption{Cut flow of the electrons coming from the surface of the foil vs the number of reconstructed electrons and the selection criteria}
 \label{Cutflowelectron}
 \end{table}
 
 
-\noindent The number of reconstructed particles is higher than the number of simulated electrons (+114.6 $\pm$ 0.2\%). This is due to some events, where, the number of reconstructed particles can be higher than 1. The number of reconstructed particles can reach 4 or 5 in some events. An electron can be scattered by a wire in the tracker or can rebound on a calorimeter wall. The track is brocken. In this case, CAT recognizes two clusters. These two clusters are then processed independently by TrackFit which fits two tracks instead of only one. In the future, a specific module could be implemented to merge these events in single particle. 
+\noindent The number of reconstructed particles is higher than the number of simulated electrons (+114.6 $\pm$ 0.2\%). This is due to some events, where the number of reconstructed particles can be higher than 1. The number of reconstructed particles can reach 4 or 5 in some events. An electron can be scattered by a wire in the tracker or can rebound on a calorimeter wall. The track is broken. In this case, CAT recognizes two clusters. These two clusters are then processed independently by TrackFit which fits two tracks instead of only one. In the future, a specific module could be implemented to merge these events in a single particle. 
 
 
 \bigskip
@@ -615,7 +616,7 @@ $\#$ having a negative charge  & 116 325  & 38.8  $\pm$ 0.2 \%\\
 \bigskip
 
 
-\noindent The number of Geiger hits is always greater than 8. This result makes sense because the tracker has 9 layers of wires between the source foil and the main calorimeter wall and the electron must cross the entire distance. Similarly, the distance between the source foil and the main calorimeter wall is 45 cm, so the minimum length observed cannot be smaller than this distance. The mean distance traveled by an electron is 63 cm. The energy spectrum looks like the expected energy spectrum of the  $^{\text{214}}$Bi with the Q-value of 3.27 MeV.
+\noindent The number of Geiger hits is always greater than 8. This result makes sense because the tracker has 9 layers of wires between the source foil and the main calorimeter wall and the electron must cross the entire distance. Similarly, the distance between the source foil and the main calorimeter wall is 45 cm, so the minimum length observed cannot be smaller than this distance. The mean distance travelled by an electron is 63 cm. The energy spectrum looks like the expected energy spectrum of the  $^{\text{214}}$Bi with the Q-value of 3.27 MeV.
 
 
 \bigskip
@@ -638,7 +639,7 @@ $\#$ having a negative charge   & 122 170 & 39.7  $\pm$ 0.2 \% \\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the electrons coming from the bulk of the foil according the number of reconstructed electrons and the selection criteria}
+\caption{Cut flow of the electrons coming from the bulk of the foil vs the number of reconstructed electrons and the selection criteria}
 \label{Cutflowelectronbulk}
 \end{table}
 
@@ -657,7 +658,7 @@ $\#$ having a negative charge   & 51 480  & 16.7  $\pm$ 0.2 \%\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the electrons coming from the tracker according the number of reconstructed electrons and the selection criteria}
+\caption{Cut flow of the electrons coming from the tracker vs the number of reconstructed electrons and the selection criteria}
 \label{Cutflowelectrontrackercomingfromthesource}
 \end{table}
 
@@ -665,13 +666,13 @@ $\#$ having a negative charge   & 51 480  & 16.7  $\pm$ 0.2 \%\\
 \bigskip
 
 
-\noindent With the source selection, $\sim$ 17 \% of the electron generated in the tracker are reconstructed and selected. These electrons correspond to events where the electron is simulated on the first layer close to the source foil. The vertex of this events is extrapoled and is considered to be on the source foil.
+\noindent With the source selection, $\sim$ 17 \% of the electrons generated in the tracker are reconstructed and selected. These electrons correspond to events where the electron is simulated on the first layer close to the source foil. The vertex of these events is extrapolated and is considered to be on the source foil.
 
 
 \bigskip
 
 
-\noindent In order to verify the usefulness and the influence of the charge cut, a study is realized. The definition of the charge confusion is introduced as the ratio between the number of true electron that have been reconstructed with a positive or no charge over the total of true electron.
+\noindent In order to verify the usefulness and the influence of the charge cut, a study is realized. The definition of the charge confusion is introduced as the ratio between the number of true electrons that have been reconstructed with a positive or no charge over the total of true electrons.
 
 
 \begin{equation}
@@ -682,7 +683,7 @@ $\#$ having a negative charge   & 51 480  & 16.7  $\pm$ 0.2 \%\\
 \bigskip
 
 
-\noindent Figure~\ref{charge_confusion_source_plots} (left) shows the electron length. The black curve represents all the reconstructed electrons coming from the foil and hitting the main wall. The fraction of these electrons reconstructed with a negative charge are shown in red. The electrons reconstructed with a positive or no charge are plotted in blue. Figure~\ref{charge_confusion_source_plots} (right) also shown the charge confusion with respect to the length of the electron track. 
+\noindent Figure~\ref{charge_confusion_source_plots} (left) shows the electron track length. The black curve represents all the reconstructed electrons coming from the foil and hitting the main wall. The fraction of these electrons reconstructed with a negative charge are shown in red. The electrons reconstructed with a positive or no charge are plotted in blue. Figure~\ref{charge_confusion_source_plots} (right) also shows the charge confusion with respect to the length of the electron track. 
 
 \bigskip
 
@@ -691,7 +692,7 @@ $\#$ having a negative charge   & 51 480  & 16.7  $\pm$ 0.2 \%\\
 \begin{center}
 \includegraphics[scale=0.34]{pictures/Chap5/length_source_charge_confusion_2.pdf}
 \includegraphics[scale=0.34]{pictures/Chap5/charge_confusion_length_source.pdf}
-\caption{On the left : length of the electron according the charge. The black curve represents all the reconstructed electrons coming from the foil and hitting the main wall. In red, the electrons coming from the source foil and hitting the main wall reconstructed with a negative charge. In blue, the electrons reconstructed with a positive or undefined charge. On the rigth : the charge confusion according the length of the electron track.}
+\caption{On the left : length of the electron vs the track charge. The black curve represents all the reconstructed electrons coming from the foil and hitting the main wall. In red, the electrons coming from the source foil and hitting the main wall reconstructed with a negative charge. In blue, the electrons reconstructed with a positive or undefined charge. On the right: the charge confusion vs the length of the electron track.}
 \label{charge_confusion_source_plots}
 \end{center}
 \end{figure}
@@ -700,7 +701,7 @@ $\#$ having a negative charge   & 51 480  & 16.7  $\pm$ 0.2 \%\\
 \bigskip
 
 
-\noindent For the events coming from the source foil, the charge confusion is $\sim$ 8 $\%$ and remains as  a function of the length of the electron track. This cut suppresses the multi-scattering of the electron inside the tracker chamber. For the selection of 1e1$\alpha$ events coming from the source foil, this charge cut is used in order to get an high purity electron sample.
+\noindent For the events coming from the source foil, the charge confusion is $\sim$ 8 $\%$ and remains as  a function of the length of the electron track. This cut suppresses the multi-scattering of the electron inside the tracker chamber. For the selection of 1e1$\alpha$ events coming from the source foil, this charge cut is used in order to get a high purity electron sample.
 
 
 \FloatBarrier
@@ -716,13 +717,13 @@ $\#$ having a negative charge   & 51 480  & 16.7  $\pm$ 0.2 \%\\
 \hline
 $\#$ of simulated alphas & 300 000 & \\
 \hline
-$\#$ of reconstructed alpha & 104 288 & 34.8$\pm$ 0.2\%\\
-$\#$ being delayed          & 104 288 & 34.8$\pm$ 0.2\%\\
-$\#$ coming from the foil   & 87 316  & 29.1$\pm$ 0.2\%\\
-$\#$ hitting no calorimeter & 87 316  & 29.1$\pm$ 0.2\%\\
+$\#$ of reconstructed alpha & 104 288 & 34.8 $\pm$ 0.2\%\\
+$\#$ being delayed          & 104 288 & 34.8 $\pm$ 0.2\%\\
+$\#$ coming from the foil   & 87 316  & 29.1 $\pm$ 0.2\%\\
+$\#$ hitting no calorimeter & 87 316  & 29.1 $\pm$ 0.2\%\\
 \end{tabular}
 \end{center}
-\caption{Cut flow of the alpha according the number of reconstructed alphas and the selection criteria}
+\caption{Cut flow of the alpha vs the number of reconstructed alphas and the selection criteria}
 \label{Cutflowelectronalpha}
 \end{table}
 
@@ -730,7 +731,7 @@ $\#$ hitting no calorimeter & 87 316  & 29.1$\pm$ 0.2\%\\
 \bigskip
 
 
-\noindent After the simulation, 34.8~\% of the alpha particles are reconstructed. Comparing to the electron detection efficiency this number is much lower. Due to the high energy losses, events generated toward the source foil not cross it, and $\sim$50~\% of the events are lost. The number alpha found by our criteria is 29.2~$\pm$~0.2~\% of the simulated particle. The length and the number of Geiger hits of the alpha particles is plotted in Figure \ref{alphaLengthSSS}.
+\noindent After the simulation, 34.8~\% of the alpha particles are reconstructed. Compared to the electron detection efficiency this number is much lower. Due to the high energy losses, events generated towards the source foil will not cross it, and $\sim$50~\% of the events are lost. The number of alpha particles found by our criteria is 29.2~$\pm$~0.2~\% of the simulated particle. The length and the number of Geiger hits of the alpha particles are plotted in Figure \ref{alphaLengthSSS}.
 
 
 \bigskip
@@ -748,7 +749,7 @@ $\#$ hitting no calorimeter & 87 316  & 29.1$\pm$ 0.2\%\\
 \end{figure}
 
 
-\noindent As expected the number of Geiger hits is low and does not exceed 9. The average number of Geiger hits for an alpha particle is 4. The mean length of the identified alpha is $\sim$22 cm which is consistent with the estimated value in section~4, knowing that the gas tracker is made of 95~\% of He.  
+\noindent As expected the number of Geiger hits is low and does not exceed 9. The average number of Geiger hits for an alpha particle is 4. The mean track length of the identified alpha is $\sim$22 cm which is consistent with the estimated value in section~4, knowing that the tracker gas is made of 95~\% of He.  
 
 
 \bigskip
@@ -771,7 +772,7 @@ $\#$ hitting no calorimeter & 24 301 & 8.1  $\pm$ 0.2\% \\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the alpha coming from the bulk of the foil according the number of reconstructed alphas and the selection criteria}
+\caption{Cut flow of the alpha particles coming from the bulk of the foil vs the number of reconstructed alphas and the selection criteria}
 \label{Cutflowalphabulk}
 \end{table}
 
@@ -790,7 +791,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the alpha according the number of reconstructed alphas and the selection criteria}
+\caption{Cut flow of the alpha particles vs the number of reconstructed alphas and the selection criteria}
 \label{Cutflowalphatrackerselection}
 \end{table}
 
@@ -798,7 +799,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \bigskip
 
 
-\noindent The 1e1$\alpha$ topology is built by associating, an electron and a delayed alpha. The length of the alpha and the time between the electrons and the alphas are the main observables of this topology. The length of the alphas according the vertex generation (bulk in black, surface in blue, tracker in red) is shown in Figure~\ref{alpha_length_source_selection}.
+\noindent The 1e1$\alpha$ topology is built by associating, an electron and a delayed alpha. The track length of the alpha and the time between the electrons and the alphas are the main observables of this topology. The track length of the alphas according to the vertex generation (bulk in black, surface in blue, tracker in red) is shown in Figure~\ref{alpha_length_source_selection}.
 
 
 \begin{figure}[h!]
@@ -806,7 +807,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \includegraphics[scale=0.39]{pictures/Chap5/alpha_length_bulk_1M.pdf}
 \includegraphics[scale=0.39]{pictures/Chap5/alpha_length_surface_1M.pdf}
 \includegraphics[scale=0.39]{pictures/Chap5/alpha_length_tracker_1M.pdf}
-\caption{Alpha track length in the 1a1$\alpha$ channel. Top : event coming from the bulk. Middle : event coming from the surface of the foil. Bottom : event coming from the tracker.}
+\caption{Alpha track length in the 1a1$\alpha$ channel. Top : events coming from the bulk. Middle : events coming from the surface of the foil. Bottom : events coming from the tracker.}
 \label{alpha_length_source_selection}
 \end{center}
 \end{figure}
@@ -815,11 +816,11 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \FloatBarrier
 
 
-\noindent Given the high ionisation power of the alpha particles, they lose a lot of energy just by crossing the source foil. Thus, the alpha coming from the bulk are expected to have a shorter track length than the alpha coming from the surface of the foil. The alpha coming from tracker cross only the helium gas of the detector. Given the energy loss of the alpha in the helium, the maximum length of the track will be around 45-50 cm.
+\noindent Given the high ionisation power of the alpha particles, they lose a lot of energy just by crossing the source foil. Thus, the alpha particles coming from the bulk are expected to have a shorter track length than the alpha particles coming from the surface of the foil. The alpha particles coming from the tracker cross only the helium gas of the detector. Given the energy loss of the alpha in helium, the maximum length of the track will be around 45-50 cm.
 
 \bigskip
 
-\noindent The multi-peak distribution of the alpha coming from the bulk of the foil can be explained by the tracker configuration. The first peak correspond to the alpha hitting the first layer of the tracker, the decay of each peak corresponds to all the possible angles. The second peak corresponds to the alpha hitting the second layer of the tracker.
+\noindent The multi-peak distribution of the alpha particles coming from the bulk of the foil can be explained by the tracker configuration. The first peak corresponds to the alpha hitting the first tracker layer, the decay of each peak corresponds to all the possible angles. The second peak corresponds to the alpha hitting the second layer of the tracker.
  %Figure~\ref{alpha_track_length_bulk_3D} represents the length of the alpha according the number of Geiger hits of the alpha.
 
 %\begin{figure}[h!]
@@ -838,7 +839,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \bigskip
 
 
-\noindent The delayed time between the electron and the alpha is plotted in the Figure~\ref{delayedtimetopology}. The half-life of the process is well recovered : t$_{\text{1/2}}$ = 162.6 $\pm$ 4.1 $\mu s$. This agrees well with the published value of 164.6 $\pm$ 0.3 $\mu$s from \cite{NuclearDataSheet210}.
+\noindent The delayed time between the electron and the alpha is plotted in Figure~\ref{delayedtimetopology}. The half-life of the process is well found : t$_{\text{1/2}}$ = 162.6 $\pm$ 4.1 $\mu s$. This agrees well with the published value of 164.6 $\pm$ 0.3 $\mu$s from \cite{NuclearDataSheet210}.
 
 
 \begin{figure}[h!]
@@ -876,14 +877,14 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \includegraphics[scale=0.312]{pictures/Chap5/angle.pdf}
 \includegraphics[scale=0.38]{pictures/Chap5/delayedTime.pdf}
 %\includegraphics[scale=0.34]{/home/lenoblet-local/Documents/latex-papers/Alpha_Finder_note/pictures/angle_cut_optimisation.pdf}
-\caption{On the left : The angular distribution of the 1e1$\alpha$ events with the fake alphas. The angle between the electron and the fake alpha is very close to zero, so an excess of events is expected near to  cos ($\theta_{e-\alpha}$) = 1. On the right : the time distribution for events with cos($\theta_{e-\alpha}$) in [0.95 - 1]. An excess of events corresponding to fake alphas is observed for small $\Delta \text{t}$.} 
+\caption{On the left : The angular distribution of the 1e1$\alpha$ events with the fake alphas. The angle between the electron and the fake alpha is very close to zero, so an excess of events is expected near cos ($\theta_{e-\alpha}$) = 1. On the right : the time distribution for events with cos($\theta_{e-\alpha}$) in [0.95 - 1]. An excess of events corresponding to fake alphas is observed for small $\Delta \text{t}$.} 
 \label{angularDistribution}
 \end{center}
 \end{figure}
 
 \bigskip
 
-\noindent A peak is observed in the time distribution for the events having cos($\theta_{e-\alpha}$) $\simeq$ [0.95 - 1] so, the fake alpha have a different time distribution. The value of $\Delta \text{t}$ can be thus used as discriminating variable to remove the fake alphas. Knowing the true Monte Carlo information, we can check if the cell has been triggered by an alpha (true alpha event) or by an electron (fake alpha event) and study the two samples independently.
+\noindent A peak is observed in the time distribution for the events having cos($\theta_{e-\alpha}$) $\simeq$ [0.95 - 1] so, the fake alphas have a different time distribution. The value of $\Delta \text{t}$ can thus be used as discriminating variable to remove the fake alphas. Knowing the true Monte Carlo information, we can check if the cell has been triggered by an alpha (true alpha event) or by an electron (fake alpha event) and study the two samples independently.
 
 
 \begin{figure}[h!]
@@ -896,7 +897,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \end{figure}
 
 
-\noindent The time and angular distribution of the fake alphas are plotted in Figure~\ref{fakeAlphadistribution}. The delay time of the fake alphas never exceeds 25~$\mu$s and, as expected, the angular distribution is peaked close to cos $\theta_{e-\alpha} =$~1. The same distribution are plotted in Figure~\ref{trueAlphadistribution} for the true alphas.
+\noindent The time and angular distribution of the fake alphas are plotted in Figure~\ref{fakeAlphadistribution}. The delay time of the fake alphas never exceeds 25~$\mu$s and, as expected, the angular distribution is peaked close to cos $\theta_{e-\alpha} =$~1. The same distributions are plotted in Figure~\ref{trueAlphadistribution} for the true alphas.
 
 
 \begin{figure}[h!]
@@ -909,7 +910,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \end{figure}
 
 
-\noindent In order to remove the maximum number of fake alpha but conserve the maximum number of true alphas, the cut on $\Delta \text{t}$ has been optimized to maximize the product of the efficiency and purity ($\epsilon \times \text{p}$). The efficiency of the cut, is defined by the fraction of fake alphas removed by the cut at~$\Delta \text{t}$~:
+\noindent In order to remove the maximum number of fake alphas but keep the maximum number of true alphas, the cut on $\Delta \text{t}$ has been optimized to maximize the product of the efficiency and purity ($\epsilon \times \text{p}$). The efficiency of the cut, is defined by the fraction of fake alphas removed by the cut at~$\Delta \text{t}$~:
 
 
 \begin{equation}
@@ -917,7 +918,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \end{equation}
 
 
-\noindent where f(t) is time distribution of the fake alphas. In the same way, the purity is defined as the fraction of the true alphas kept after the cut $\Delta t$~:
+\noindent where f(t) is the time distribution of the fake alphas. In the same way, the purity is defined as the fraction of the true alphas kept after the cut $\Delta t$~:
 
 \begin{equation}
 \text{p} = \frac{ \displaystyle{\int_{\Delta \text{t}}^{+\infty}} \text{g(t)} \text{dt} } { \displaystyle{\int_\text{0}^{+\infty}} \text{g(t)} \text{dt}} 
@@ -930,7 +931,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 \begin{center}
 \includegraphics[scale=0.4]{pictures/Chap5/efficiency_purity.pdf}
 \includegraphics[scale=0.4]{pictures/Chap5/pe.pdf}
-\caption{On the top : the efficiency of the cut for the true alphas in blue and the fake alphas in red. On the bottom : the ratio of the two efficiencies. This ratio has a maximum for a cut at $\Delta \text{t}_{e-\alpha}$ = 17.0 $\mu$s.}
+\caption{On the top : the efficiency of the cut for the true alphas in blue and the fake alphas in red. On the bottom : the product of the two efficiencies. This product has a maximum for a cut at $\Delta \text{t}_{e-\alpha}$ = 17.0 $\mu$s.}
 \label{efficiency_ratio}
 \end{center}
 \end{figure}
@@ -941,7 +942,7 @@ $\#$ hitting no calorimeter & 32 716  & 10.9 $\pm$ 0.2\% \\
 
 \bigskip
 
-\noindent The number of reconstructed 1e1$\alpha$ events according the vertex is given in the Table \ref{efficiency_different_parts_foil_source}. So, $\sim$ 10~\% of the 1e1$\alpha$ events generated on the surface of the foil are reconstructed. The efficiency of reconstruction of the 1e1$\alpha$ events coming from the bulk is $\sim$ 3~\%. With the source selection, $\sim$ 1.5\% of the 1e1$\alpha$ events coming from the tracker are reconstructed. These events are the events generated on the first layer of wire close to the source foil. By default, the vertex is extrapolated to the source if the first layer of wire is hit.
+\noindent The number of reconstructed 1e1$\alpha$ events depending on the vertex is given in the Table \ref{efficiency_different_parts_foil_source}. So, $\sim$ 10~\% of the 1e1$\alpha$ events generated on the surface of the foil are reconstructed. The efficiency of reconstruction of the 1e1$\alpha$ events coming from the bulk is $\sim$ 3~\%. With the source selection, $\sim$ 1.5\% of the 1e1$\alpha$ events coming from the tracker are reconstructed. These events are the events generated on the first layer of tracker wires close to the source foil. By default, the vertex is extrapolated to the source if the first layer of wire is hit.
 
 
 \begin{table}[h!]
@@ -970,26 +971,26 @@ $\epsilon_{\text{1e1}\alpha}$ [\%] & 2.94 & 10.07  & 1.59 \\
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.6]{pictures/Chap5/cartoon_tracker_selection.pdf}
-\caption{Schema of the tracker selection. The green part represents the region where the events are selected.}
+\caption{Tracker selection diagram of the tracker selection. The green part represents the region where the events are selected.}
 \label{cartoon_tracker_selection}
 \end{center}
 \end{figure}
 
 
-\noindent In this selection, an electron is defined as a prompt particle hitting a calorimeter. To increase the statistics, an electron can also hit the main wall, the $\gamma$-veto wall, or the x-wall. Generated in the tracker, some electrons are expected to be simulated very close a calorimeter block and will not have a long track. In some cases, electron track can be only 2-3 Geiger hits it will even appear to be straight. So, the same study about the charge confusion is realized.
+\noindent In this selection, an electron is defined as a prompt particle hitting a calorimeter. To increase the statistics, an electron can also hit the main wall, the $\gamma$-veto wall, or the x-wall. Generated in the tracker, some electrons are expected to be simulated very close to a calorimeter block and will not have a long track. In some cases, electron tracks can be only 2-3 Geiger hits even appearing on a straght line. So, the same study about the charge confusion is realized.
 
 
 \bigskip
 
 
-\noindent The electron length and the charge confusion are plotted in Figure \ref{charge_confusion_tracker_plots}. The charge confusion is high for the short length and reach 80~\%. The charge confusion decreases with the length of the track and reaches a stable value of ~20~\% for tracks longer than 500~mm.
+\noindent The electron length and the charge confusion are plotted in Figure \ref{charge_confusion_tracker_plots}. The charge confusion is high for the short length and reaches 80~\%. The charge confusion decreases with the length of the track and reaches a stable value of ~20~\% for tracks longer than 50~cm.
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.34]{pictures/Chap5/length_tracker_charge_confusion_2.pdf}
 \includegraphics[scale=0.34]{pictures/Chap5/charge_confusion_length_tracker.pdf}
-\caption{On the left : length of the electron according the charge. The black curve represents all the reconstructed electrons hitting a calorimeter. In red, the electrons hitting a calorimeter reconstructed with a negative charge. In blue, the electrons reconstructed with a positive or undefined charge. On the rigth : the charge confusion according the length of the electron track.}
+\caption{On the left : length of the electron vs the charge. The black curve represents all the reconstructed electrons hitting a calorimeter. In red, the electrons hitting a calorimeter reconstructed with a negative charge. In blue, the electrons reconstructed with a positive or undefined charge. On the right : the charge confusion vs the length of the electron track.}
 \label{charge_confusion_tracker_plots}
 \end{center}
 \end{figure}
@@ -998,7 +999,7 @@ $\epsilon_{\text{1e1}\alpha}$ [\%] & 2.94 & 10.07  & 1.59 \\
 \bigskip 
 
 
-\noindent If a cut is introduced to select the electrons reconstructed with a negative charge, $\sim$27~\% of the true electrons are lost. So, in order to not lose too much events no cut on the charge is introduced.  The cut flow of the electron coming from the tracker is summarized in Table~\ref{Cutflowelectrontracker}. 
+\noindent If a cut is introduced to select the electrons reconstructed with a negative charge, $\sim$27~\% of the true electrons are lost. So, in order to avoid losing too many events, no cut on the charge is introduced. The cut flow of the electrons coming from the tracker is summarized in Table~\ref{Cutflowelectrontracker}. 
 
 \begin{table}[h!]
 \begin{center}
@@ -1014,7 +1015,7 @@ $\#$ having a negative charge   & 78 940  & 25.6  $\pm$ 0.2 \%\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the electrons coming from the tracker according the number of reconstructed electrons and the selection criteria}
+\caption{Cut flow of the electrons coming from the tracker vs the number of reconstructed electrons and the selection criteria}
 \label{Cutflowelectrontracker}
 \end{table}
 
@@ -1022,7 +1023,7 @@ $\#$ having a negative charge   & 78 940  & 25.6  $\pm$ 0.2 \%\\
 \bigskip
 
 
-\noindent By releasing the cut on the charge and allow that an electron can hit the x-wall or the $\gamma$ veto, the selection of the electron in the tracker is  $\sim$ 25~\%. The cut flow of the electrons coming from the bulk and the surface of the foil are summarized in Table~\ref{Cutflowelectrontrackerbulk} and Table~\ref{Cutflowelectrontrackersurface}.
+\noindent By releasing the cut on the charge and allowing an electron to hit the x-wall or the $\gamma$ veto, the selection of the electron in the tracker is $\sim$ 25~\%. The cut flow of the electrons coming from the bulk and the surface of the foil are summarized in Table~\ref{Cutflowelectrontrackerbulk} and Table~\ref{Cutflowelectrontrackersurface}.
 
 
 \begin{table}[h!]
@@ -1032,14 +1033,14 @@ $\#$ having a negative charge   & 78 940  & 25.6  $\pm$ 0.2 \%\\
 \toprule
 $\#$ of simulated electrons & 308 000 & \\
 \hline
-$\#$ of reconstructed electrons & 320 379 & 104.0$ \pm $0.2 \% \\
-$\#$ coming from the foil       & 320 379 & 104.0$ \pm$ 0.2 \%\\
-$\#$ hiting the main wall       & 161 308 & 53.8$ \pm$ 0.2 \%\\
-$\#$ having a negative charge   & 17 088  & 5.7$ \pm$ 0.2 \%\\
+$\#$ of reconstructed electrons & 320 379 & 104.0 $\pm $0.2 \% \\
+$\#$ coming from the foil       & 320 379 & 104.0 $\pm$ 0.2 \%\\
+$\#$ hiting the main wall       & 161 308 & 53.8 $\pm$ 0.2 \%\\
+$\#$ having a negative charge   & 17 088  & 5.7 $\pm$ 0.2 \%\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the electrons coming from the bulk according the number of reconstructed electrons and the selection criteria}
+\caption{Cut flow of the electrons coming from the bulk vs the number of reconstructed electrons and the selection criteria}
 \label{Cutflowelectrontrackerbulk}
 \end{table}
 
@@ -1050,21 +1051,21 @@ $\#$ having a negative charge   & 17 088  & 5.7$ \pm$ 0.2 \%\\
 \toprule
 $\#$ of simulated electrons & 308 000 & \\
 \hline
-$\#$ of reconstructed electrons & 362 157 & 117.6$ \pm$ 0.2 \% \\
-$\#$ coming from the foil       & 362 157 & 117.6$ \pm$ 0.2 \%\\
-$\#$ hiting the main wall       & 159 893 & 5.9$ \pm$ 0.2 \%\\
-$\#$ having a negative charge   & 21 567  & 7.0$ \pm$ 0.2 \%\\
+$\#$ of reconstructed electrons & 362 157 & 117.6 $\pm$ 0.2 \% \\
+$\#$ coming from the foil       & 362 157 & 117.6 $\pm$ 0.2 \%\\
+$\#$ hiting the main wall       & 159 893 & 5.9 $\pm$ 0.2 \%\\
+$\#$ having a negative charge   & 21 567  & 7.0 $\pm$ 0.2 \%\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the electrons coming from the surface according the number of reconstructed electrons and the selection criteria}
+\caption{Cut flow of the electrons coming from the surface vs the number of reconstructed electrons and the selection criteria}
 \label{Cutflowelectrontrackersurface}
 \end{table}
 
 
 \bigskip
 
-\noindent As expected, the selection efficiency of the electrons coming from the foil is low, $\sim$~6\% and $\sim$~7\%. This corresponds to electrons coming from the source foil but do not trigger the first layer of wire of the tracker. The vertex of these events are reconstructed in the tracker even if they come from the source foil.  
+\noindent As expected, the selection efficiency of the electrons coming from the foil is low, $\sim$~6\% and $\sim$~7\%. This corresponds to electrons coming from the source foil that did not trigger the first layer of wires of the tracker. The vertex of these events is reconstructed in the tracker even if they come from the source foil.  
 
 
 \bigskip
@@ -1080,14 +1081,14 @@ $\#$ having a negative charge   & 21 567  & 7.0$ \pm$ 0.2 \%\\
 \toprule
 $\#$ of simulated alphas & 300 000 & \\
 \hline
-$\#$ of reconstructed alpha & 131 596 & 43.9 $ \pm$ 0.2 \%\\
-$\#$ being delayed          & 131 596 & 43.9 $ \pm$ 0.2 \%\\
-$\#$ coming from the foil   & 98 880  & 33.0 $ \pm$ 0.2 \%\\
-$\#$ hitting no calorimeter & 98 859  & 33.0 $ \pm$ 0.2 \%\\
+$\#$ of reconstructed alpha & 131 596 & 43.9 $\pm$ 0.2 \%\\
+$\#$ being delayed          & 131 596 & 43.9 $\pm$ 0.2 \%\\
+$\#$ coming from the foil   & 98 880  & 33.0 $\pm$ 0.2 \%\\
+$\#$ hitting no calorimeter & 98 859  & 33.0 $\pm$ 0.2 \%\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the alpha coming from the tracker according the number of reconstructed alphas and the selection criteria}
+\caption{Cut flow of the alpha coming from the tracker vs the number of reconstructed alphas and the selection criteria}
 \label{Cutflowalphatrackertracker}
 \end{table}
 
@@ -1099,14 +1100,14 @@ $\#$ hitting no calorimeter & 98 859  & 33.0 $ \pm$ 0.2 \%\\
 \toprule
 $\#$ of simulated alphas & 300 000 & \\
 \hline
-$\#$ of reconstructed alpha & 33 876 & 11.3 $ \pm 0.2$ \%\\
-$\#$ being delayed          & 33 876 & 11.3 $ \pm 0.2$ \%\\
-$\#$ coming from the foil   & 9 570  & 3.19 $ \pm 0.2$ \%\\
-$\#$ hitting no calorimeter & 9 565  & 3.19 $ \pm 0.2$ \%\\
+$\#$ of reconstructed alpha & 33 876 & 11.3 $\pm$ 0.2 \%\\
+$\#$ being delayed          & 33 876 & 11.3 $\pm$ 0.2 \%\\
+$\#$ coming from the foil   & 9 570  & 3.19 $\pm$ 0.2 \%\\
+$\#$ hitting no calorimeter & 9 565  & 3.19 $\pm$ 0.2 \%\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the alpha coming from the bulk according the number of reconstructed alphas and the selection criteria}
+\caption{Cut flow of the alpha coming from the bulk vs the number of reconstructed alphas and the selection criteria}
 \label{Cutflowalphatrackerbulk}
 \end{table}
 
@@ -1118,14 +1119,14 @@ $\#$ hitting no calorimeter & 9 565  & 3.19 $ \pm 0.2$ \%\\
 \toprule
 $\#$ of simulated alphas & 300 000 & \\
 \hline
-$\#$ of reconstructed alpha & 104 288 & 34.8 $ \pm $0.2 \%\\
-$\#$ being delayed          & 104 288 & 34.8 $ \pm $0.2 \%\\
-$\#$ coming from the foil   & 16 972  & 5.66 $ \pm $0.2 \%\\
-$\#$ hitting no calorimeter & 16 972  & 5.66 $ \pm $0.2 \%\\
+$\#$ of reconstructed alpha & 104 288 & 34.8 $\pm $0.2 \%\\
+$\#$ being delayed          & 104 288 & 34.8 $\pm $0.2 \%\\
+$\#$ coming from the foil   & 16 972  & 5.66 $\pm $0.2 \%\\
+$\#$ hitting no calorimeter & 16 972  & 5.66 $\pm $0.2 \%\\
 \bottomrule
 \end{tabular}
 \end{center}
-\caption{Cut flow of the alpha coming from the surface according the number of reconstructed alphas and the selection criteria}
+\caption{Cut flow of the alpha coming from the surface vs the number of reconstructed alphas and the selection criteria}
 \label{Cutflowalphatrackersurface}
 \end{table}
 
@@ -1133,7 +1134,7 @@ $\#$ hitting no calorimeter & 16 972  & 5.66 $ \pm $0.2 \%\\
 \bigskip
 
 
-\noindent The 1e1$\alpha$ topology is built by associating, an electron and a delayed alpha. The alpha length of the different contribution are plotted in Figure~\ref{alpha_length_tracker_selection}. The delayed time between the electron and the alpha is shown in Figure~\ref{delta_t_tracker_selection}.
+\noindent The 1e1$\alpha$ topology is built by associating, an electron and a delayed alpha. The alpha length of the different contributions are plotted in Figure~\ref{alpha_length_tracker_selection}. The delayed time between the electron and the alpha is shown in Figure~\ref{delta_t_tracker_selection}.
 
 
 \begin{figure}[h!]
@@ -1141,7 +1142,7 @@ $\#$ hitting no calorimeter & 16 972  & 5.66 $ \pm $0.2 \%\\
 \includegraphics[scale=0.39]{pictures/Chap5/length_alpha_tracker_selection_bulk.pdf}
 \includegraphics[scale=0.39]{pictures/Chap5/length_alpha_tracker_selection_surface.pdf}
 \includegraphics[scale=0.39]{pictures/Chap5/length_alpha_tracker_selection_tracker.pdf}
-\caption{Time between the alpha and the electron in the identified 1a1$\alpha$ channel}
+\caption{Alpha track length for different contributions : source bulk (black), source surface (blue) and tracker (red).}
 \label{alpha_length_tracker_selection}
 \end{center}
 \end{figure}
@@ -1159,13 +1160,13 @@ $\#$ hitting no calorimeter & 16 972  & 5.66 $ \pm $0.2 \%\\
 \bigskip
 
 
-\noindent The optimisation introducted in the previous section on the $\Delta$t~>~17~$\mu$s is also applied because it does not depend of the vertex position. 
+\noindent The optimisation introduced in the previous section on the $\Delta$t~>~17~$\mu$s is also applied because it does not depend on the vertex position. 
 
 
 \bigskip
 
 
-\noindent The number of reconstructed 1e1$\alpha$ events according the vertex is given in the Table~\ref{efficiency_different_parts_tracker}. So, $\sim$7~\% of the 1e1$\alpha$ events generated in the tracker are reconstructed. The efficiency of reconstruction of the 1e1$\alpha$ events coming from the surface and the bulk is $\sim$0.2~\% and $\sim$0.05~\%. With the tracker selection, the efficiency of reconstruction of the 1e1$\alpha$ events coming from the source are very low. These residual events are the events coming from the source foil but not hitting the first layer of wire close to the source foil. The vertex of these events are extrapolated to be in the tracker.
+\noindent The number of reconstructed 1e1$\alpha$ events according to the vertex is given in Table~\ref{efficiency_different_parts_tracker}. So, $\sim$7~\% of the 1e1$\alpha$ events generated in the tracker are reconstructed. The efficiency of reconstruction of the 1e1$\alpha$ events coming from the surface and the bulk is $\sim$0.2~\% and $\sim$0.05~\%. With the tracker selection, the efficiency of reconstruction of the 1e1$\alpha$ events coming from the source is very low. These residual events are the events coming from the source foil but not hitting the first layer of wires close to the source foil. The vertex of these events are extrapolated to be in the tracker.
 
 
 \begin{table}[h!]
@@ -1173,7 +1174,7 @@ $\#$ hitting no calorimeter & 16 972  & 5.66 $ \pm $0.2 \%\\
 \begin{tabular}{c|c|c|c}
            & bulk   & surface & tracker \\
 \hline
-$\epsilon_{1e1\alpha}$ [$\%$] & 0.05 & 0.16  & 6.72 \\
+$\epsilon_{1e1\alpha}$ [\%] & 0.05 & 0.16  & 6.72 \\
 \hline
 \end{tabular}
 \end{center}
@@ -1194,13 +1195,13 @@ $\epsilon_{1e1\alpha}$ [$\%$] & 0.05 & 0.16  & 6.72 \\
 \bigskip
 
 
-\noindent \textbf{1) Normalization to the activity and sum} : The three distributions of the alpha length presented in Section~\ref{sec:Selection1e1aChannel} are normalized to their respective activities computed in Section~\ref{sec:ActivityComputation} and summed. Figure~\ref{ref_distribution} shows the summed distribution.
+\noindent \textbf{1) Normalization to the activity and sum} : The three distributions of the alpha track length presented in Section~\ref{sec:Selection1e1aChannel} are normalized to their respective activities computed in Section~\ref{sec:ActivityComputation} and summed. Figure~\ref{ref_distribution} shows the summed distribution.
 
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.6]{pictures/Chap5/basic_distribution_alpha_length.pdf}
-\caption{Summed and normalized alpha length distribution from the 3 contributions.}
+\includegraphics[scale=0.55]{pictures/Chap5/basic_distribution_alpha_length.pdf}
+\caption{Summed and normalized alpha length distribution from the 3 contributions (source bulk, source surface and tracker).}
 \label{ref_distribution}
 \end{center}
 \end{figure}
@@ -1220,7 +1221,7 @@ $\epsilon_{1e1\alpha}$ [$\%$] & 0.05 & 0.16  & 6.72 \\
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.6]{pictures/Chap5/alph_length_exposure_60.pdf}
+\includegraphics[scale=0.55]{pictures/Chap5/alph_length_exposure_60.pdf}
 \caption{Pseudo experiment, length of the $\alpha$ track after an exposure of 60 days.}
 \label{pseudo-experiment}
 \end{center}
@@ -1230,13 +1231,13 @@ $\epsilon_{1e1\alpha}$ [$\%$] & 0.05 & 0.16  & 6.72 \\
 \bigskip
 
 
-\noindent \textbf{4) Fit the pseudo-experiment} : The pseudo-experiment is fitted with the three distributions presented in Section~5. The fit is a likelihood fit (\`a la NEMO 3) which returns the activity of each component. Figure~\ref{fit-pseudo-experiment} shows the result of the fit.
+\noindent \textbf{4) Fit the pseudo-experiment} : The pseudo-experiment is fitted with the three distributions presented in Section~\ref{sec:Selection1e1aChannel}. The fit is a likelihood fit (\`a la NEMO 3) which returns the activity of each component. Figure~\ref{fit-pseudo-experiment} shows the result of the fit.
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{pictures/Chap5/fit_exposure_60.pdf}
-\caption{Fit of the pseudo-experiment with the three contributions after an exposure of 60 days. In red, the tracker contribution. In blue, the surface contribution. In black, the bulk contribution.}
+\caption{Fit of the pseudo-experiment with the three contributions after an exposure of 60~days. In red, the tracker contribution. In blue, the surface contribution. In black, the bulk contribution.}
 \label{fit-pseudo-experiment}
 \end{center}
 \end{figure}
@@ -1245,7 +1246,7 @@ $\epsilon_{1e1\alpha}$ [$\%$] & 0.05 & 0.16  & 6.72 \\
 \bigskip
 
 
-\noindent \textbf{5) Repeat 3 and 4} : The actions 3 and 4 are repeated $10^\text{5}$ times. The distribution of the fitted activity of each composant is get and plotted in~Figure~\ref{gaus}. The mean activity ($\mu$) and the sigma ($\sigma$) are recoverered. The relative error is defined as the ratio~:~$\sigma$~/~$\mu$.
+\noindent \textbf{5) Repeat 3 and 4} : The actions 3 and 4 are repeated 10$^\text{5}$ times. The distribution of the fitted activity of each composant is plotted in~Figure~\ref{gaus}. The mean activity ($\mu$) and the sigma ($\sigma$) are recoverered. The relative error is defined as the ratio~:~$\sigma$~/~$\mu$.
 
 \begin{figure}[h!]
 \begin{center}
@@ -1268,19 +1269,19 @@ $\epsilon_{1e1\alpha}$ [$\%$] & 0.05 & 0.16  & 6.72 \\
 \section{Results and Conclusion}\label{sec:Results}
 
 
-\noindent The method described in Section~\ref{sec:MeasurementStategy} is generalized to different exposures. For both selections, source and tracker, the number of expected events is computed according Eq.\ref{eq_number_of_expected_events} and by using the selection efficiency presented in Section~\ref{sec:Selection1e1aChannel} and the mean activity computed in Section~\ref{sec:MeasurementStategy}.
+\noindent The method described in Section~\ref{sec:MeasurementStategy} is generalized to different exposures. For both selections, source and tracker, the number of expected events is computed according to Eq.\ref{eq_number_of_expected_events} and by using the selection efficiency presented in Section~\ref{sec:Selection1e1aChannel} and the mean activity computed in Section~\ref{sec:MeasurementStategy}.
 
 
 \subsection{Source selection}
 
 
-\NI Concerning the source selection, the number of events according the exposure for the different contributions in shown in Figure~\ref{picture_number_of_expected_events_source_selection}. Table~\ref{table_number_of_expected_events_source_selection} summarizes the number of expected events after 1~day, 1~week, 2~weeks and 1~month with the source selection. The relative error defined as the ratio $\sigma$/$\mu$ is computed for different exposures and shown in Figure~\ref{picture_relative_error_source_selection}. Table~\ref{table_relative_error_source_selection} gives the results at some exposures.
+\NI Concerning the source selection, the number of events according to the exposure for the different contributions is shown in Figure~\ref{picture_number_of_expected_events_source_selection}. Table~\ref{table_number_of_expected_events_source_selection} summarizes the number of expected events after 1~day, 1~week, 2~weeks and 1~month with the source selection. The relative error defined as the ratio $\sigma$/$\mu$ is computed for different exposures and shown in Figure~\ref{picture_relative_error_source_selection}. Table~\ref{table_relative_error_source_selection} gives the results at some exposures.
 
 
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{l|c|c|c|c}
- & $\symbol{64}~1$ day  & $\symbol{64}~1$ week  & $\symbol{64}~2$ weeks & $\symbol{64}~1$ month  \\
+ & $\symbol{64}$ 1 day  & $\symbol{64}$ 1 week  & $\symbol{64}$ 2 weeks & $\symbol{64}$ 1 month  \\
 \hline
 $\text{N}_\text{bulk}$ [cts.]    & $\sim$ 40 & $\sim$ 275  & $\sim$ 600 & $\sim$ 1175 \\
 $\text{N}_\text{surface}$ [cts.] & $\sim$ 2  & $\sim$ 10   & $\sim$ 25  & $\sim$ 50   \\
@@ -1288,7 +1289,7 @@ $\text{N}_\text{tracker}$ [cts.] & $\sim$ 60 & $\sim$ 420  & $\sim$ 900 & $\sim$
 \hline
 \end{tabular}
 \end{center}
-\caption{Number of expected events according the exposure time for the different contributions using the source selection.}
+\caption{Number of expected events vs the exposure time for the different contributions using the source selection.}
 \label{table_number_of_expected_events_source_selection}
 \end{table}
 
@@ -1296,7 +1297,7 @@ $\text{N}_\text{tracker}$ [cts.] & $\sim$ 60 & $\sim$ 420  & $\sim$ 900 & $\sim$
 \begin{table}[h!]
 \begin{center}
 \begin{tabular}{l|c|c|c|c}
-       & $\symbol{64}~1$ day  & $\symbol{64}~1$ week  & $\symbol{64}~2$ weeks & $\symbol{64}~1$ month  \\
+      & $\symbol{64}$ 1 day  & $\symbol{64}$ 1 week  & $\symbol{64}$ 2 weeks & $\symbol{64}$ 1 month  \\
 \hline
 $(\sigma / \mu)_{\text{bulk}}$    & 24.9 \% & 9.4  \% & 6.4  \% & 4.5  \% \\
 %$(\sigma / \mu)_{\text{surface}}$ & 84.8 $\%$ & 29.4 $\%$ & 19.9 $\%$ & 14.1 $\%$ \\
@@ -1305,7 +1306,7 @@ $(\sigma / \mu)_{\text{tracker}}$ & 18.0 \% & 6.8  \% & 4.7  \% & 3.3  \% \\
 \hline
 \end{tabular}
 \end{center}
-\caption{Relative errors according the exposure time for the different contributions using the source selection.}
+\caption{Relative errors vs the exposure time for the different contributions using the source selection.}
 \label{table_relative_error_source_selection}
 \end{table}
 
@@ -1314,7 +1315,7 @@ $(\sigma / \mu)_{\text{tracker}}$ & 18.0 \% & 6.8  \% & 4.7  \% & 3.3  \% \\
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.6]{pictures/Chap5/nexpected_source_selection.pdf}
-\caption{Number of expected events according the exposure time for the different contributions using the source selection.}
+\caption{Number of expected events vs the exposure time for the different contributions using the source selection.}
 \label{picture_number_of_expected_events_source_selection}
 \end{center}
 \end{figure}
@@ -1323,7 +1324,7 @@ $(\sigma / \mu)_{\text{tracker}}$ & 18.0 \% & 6.8  \% & 4.7  \% & 3.3  \% \\
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.6]{pictures/Chap5/n_source_selection_last_results.pdf}
-\caption{Number of expected events according the exposure time for the different contributions using the source selection. The relative errors using the source selection.}
+\caption{Number of expected events vs the exposure time for the different contributions using the source selection.}
 \label{picture_relative_error_source_selection}
 \end{center}
 \end{figure}
@@ -1333,7 +1334,7 @@ $(\sigma / \mu)_{\text{tracker}}$ & 18.0 \% & 6.8  \% & 4.7  \% & 3.3  \% \\
 
 \bigskip
 
-\noindent With the source selection, the level of $^{\text{214}}$Bi background coming from the source bulk can be known at $\sim$ 10~\% after one week of data taking. The level of $^{\text{214}}$Bi background coming from the surface of the foil, due to its very low activity compared to the other contributions, is expected to be measured with a high uncertainty, $\sim$~63\% after one month of data taking. Note that this value is a bit pessimist since this study do not take into account that a fraction of the $^{\text{222}}$Rn inside the tracker can be transfered to the foil surface. Futhermore, new radon emanation  measurements of the tracker show that the activity of the tracker have been a little bit overestimated in this work. Finally, note that even if the source selection is not optimised to measure the background contribution from the tracker, it can be measured at $\sim$ 7~\% after one week of data taking.  
+\noindent With the source selection, the level of $^{\text{214}}$Bi background coming from the source bulk can be known at $\sim$ 10~\% after one week of data taking. The level of $^{\text{214}}$Bi background coming from the surface of the foil, due to its very low activity compared to the other contributions, is expected to be measured with a high uncertainty, $\sim$~63\% after one month of data taking. Note that this value is a bit pessemistic since this study does not take into account that a fraction of the $^{\text{222}}$Rn inside the tracker can be transferred to the foil surface. Futhermore, new radon emanation  measurements of the tracker show that the activity of the tracker has been a little bit overestimated in this work. Finally, note that even if the source selection is not optimised to measure the background contribution from the tracker, it can be measured at $\sim$ 7~\% after one week of data taking.  
 
 
 \FloatBarrier
@@ -1342,7 +1343,7 @@ $(\sigma / \mu)_{\text{tracker}}$ & 18.0 \% & 6.8  \% & 4.7  \% & 3.3  \% \\
 \subsection{Tracker selection}
 
 
-\noindent For the tracker selection, the number of expected events according the exposure is plotted in Figure~\ref{picture_number_of_expected_events_tracker_selection} and the relative error are shown in Figure~\ref{picture_relative_error_tracker_selection}. Table~\ref{table_number_of_expected_events_relative_error_tracker_selection} summaries the results for several different exposures. The level of $^{\text{222}}$Rn inside the tracker can be known at $\sim$ 8\% after one day and can be monitored daily. Moreover, as this selection is not optimised for the event coming from the bulk and the surface of the foil, the selection efficiency are low and the expected number of events coming from the foil are negligible. The measurement of the level of $^{\text{222}}$Rn in the tracker volume will be one of the measurement to be performed.
+\noindent For the tracker selection, the number of expected events according to the exposure is plotted in Figure~\ref{picture_number_of_expected_events_tracker_selection} and the relative errors are shown in Figure~\ref{picture_relative_error_tracker_selection}. Table~\ref{table_number_of_expected_events_relative_error_tracker_selection} summaries the results for several different exposures. The level of $^{\text{222}}$Rn inside the tracker can be known at $\sim$ 8\% after one day and can be monitored daily. Moreover, as this selection is not optimised for the events coming from the bulk and the surface of the foil, the selection efficiencies are low and the expected number of events coming from the foil are negligible. The measurement of the level of $^{\text{222}}$Rn in the tracker volume will be one of the measurements to be performed.
 
 
  
@@ -1351,7 +1352,7 @@ $(\sigma / \mu)_{\text{tracker}}$ & 18.0 \% & 6.8  \% & 4.7  \% & 3.3  \% \\
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{pictures/Chap5/nexpected_tracker_selection.pdf}
-\caption{Number of expected events according the exposure time for the different contributions using the tracker selection. The relative errors using the tracker selection.}
+\caption{Number of expected events vs the exposure time for the different contributions using the tracker selection.}
 \label{picture_number_of_expected_events_tracker_selection}
 \end{center}
 \end{figure}
@@ -1359,7 +1360,7 @@ $(\sigma / \mu)_{\text{tracker}}$ & 18.0 \% & 6.8  \% & 4.7  \% & 3.3  \% \\
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{pictures/Chap5/rr.pdf}
-\caption{Relative errors using the tracker selection according the exposure.}
+\caption{Relative errors using the tracker selection vs the exposure.}
 \label{picture_relative_error_tracker_selection}
 \end{center}
 \end{figure}
@@ -1375,7 +1376,7 @@ $(\sigma / \mu)_{\text{tracker}}$ & 8.3 \%     & 3.1  \%     & 2.1  \%     & 1.5
 \hline
 \end{tabular}
 \end{center}
-\caption{Number of expected events and relative errors in tracker according the exposure time for the tracker selection.}
+\caption{Number of expected events and relative errors in tracker vs the exposure time for the tracker selection.}
 \label{table_number_of_expected_events_relative_error_tracker_selection}
 \end{table}
 
