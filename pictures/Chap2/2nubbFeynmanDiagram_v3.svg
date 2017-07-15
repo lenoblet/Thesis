@@ -288,7 +288,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -460,7 +460,7 @@
          id="tspan4176-49"
          x="120.85714"
          y="665.79077"
-         style="font-size:20px;line-height:0%;-inkscape-font-specification:cmmi10;font-family:cmmi10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">u</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:0%;font-family:cmmi10;-inkscape-font-specification:cmmi10">d</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -484,7 +484,7 @@
          id="tspan4176-4-0-42"
          x="120.57143"
          y="707.36218"
-         style="font-size:20px;line-height:0%;-inkscape-font-specification:cmmi10;font-family:cmmi10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">d</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:0%;font-family:cmmi10;-inkscape-font-specification:cmmi10">u</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
